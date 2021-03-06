@@ -2,11 +2,12 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
+import config as cfg
+import plotly.graph_objs as go
 
 data = pd.read_csv("results_stacked.csv", index_col=0)
 data.sort_values(["season", 'week'], inplace=True)
 
-import plotly.graph_objs as go
 fig = go.Figure(data=[go.Scatter(x=data["season"].values, y=data["week"].values, mode='markers')])
 
 app = dash.Dash(__name__)
