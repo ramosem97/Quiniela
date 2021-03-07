@@ -2,17 +2,17 @@ import sqlite3
 from sqlite3 import Error
 
 
-def create_connection(db_file):
-    """ create a database connection to a SQLite database """
-    conn = None
-    try:
-        conn = sqlite3.connect(db_file)
-        print(sqlite3.version)
-    except Error as e:
-        print(e)
-    finally:
-        if conn:
-            conn.close()
+class db_connect(object):
 
-if __name__ == "__main__":
-    create_connection("quiniela_db.db")
+    def __init__(self, db_file):
+        self._db_connection = sqlite3.connect(db_file)
+        self._db_cur = self._db_connection.cursor()
+
+    def connection(self):
+        return self._db_connection
+
+    def query(self, query, params):
+        return self._db_cur.execute(query, params)
+
+    def __del__(self):
+        self._db_connection.close()

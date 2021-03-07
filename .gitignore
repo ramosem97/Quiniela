@@ -232,3 +232,6 @@ _Pvt_Extensions
 
 # Configuration File
 config.py
+
+# Python Notebook
+__pycache__

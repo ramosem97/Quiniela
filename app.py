@@ -4,9 +4,19 @@ import dash_html_components as html
 import pandas as pd
 import config as cfg
 import plotly.graph_objs as go
+from db_connection import db_connect
 
-data = pd.read_csv("results_stacked.csv", index_col=0)
-data.sort_values(["season", 'week'], inplace=True)
+# # Establish connection to DB
+# con = db_connect(cfg.sqlite_config['db'])
+# data1 = pd.read_sql_query("SELECT * FROM quiniela_table", con.connection())
+
+# Read In Data as CSV
+data_old = pd.read_csv("results_stacked.csv", index_col=0)
+data_old.sort_values(["season", 'week'], inplace=True)
+
+# Establish connection to DB
+con = db_connect(cfg.sqlite_config['db'])
+data = pd.read_sql_query("SELECT * FROM quiniela_table", con.connection())
 
 fig = go.Figure(data=[go.Scatter(x=data["season"].values, y=data["week"].values, mode='markers')])
 
@@ -29,7 +39,7 @@ app.layout = html.Div(
                         "type": "scatter",
                     },
                 ],
-                "layout": {"title": "Average Price of Avocados"},
+                "layout": {"title": "Season Week"},
             },
         ),
         dcc.Graph(
