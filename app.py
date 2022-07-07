@@ -150,7 +150,7 @@ app.config.suppress_callback_exceptions = True
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
-    navbar.layout,
+    navbar.create_navbar(df=df.copy(), preds=preds.copy()),
     html.Div(children=[], id='page',
     style={'width':'100%', 'textAlign':'center', 'justify':'center', 'display':'inline-block'})
 ])
@@ -168,6 +168,8 @@ def print_df(season, week):
                                             week=week,
                                             user='Emilio',
                                             df=df.copy(),
+                                            df_teams=df_teams.copy(),
+                                            user_df=user_df.copy(),
                                             USER_LIST=USER_LIST)
 
     ### Update Week Options
@@ -184,7 +186,7 @@ def print_df(season, week):
     
 if __name__ == '__main__':
 
-    debug=False
+    debug=True
     if debug:
             app.run_server(debug=debug, port=8060)
     else:

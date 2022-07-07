@@ -233,13 +233,13 @@ def display_team(row, home_or_away, df_teams):
         )
 
 
-def display_scores(season, week, user, df, USER_LIST):
+def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
-    def display_upcoming_week(scores, season=season, week=week):
+    def display_upcoming_week(scores, season=season, week=week,df_teams=df_teams, USER_LIST=USER_LIST):
 
         return []
 
-    def display_historical_week(scores, season=season, week=week):
+    def display_historical_week(scores, season=season, week=week, user_df=user_df, df_teams=df_teams, USER_LIST=USER_LIST):
 
         score_layout = [dbc.Row([
 
@@ -314,7 +314,7 @@ def display_scores(season, week, user, df, USER_LIST):
                                     dbc.Col(html.Div(''), style={'width':'5%'}),
 
                                     ### Away Team
-                                    display_team(row=row, home_or_away='away'),
+                                    display_team(row=row, home_or_away='away', df_teams=df_teams),
 
                                     ## Away Team Score
                                     dbc.Col([
@@ -407,7 +407,7 @@ def display_scores(season, week, user, df, USER_LIST):
                                     ),
 
                                     ## Home Team
-                                    display_team(row=row, home_or_away='home'),                              
+                                    display_team(row=row, home_or_away='home', df_teams=df_teams),                              
                                     
                                     dbc.Col(html.Div(''), style={'width':'1%'}),
 
@@ -471,9 +471,9 @@ def display_scores(season, week, user, df, USER_LIST):
 
     ## Check if Week has results or is upcoming
     if today > pd.to_datetime(min_date_week):
-        layout = get_curr_score(season=season, week=week) + display_historical_week(scores=curr_scores)
+        layout = get_curr_score(season=season, week=week, user_df=user_df, USER_LIST=USER_LIST) + display_historical_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)
     else:
-        layout = [] + get_curr_score(scores=curr_scores)   + display_upcoming_week(scores=curr_scores)   
+        layout = [] + get_curr_score(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   + display_upcoming_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   
 
     return layout
 
