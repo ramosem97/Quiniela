@@ -183,7 +183,7 @@ def print_df(season, week):
     
 if __name__ == '__main__':
 
-    debug=False
+    debug=True
     if debug:
             app.run_server(debug=debug, port=8060)
     else:

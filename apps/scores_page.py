@@ -159,44 +159,12 @@ def display_team(row, home_or_away, df_teams):
         team= 'home_team'
         team_name = 'full_name_home'
 
-    ## Get Image
-    # curr_path = os.getcwd()
-    # img_logo = Image.open(curr_path.replace('\\', '/') + '/assets/teams/{team}_logo.webp'.format(team=row[team].upper()))
-    # fig_logo = px.imshow(img_logo)
-    # fig_logo.update_layout({'plot_bgcolor':'rgba(0,0,0,0)', 'paper_bgcolor':'rgba(0,0,0,0)',
-    #                         'xaxis':{ 'showgrid': False, "visible":False, "matches":None},
-    #                         'yaxis':{ 'showgrid': False, "visible":False, "matches":None},
-    #                         })
-    # config = {
-    #     "modeBarButtonsToAdd": 
-    #     [
-    #         "drawline",
-    #         "drawopenpath",
-    #         "drawclosedpath",
-    #         "drawcircle",
-    #         "drawrect",
-    #         "eraseshape",
-    #     ],
-    #     'responsive':False,
-    # }
-
     ## Return Layout
     return dbc.Col(
         [
         
             dbc.Row(
             [
-                # html.Div(
-                #     dcc.Graph(figure=fig_logo, config=config),
-                #     style={
-                #         'height':"5px",
-                #         'width':"5px",
-                #         'display': 'inline-block',
-                #         # 'verticalAlign':'center',
-                #         # 'justify':"center",
-                #         # 'textAlign':'center',
-                #     }
-                # ),
                 html.Img(
                     src='/assets/teams/{team}_logo.webp'.format(team=row[team].upper()), 
                     id = row[team] + '_logo',
@@ -229,7 +197,7 @@ def display_team(row, home_or_away, df_teams):
             # 'textAlign':'center',
             # 'verticalAlign':'center',
             # 'display': 'inline-block', 
-            'fontSize':'80%',
+            # 'fontSize':'80%',
         }
         )
 
@@ -274,7 +242,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                 ## Predictions
                                 html.Div([
-                                    html.H6("Scores"),
+                                    html.H6("Predictions"),
                                 ]),
                             ],
                             style={
@@ -344,7 +312,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                 ]),
                                             ],
                                             style={
-                                                'fontSize':'50%',
+                                                # 'fontSize':'50%',
                                                 'justify':"center",
                                                 'textAlign':'center',
                                                 'verticalAlign':'center', 
@@ -358,7 +326,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                 ]),
                                             ],
                                             style={
-                                                'fontSize':'50%',
+                                                # 'fontSize':'50%',
                                                 'justify':"center",
                                                 'textAlign':'center',
                                                 'verticalAlign':'center', 
@@ -510,13 +478,14 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                     ## Away Team Score
                                     dbc.Col([
-                                        html.Div("{score}".format(score=int(row['away_team_score'] + row['visitor_points_overtime_total']))),
+                                        html.H4("{score}".format(score=int(row['away_team_score'] + row['visitor_points_overtime_total']))),
                                     ],
                                     style={
                                         'fontWeight':'bold',
                                         'width':'5%',
                                         # 'textAlign':'center',
                                         # 'display': 'inline-block', 
+                                        'marginTop':'2%',
                                     },
                                     ),
 
@@ -555,7 +524,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                 ]),
                                             ],
                                             style={
-                                                'fontSize':'50%',
+                                                # 'fontSize':'50%',
                                                 'justify':"center",
                                                 'textAlign':'center',
                                                 'verticalAlign':'center', 
@@ -569,7 +538,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                 ]),
                                             ],
                                             style={
-                                                'fontSize':'50%',
+                                                # 'fontSize':'50%',
                                                 'justify':"center",
                                                 'textAlign':'center',
                                                 'verticalAlign':'center', 
@@ -588,13 +557,14 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                     ## Home Team Score
                                     dbc.Col([
-                                        html.Div("{score}".format(score=int(row['home_team_score'] + row['home_points_overtime_total']))),
+                                        html.H4("{score}".format(score=int(row['home_team_score'] + row['home_points_overtime_total']))),
                                     ],
                                     style={
                                         'fontWeight':'bold',
                                         'width':'5%',
                                         # 'textAlign':'center',
                                         # 'display': 'inline-block', 
+                                        'marginTop':'2%',
                                     },
                                     ),
 
