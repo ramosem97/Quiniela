@@ -1,0 +1,33 @@
+,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue
+2,WAS,Washington Commanders,Commanders,NFC,NFC_EAST,Washington,2022,FedExField
+3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2022,Raymond James Stadium
+4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2022,CenturyLink Field
+5,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2022,Levi's® Stadium
+6,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2022,SoFi Stadium
+7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2022,Heinz Field
+8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2022,State Farm Stadium
+9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2022,Lincoln Financial Field
+10,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2022,MetLife Stadium
+11,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2022,MetLife Stadium
+12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2022,Caesars Superdome
+13,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2022,Gillette Stadium
+14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2022,U.S. Bank Stadium
+15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2022,Hard Rock Stadium
+16,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2022,Allegiant Stadium
+17,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2022,SoFi Stadium
+18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2022,GEHA Field at Arrowhead Stadium
+19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2022,TIAA Bank Field
+20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2022,Lucas Oil Stadium
+21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2022,NRG Stadium
+22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2022,Nissan Stadium
+23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2022,Lambeau Field
+24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2022,Ford Field
+25,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2022,Empower Field at Mile High
+26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2022,AT&T Stadium
+27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2022,FirstEnergy Stadium
+28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2022,Paul Brown Stadium
+29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2022,Soldier Field
+30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2022,Bank of America Stadium
+31,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2022,Highmark Stadium
+32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2022,M&T Bank Stadium
+33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2022,Mercedes-Benz Stadium
