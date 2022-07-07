@@ -3,11 +3,11 @@ import os
 import dash_bootstrap_components as dbc
 import pandas as pd
 import numpy as np
-import nflapi
+# import nflapi
 
 ############# GLOBAL VARS ###################
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
-nfl = nflapi.NFL(ua="nflapi_quiniela")
+# nfl = nflapi.NFL(ua="nflapi_quiniela")
 
 HOME_COLS = {}
 HOME_COLS['id'] = ['home_team', 'abbreviation_home', 'nick_name_home',
