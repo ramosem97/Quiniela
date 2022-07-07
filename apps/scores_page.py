@@ -185,7 +185,7 @@ def display_team(row, home_or_away, df_teams):
             ),
 
             dbc.Row([
-                html.Div("{name}"\
+                html.H5("{name}"\
                     .format(name=row[team_name].title())),
             ]),
 
@@ -212,7 +212,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             dbc.Col(html.Div(''), style={'width':'5%'}),
 
                             ## Away Team
-                            dbc.Col(html.H6("Away"), 
+                            dbc.Col(html.H4("Away"), 
                                 style={'width':'15%',
                                     'textAlign':'center', 
                                     'justify':"center",
@@ -227,7 +227,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             ),
 
                             ## Home Team
-                            dbc.Col(html.H6("Home"), 
+                            dbc.Col(html.H4("Home"), 
                                 style={'width':'15%',
                                     'textAlign':'center', 
                                     'justify':"center",
@@ -242,7 +242,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                 ## Predictions
                                 html.Div([
-                                    html.H6("Predictions"),
+                                    html.H4("Predictions"),
                                 ]),
                             ],
                             style={
@@ -407,7 +407,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             dbc.Col(html.Div(''), style={'width':'5%'}),
 
                             ## Away Team
-                            dbc.Col(html.H6("Away"), 
+                            dbc.Col(html.H4("Away"), 
                                 style={'width':'15%',
                                     'textAlign':'center', 
                                     'justify':"center",
@@ -426,7 +426,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             dbc.Col(html.Div(''), style={'width':'5%'}),
 
                             ## Home Team
-                            dbc.Col(html.H6("Home"), 
+                            dbc.Col(html.H4("Home"), 
                                 style={'width':'15%',
                                     'textAlign':'center', 
                                     'justify':"center",
@@ -441,7 +441,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                 ## Predictions
                                 html.Div([
-                                    html.H6("Scores"),
+                                    html.H4("Scores"),
                                 ]),
                             ],
                             style={
