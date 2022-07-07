@@ -354,7 +354,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                                 dbc.Col([
                                                     html.Div(
-                                                        '{venue}'.format(venue=row['venue_home'],)),
+                                                        '{venue}'.format(venue=(row['venue_home']).replace('nan', ''),)),
                                                 ]),
                                             ],
                                             style={
