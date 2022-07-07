@@ -473,7 +473,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
     if today > pd.to_datetime(min_date_week):
         layout = get_curr_score(season=season, week=week, user_df=user_df, USER_LIST=USER_LIST) + display_historical_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)
     else:
-        layout = [] + get_curr_score(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   + display_upcoming_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   
+        layout = [] + get_curr_score(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   + display_historical_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   
 
     return layout
 
