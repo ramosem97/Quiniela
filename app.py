@@ -1,9 +1,19 @@
+import dash_bootstrap_components as dbc
+import plotly.graph_objs as go
+from dash import dcc, html
+from dash.dependencies import Input, Output
+from dash_extensions.enrich import Input, Output
 import dash
 import os
 import dash_bootstrap_components as dbc
-import pandas as pd
-import numpy as np
+# from app_src import df, USER_LIST, nfl, HOME_COLS, AWAY_COLS, preds, teams, scores, df_teams, user_df
+from apps import navbar, scores_page, stats_page
 import nflapi
+import pandas as pd
+
+####################################################
+################ GLOBAL VARS #######################
+####################################################
 
 ############# GLOBAL VARS ###################
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
@@ -121,7 +131,9 @@ user_df = user_df.groupby(['season', 'week_num'])[[x+'_correct' for x in userL]]
 user_df[[x+'_score' for x in userL]] = user_df.groupby(['season'])[[x+'_correct' for x in userL]].cumsum()
 user_df = user_df.reset_index(drop=False)
 
-############# START APP ######################
+####################################################
+################ START APP #########################
+####################################################
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -132,4 +144,48 @@ app.config.suppress_callback_exceptions = True
 # app.css.config.serve_locally = True
 # app.scripts.config.serve_locally = True
 
+####################################################
+################ DEFINE DEFAULT LAYOUT #############
+####################################################
 
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    navbar.layout,
+    html.Div(children=[], id='page',
+    style={'width':'100%', 'textAlign':'center', 'justify':'center', 'display':'inline-block'})
+])
+
+
+
+
+
+@app.callback([Output("page", "children"), Output("week", "options"),],
+[Input("season", "value"), Input("week", "value")])
+def print_df(season, week):
+
+    ## Get Score Children
+    children = scores_page.display_scores(season=season, 
+                                            week=week,
+                                            user='Emilio',
+                                            df=df.copy(),
+                                            USER_LIST=USER_LIST)
+
+    ### Update Week Options
+    week_options = [{'label':"{week_type} - {week}".format(week=week_num, week_type=week_type), 'value':week_num} \
+                            for week_num, week, week_type in df.loc[df['season']==season]\
+                            .sort_values('week_num', ascending=True).groupby(['week_num', 'week', 'week_type']).size()\
+                                .reset_index(drop=False)[['week_num', 'week', 'week_type']].values]
+
+
+    ## Get Table of Scores
+
+
+    return children, week_options
+    
+if __name__ == '__main__':
+
+    debug=False
+    if debug:
+            app.run_server(debug=debug, port=8060)
+    else:
+        app.run_server(debug=debug, host='0.0.0.0', port=8060)

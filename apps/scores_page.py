@@ -2,11 +2,6 @@
 import pandas as pd
 import numpy as np
 
-import glob
-import os
-import datetime
-
-import dash
 from dash import dash_table as dt
 from dash import html as html
 import plotly.graph_objects as go
@@ -18,11 +13,11 @@ from dash_extensions.enrich import Dash, ServersideOutput, Output, Input, Trigge
 # from PIL import Image
 
 ## App Import
-from app import app, df, USER_LIST, user_df, df_teams
+# from app import df, USER_LIST, user_df, df_teams
 
 
 ########## building score tables ################
-def get_curr_score(week, season, user_df=user_df):
+def get_curr_score(week, season, user_df, USER_LIST):
     curr_user = user_df.loc[((user_df.season==season) & (user_df.week_num==week))]
 
     curr_user = pd.concat([
@@ -106,7 +101,7 @@ layout = \
 ################# HELPER FUNCTIONS #################
 ####################################################
 
-def team_stats(team, season=None, week=None, df_teams=df_teams):
+def team_stats(team, df_teams, season=None, week=None):
 
     loc = 1
     if week==1:
@@ -154,7 +149,7 @@ def team_stats(team, season=None, week=None, df_teams=df_teams):
 
     return last_3_gamesL +   [html.P(win_streak)]
 
-def display_team(row, home_or_away):
+def display_team(row, home_or_away, df_teams):
 
     if home_or_away == 'away':
         team= 'away_team'
@@ -238,7 +233,7 @@ def display_team(row, home_or_away):
         )
 
 
-def display_scores(season, week, user):
+def display_scores(season, week, user, df, USER_LIST):
 
     def display_upcoming_week(scores, season=season, week=week):
 
