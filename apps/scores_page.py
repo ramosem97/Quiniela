@@ -185,7 +185,10 @@ def display_team(row, home_or_away, df_teams, width):
 
             dbc.Row([
                 html.H5("{name}"\
-                    .format(name=row[team_name].title())),
+                    .format(name=row[team_name].title(),
+                    style={
+                        'fontSize':'3.5vw',
+                    })),
             ]),
 
         ],
@@ -367,7 +370,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                     html.Div(
                                                     '{venue}'.format(venue=row['venue_home'],)),
                                             ]),
-                                        ], style={'width':vs_width,'maxWidth':vs_width,'textAlign':'center','verticalAlign':'center', 'display':'inline-block'}),    
+                                        ], style={'width':vs_width,'maxWidth':vs_width,'textAlign':'center','verticalAlign':'center', 'display':'inline-block', 'fontSize':'1vw',}),    
                                         dbc.Col(html.Div(''), style={'width':team_width,'maxWidth':team_width}),
                                         dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding}),
                                         dbc.Col(html.Div(''), style={'width':preds_width, 'maxWidth':preds_width}),
