@@ -135,8 +135,8 @@ user_df = user_df.reset_index(drop=False)
 ####################################################
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+# app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, external_stylesheets])
 
 server = app.server
 app.config.suppress_callback_exceptions = True
@@ -153,9 +153,6 @@ app.layout = html.Div([
     html.Div(children=[], id='page',
     style={'width':'100%', 'textAlign':'center', 'justify':'center', 'display':'inline-block'})
 ])
-
-
-
 
 
 @app.callback([Output("page", "children"), Output("week", "options"),],
