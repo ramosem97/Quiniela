@@ -365,6 +365,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         'justify':"center",
                                         'textAlign':'center',
                                         'verticalAlign':'center', 
+                                        'width':'100%',
                                     }),
                                  ]
 
@@ -545,6 +546,8 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     dbc.Row([
                                         dbc.Col(html.Div(''), style={'width':'5%'}),
                                         dbc.Col(html.Div(''), style={'width':'15%'}),
+                                         dbc.Col(html.Div(''), style={'width':'5%'}),
+
                                         dbc.Col([
                                             dbc.Row([
                                                 html.Div(
@@ -554,7 +557,8 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                     html.Div(
                                                     '{venue}'.format(venue=row['venue_home'],)),
                                             ]),
-                                        ], style={'width':'15%','textAlign':'center','verticalAlign':'center', 'display':'inline-block'}),
+                                        ], style={'width':'5%','textAlign':'center','verticalAlign':'center', 'display':'inline-block'}),    
+                                        dbc.Col(html.Div(''), style={'width':'5%'}),
                                         dbc.Col(html.Div(''), style={'width':'15%'}),
                                         dbc.Col(html.Div(''), style={'width':'1%'}),
                                         dbc.Col(html.Div(''), style={'width':'10%'}),
@@ -563,7 +567,8 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     style={
                                         'justify':"center",
                                         'textAlign':'center',
-                                        'verticalAlign':'center', 
+                                        'verticalAlign':'center',
+                                        'width':'100%',
                                     }),
                                  ]
             score_layout = score_layout + [curr_game_layout] + curr_game_info_layout + [html.Br()]
