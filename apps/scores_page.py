@@ -118,7 +118,7 @@ def team_stats(team, df_teams, season=None, week=None):
         team_df = team_df.loc[team_df['week_num']<=week].reset_index(drop=True)
 
     ## Previous Three Games
-    last_3_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase'].notnull()].head(3)[['phase', 'week_type', 'week_num', 'against_team', 'team', 'team_score', 'against_team_score', 'points_overtime_total','against_points_overtime_total', 'home_or_away']]
+    last_3_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase']!=''].head(3)[['phase', 'week_type', 'week_num', 'against_team', 'team', 'team_score', 'against_team_score', 'points_overtime_total','against_points_overtime_total', 'home_or_away']]
     
     last_3_gamesL = [html.P('Last Games:')]
     for idx, game in last_3_games.iterrows():
@@ -134,7 +134,7 @@ def team_stats(team, df_teams, season=None, week=None):
                 int(game['against_team_score']+game['against_points_overtime_total'])) + game['against_team']))
 
     ## Win Streak
-    last_5_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase'].notnull()].head(5)[['phase', 'against_team', 'team', 'winner', 'home_or_away']]
+    last_5_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase']!=''].head(5)[['phase', 'against_team', 'team', 'winner', 'home_or_away']]
     win_streak = "Streak: "
     for idx, game in last_5_games.iterrows():
         if game['winner'] == game['team']:
@@ -270,7 +270,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
         
         for idx, row in scores.iterrows():
             
-            curr_score_layout =   dbc.Row([
+            curr_game_layout =   dbc.Row([
                                     ### Left Margin
                                     dbc.Col(html.Div(''), style={'width':'5%'}),
 
@@ -278,68 +278,15 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     display_team(row=row, home_or_away='away', df_teams=df_teams),
 
                                     ## vs
-                                    dbc.Col(
-                                        [
-
-                                            dbc.Row([
-
-
-                                                dbc.Col(html.H6("VS")
-                                                ,
-                                                style={
-                                                    # 'leftMargin':'1%',
-                                                    # 'rightMargin':'1%',
-                                                    'fontWeight':'bold',
-                                                    # 'width':'5%',
-                                                    'textAlign':'center',
-                                                    'display': 'inline-block', 
-                                                    'justify':'center',
-                                                    'verticalAlign':'center', 
-                                                },
-                                                ),
-
-                                            ],
-                                            style={
-                                                # 'width':'15%',
-                                                # 'display': 'inline-block', 
-                                            }),
-
-                                            dbc.Row([
-                                                dbc.Col([
-                                                    html.Div(
-                                                        '{date}'.format(date=str(row['game_date']).replace('-', '/')),
-                                                    ),
-                                                ]),
-                                            ],
-                                            style={
-                                                # 'fontSize':'50%',
-                                                'justify':"center",
-                                                'textAlign':'center',
-                                                'verticalAlign':'center', 
-                                            }),
-
-                                            dbc.Row([
-
-                                                dbc.Col([
-                                                    html.Div(
-                                                        '{venue}'.format(venue=str(row['venue_home']).replace('nan', ''),)),
-                                                ]),
-                                            ],
-                                            style={
-                                                # 'fontSize':'50%',
-                                                'justify':"center",
-                                                'textAlign':'center',
-                                                'verticalAlign':'center', 
-                                            }),
-
-                                        ],
+                                    dbc.Col([
+                                        html.H6("VS"),
+                                    ],
                                     style={
+                                        'fontWeight':'bold',
                                         'width':'5%',
-                                        'justify':"center",
-                                        'textAlign':'center',
-                                        'verticalAlign':'center', 
+                                        # 'textAlign':'center',
                                         # 'display': 'inline-block', 
-                                        'marginTop':'2%', 
+                                        'marginTop':'6%',
                                     },
                                     ),
 
@@ -395,7 +342,33 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     'width':'100%', 
                                 })
 
-            score_layout = score_layout + [curr_score_layout] + [html.Br()]
+            curr_game_info_layout = [
+                                    dbc.Row([
+                                        dbc.Col(html.Div(''), style={'width':'5%'}),
+                                        dbc.Col(html.Div(''), style={'width':'15%'}),
+                                        dbc.Col([
+                                            dbc.Row([
+                                                html.Div(
+                                                    '{date}'.format(date=str(row['game_date']).replace('-', '/'))),
+                                            ]),
+                                            dbc.Row([
+                                                    html.Div(
+                                                    '{venue}'.format(venue=row['venue_home'],)),
+                                            ]),
+                                        ], style={'width':'15%','textAlign':'center','verticalAlign':'center', 'display':'inline-block'}),
+                                        dbc.Col(html.Div(''), style={'width':'15%'}),
+                                        dbc.Col(html.Div(''), style={'width':'1%'}),
+                                        dbc.Col(html.Div(''), style={'width':'10%'}),
+                                        dbc.Col(html.Div(''), style={'width':'5%'}),
+                                    ],
+                                    style={
+                                        'justify':"center",
+                                        'textAlign':'center',
+                                        'verticalAlign':'center', 
+                                    }),
+                                 ]
+
+            score_layout = score_layout + [curr_game_layout] + curr_game_info_layout + [html.Br()]
 
         return score_layout
 
@@ -469,7 +442,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
         
         for idx, row in scores.iterrows():
             
-            curr_score_layout =   dbc.Row([
+            curr_game_layout =   dbc.Row([
                                     ### Left Margin
                                     dbc.Col(html.Div(''), style={'width':'5%'}),
 
@@ -490,68 +463,15 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     ),
 
                                     ## vs
-                                    dbc.Col(
-                                        [
-
-                                            dbc.Row([
-
-
-                                                dbc.Col(html.H6("VS")
-                                                ,
-                                                style={
-                                                    # 'leftMargin':'1%',
-                                                    # 'rightMargin':'1%',
-                                                    'fontWeight':'bold',
-                                                    # 'width':'5%',
-                                                    'textAlign':'center',
-                                                    'display': 'inline-block', 
-                                                    'justify':'center',
-                                                    'verticalAlign':'center', 
-                                                },
-                                                ),
-
-                                            ],
-                                            style={
-                                                # 'width':'15%',
-                                                # 'display': 'inline-block', 
-                                            }),
-
-                                            dbc.Row([
-                                                dbc.Col([
-                                                    html.Div(
-                                                        '{date}'.format(date=str(row['game_date']).replace('-', '/')),
-                                                    ),
-                                                ]),
-                                            ],
-                                            style={
-                                                # 'fontSize':'50%',
-                                                'justify':"center",
-                                                'textAlign':'center',
-                                                'verticalAlign':'center', 
-                                            }),
-
-                                            dbc.Row([
-
-                                                dbc.Col([
-                                                    html.Div(
-                                                        '{venue}'.format(venue=row['venue_home'],)),
-                                                ]),
-                                            ],
-                                            style={
-                                                # 'fontSize':'50%',
-                                                'justify':"center",
-                                                'textAlign':'center',
-                                                'verticalAlign':'center', 
-                                            }),
-
-                                        ],
+                                    dbc.Col([
+                                        html.H6("VS"),
+                                    ],
                                     style={
+                                        'fontWeight':'bold',
                                         'width':'5%',
-                                        'justify':"center",
-                                        'textAlign':'center',
-                                        'verticalAlign':'center', 
+                                        # 'textAlign':'center',
                                         # 'display': 'inline-block', 
-                                        'marginTop':'2%', 
+                                        'marginTop':'6%',
                                     },
                                     ),
 
@@ -620,7 +540,33 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     'width':'100%', 
                                 })
 
-            score_layout = score_layout + [curr_score_layout] + [html.Br()]
+                                
+            curr_game_info_layout = [
+                                    dbc.Row([
+                                        dbc.Col(html.Div(''), style={'width':'5%'}),
+                                        dbc.Col(html.Div(''), style={'width':'15%'}),
+                                        dbc.Col([
+                                            dbc.Row([
+                                                html.Div(
+                                                    '{date}'.format(date=str(row['game_date']).replace('-', '/'))),
+                                            ]),
+                                            dbc.Row([
+                                                    html.Div(
+                                                    '{venue}'.format(venue=row['venue_home'],)),
+                                            ]),
+                                        ], style={'width':'15%','textAlign':'center','verticalAlign':'center', 'display':'inline-block'}),
+                                        dbc.Col(html.Div(''), style={'width':'15%'}),
+                                        dbc.Col(html.Div(''), style={'width':'1%'}),
+                                        dbc.Col(html.Div(''), style={'width':'10%'}),
+                                        dbc.Col(html.Div(''), style={'width':'5%'}),
+                                    ],
+                                    style={
+                                        'justify':"center",
+                                        'textAlign':'center',
+                                        'verticalAlign':'center', 
+                                    }),
+                                 ]
+            score_layout = score_layout + [curr_game_layout] + curr_game_info_layout + [html.Br()]
 
         return score_layout
 

@@ -53,16 +53,12 @@ def create_navbar(df, preds):
                 html.Div(
                     [   
                         dbc.Row([
-                            dbc.Col([
-                                html.Img(src=r'assets\\nfl_logo.jpg', height="50px",className='img'),
-                                dbc.NavbarBrand("Quiniela Ramos", className="ml-2"),
-                            ], style={'width':'20%', 'display':'inline-block'}),
-                            # dbc.Col([
-                            #     html.Div(id='scores_table'),
-                            # ], style={'width':'60%', 'height':'10px', 'display':'inline-block'}),
-                        ], 
-                            align='center', 
-                            style={'width':'100%', 'display':'inline-block', 'textAlign':'left', 'justify':"center"},
+                            dbc.Col([html.Img(src=r'assets\\nfl_logo.jpg', height='50px')], style={'paddingRight':'1%', 'width':'10%', 'max-width':'10%'}),
+                            # dbc.Col(html.Div(''), style={'width':'5%'}),
+                            dbc.Col([dbc.NavbarBrand("Quiniela Ramos")], style={'width':'25%'}),
+                            dbc.Col(html.Div(''), style={'width':'50%'}),
+                        ],
+                        style={'width':'100%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'},
                         ),
                         html.Br(),
                         dbc.Row([
