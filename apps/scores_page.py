@@ -15,7 +15,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 # from dash.dependencies import Input, Output, State
 from dash_extensions.enrich import Dash, ServersideOutput, Output, Input, Trigger
-from PIL import Image
+# from PIL import Image
 
 ## App Import
 from app import app, df, USER_LIST, user_df, df_teams
