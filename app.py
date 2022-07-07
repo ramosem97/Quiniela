@@ -6,8 +6,7 @@ from dash_extensions.enrich import Input, Output
 import dash
 import os
 import dash_bootstrap_components as dbc
-# from app_src import df, USER_LIST, nfl, HOME_COLS, AWAY_COLS, preds, teams, scores, df_teams, user_df
-from apps import navbar, scores_page, stats_page
+from apps import navbar, scores_page
 import nflapi
 import pandas as pd
 
