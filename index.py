@@ -11,6 +11,7 @@ from dash_extensions.enrich import (Dash, Input, Output, ServersideOutput,
 from app import app, df
 from apps import navbar, scores_page, stats_page
 
+
 ####################################################
 ################ DEFINE DEFAULT LAYOUT #############
 ####################################################
@@ -47,10 +48,10 @@ def print_df(season, week):
 
     return children, week_options
     
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    debug=False
-    if debug:
-            app.run_server(debug=debug, port=8060)
-    else:
-        app.run_server(debug=debug, host='0.0.0.0', port=8060)
+#     debug=False
+#     if debug:
+#             app.run_server(debug=debug, port=8060)
+#     else:
+#         app.run_server(debug=debug, host='0.0.0.0', port=8060)
