@@ -43,7 +43,7 @@ preds = preds.rename(columns={'Home Team': 'home_team', 'Away Team':'away_team'}
 teams = pd.read_csv('data/nfl_team_info_all.csv', index_col=0)
 teams['season'] = teams['season'].astype(int)
 team_dec = teams.groupby(['full_name', 'abbreviation']).size().reset_index(drop=False).set_index(['full_name'])['abbreviation'].to_dict()
-
+teams = teams.fillna('')
 
 ############# READ IN SCORES DATA ###########
 scores = pd.read_csv('data/nfl_scores_all.csv', index_col=0)
@@ -58,6 +58,7 @@ scores['winner'] = [None if((pd.isnull(home_score)) | (pd.isnull(away_score))) e
                     scores[['home_team_score', 'away_team_score', 
                             'home_points_overtime_total', 'visitor_points_overtime_total', 
                             'home_team', 'away_team']].values]
+scores = scores.fillna('')
 
 ############# CREATE FULL DATASET ###########
 ## Merge Home Team Info
