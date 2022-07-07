@@ -118,7 +118,8 @@ def team_stats(team, df_teams, season=None, week=None):
         team_df = team_df.loc[team_df['week_num']<=week].reset_index(drop=True)
 
     ## Previous Three Games
-    last_3_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].head(3)[['week_type', 'week_num', 'against_team', 'team', 'team_score', 'against_team_score', 'points_overtime_total','against_points_overtime_total', 'home_or_away']]
+    last_3_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase'].notnull()].head(3)[['phase', 'week_type', 'week_num', 'against_team', 'team', 'team_score', 'against_team_score', 'points_overtime_total','against_points_overtime_total', 'home_or_away']]
+    
     last_3_gamesL = [html.P('Last Games:')]
     for idx, game in last_3_games.iterrows():
         if game['home_or_away'] == 'home':
@@ -133,7 +134,7 @@ def team_stats(team, df_teams, season=None, week=None):
                 int(game['against_team_score']+game['against_points_overtime_total'])) + game['against_team']))
 
     ## Win Streak
-    last_5_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].head(5)[['against_team', 'team', 'winner', 'home_or_away']]
+    last_5_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase'].notnull()].head(5)[['phase', 'against_team', 'team', 'winner', 'home_or_away']]
     win_streak = "Streak: "
     for idx, game in last_5_games.iterrows():
         if game['winner'] == game['team']:
@@ -212,7 +213,7 @@ def display_team(row, home_or_away, df_teams):
                     target=row[team] + '_logo',
                 )
             ],
-            style=border_if_winner(team=row[team], winner=row['winner']),
+            style=border_if_winner(team=row[team], winner=row['winner'],),
             ),
 
             dbc.Row([
