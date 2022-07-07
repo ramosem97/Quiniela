@@ -178,3 +178,11 @@ def print_df(season, week):
 
 
     return children, week_options
+
+if __name__ == '__main__':
+
+    debug=True
+    if debug:
+            app.run_server(debug=debug, port=8060)
+    else:
+        app.run_server(debug=debug, host='0.0.0.0', port=8060)
