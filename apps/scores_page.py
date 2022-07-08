@@ -28,6 +28,16 @@ pred_font_size = '1vw'
 score_font_size = '2vw'
 dt_table_font_size = '2.5vw'
 
+########## BORDER SEP ###########################
+def end_row():
+    return [dbc.Row(
+            [
+                html.Div('', style={'width':'10%'}), 
+                html.Div('', style={'textAlign':'center', 'height':'1vw', 'justify':'center', 'borderBottom':".5px outset rgba(255,255,255,.2)", 'width':'80%', 'borderBottomWidth':'light'}),
+                html.Div('', style={'width':'10%'}), 
+            ]),
+            html.Br()]
+
 ########## building score tables ################
 def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
     curr_user = user_df.loc[((user_df.season==season) & (user_df.week_num==week))]
@@ -71,14 +81,11 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
         ],
     )
     return [
-                dbc.Row(html.H3('Season {season} Week {week} Scoreboard'.format(season=season, week=week),
-                    style={'fontSize':'5vw'})),
                 dbc.Row([ user_table], 
                     style={'width':'40%', 'textAlign':'left', 'justify':'left', 'display':'inline-block'}
                 ),
                 html.Br(),
-                html.Br(),
-            ]
+            ] + end_row()
 
 ################ BORDER IF WINNER #############
 def border_if_winner(team, winner, final=True):
@@ -232,15 +239,6 @@ def display_team(row, home_or_away, df_teams, width):
 
 
 def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_ABBV_DICT):
-
-    def end_row():
-        return [dbc.Row(
-                [
-                    html.Div('', style={'width':'10%'}), 
-                    html.Div('', style={'textAlign':'center', 'height':'1vw', 'justify':'center', 'borderBottom':".5px outset rgba(255,255,255,.2)", 'width':'80%', 'borderBottomWidth':'light'}),
-                    html.Div('', style={'width':'10%'}), 
-                ]),
-                html.Br()]
 
     def score_head_layout():
         score_layout = [dbc.Row([
