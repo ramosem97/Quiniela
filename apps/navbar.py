@@ -43,15 +43,15 @@ def create_dropdowns(df, preds):
 def dropdowns_lay(dropdown_season, dropdown_week):
     return dbc.Row([
                 html.Div([
-                    dbc.Col([html.H5('Season: ', style={'color':'white', 'fontSize':'3vw', 'textAlign':'left', })]), 
-                    dbc.Col([dropdown_season], style={'fontSize':'2.5vw', 'textAlign':'center'}),
-                    ], style={'width':'50%'}), 
+                    dbc.Col([html.Div('Season: ', style={'color':'white','textAlign':'left','paddingTop':'4px' })]), 
+                    dbc.Col([dropdown_season], style={'textAlign':'center'}),
+                    ], style={'width':'40%'}), 
                 html.Div([
-                    dbc.Col([html.H5('Week: ', style={'color':'white', 'fontSize':'3vw', 'textAlign':'left', })]), 
-                    dbc.Col([dropdown_week], style={'fontSize':'2.5vw', 'textAlign':'center'}),
-                    ], style={'width':'50%'}),
+                    dbc.Col([html.Div('Week: ', style={'color':'white', 'textAlign':'left','paddingTop':'4px' })]), 
+                    dbc.Col([dropdown_week], style={'textAlign':'center'}),
+                    ], style={'width':'40%'}),
             ],
-            style={'width':'100%', 'justify':"left", 'verticalAlign':'center'},
+            style={'width':'100%', 'justify':"left", 'verticalAlign':'center', 'fontSize':'4vw'},
             )
 
 
@@ -67,10 +67,12 @@ def create_navbar(df, preds):
                 
                 dbc.Row([
                     dbc.Col([html.Img(src=r'assets\\nfl_logo.jpg', style={'width':'15vw'})], 
-                    style={'textAlign':'left', 'justify':"left", 'verticalAlign':'center'}),
+                    style={'width':'15vw', 'textAlign':'left', 'verticalAlign':'center'}
+                    ),
                     # dbc.Col(html.Div(''), style={'width':'5%'}),
-                    dbc.Col([dbc.NavbarBrand("Quiniela Ramos", style={'fontSize':'3vw', 'height':'5vw'})], 
-                    style={'textAlign':'left', 'justify':"center", 'verticalAlign':'center'}),
+                    dbc.Col([dbc.NavbarBrand("Quiniela Ramos", style={'fontSize':'6vw', 'height':'5vw'})], 
+                    style={'textAlign':'left','verticalAlign':'bottom'}
+                    ),
                     # dbc.Col(html.Div(''), style={'width':'50%'}),
                 ],
                 style={'width':'100%', 'minWidth':'100%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'},
@@ -78,7 +80,7 @@ def create_navbar(df, preds):
                 dropdowns_lay(dropdown_season, dropdown_week),
 
                 ], style={'width':'95%', 'padding':'2.5%'}),
-
+        sticky="fixed",
         color="dark",
         dark=True,
     )
