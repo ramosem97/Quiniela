@@ -25,6 +25,7 @@ margin_padding = '.5px'
 header_size = '4vw'
 pred_font_size = '2vw'
 score_font_size = '4vw'
+dt_table_font_size = '3vw'
 
 ########## building score tables ################
 def get_curr_score(week, season, user_df, USER_LIST):
@@ -44,7 +45,7 @@ def get_curr_score(week, season, user_df, USER_LIST):
         style_cell={
             'textAlign': 'left', 
             'padding': '5px',
-            'fontSize':'1.5vw',
+            'fontSize':dt_table_font_size,
             'width': 'auto',
             'height': 'auto',
             'maxWidth': 0,
@@ -54,7 +55,7 @@ def get_curr_score(week, season, user_df, USER_LIST):
         style_header={
             'backgroundColor': 'transparent',
             'fontWeight': 'bold',
-            'fontSize':'1.5vw',
+            'fontSize':dt_table_font_size,
             'border': 'none',
         },
         style_table = {
@@ -63,13 +64,14 @@ def get_curr_score(week, season, user_df, USER_LIST):
         },
         style_cell_conditional=[
             {'if': {'column_id': ''},
-            'width': '35%'},
+            'width': '35%',
+            'fontWeight':'bold'},
         ],
     )
     return [
                 dbc.Row(html.H3('Season {season} Week {week} Scoreboard'.format(season=season, week=week))),
                 dbc.Row([user_table], 
-                    style={'width':'60%', 'textAlign':'center', 'display':'inline-block'}
+                    style={'width':'80%', 'textAlign':'center', 'display':'inline-block'}
                 ),
                 html.Br(),
                 html.Br(),
