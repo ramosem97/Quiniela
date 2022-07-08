@@ -1,7 +1,7 @@
 ### Imports
 import pandas as pd
 import numpy as np
-
+from datetime import datetime
 from dash import dash_table as dt
 from dash import html as html
 import plotly.graph_objects as go
@@ -22,7 +22,7 @@ scores_width = '1%'
 preds_width = '25%'
 
 margin_padding = '.5px'
-header_size = '2.5vw'
+header_size = '4vw'
 pred_font_size = '2vw'
 score_font_size = '4vw'
 
@@ -236,7 +236,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     'maxWidth':margin_padding}),
 
                             ## Away Team
-                            dbc.Col(html.H5("Away",
+                            dbc.Col(html.H4("Away",
                                     style={'fontSize':header_size}), 
                                 style={
                                     'fontWeight':'bold',
@@ -263,7 +263,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             #         'minWidth':margin_padding}),
 
                             ## Home Team
-                            dbc.Col(html.H5("Home",
+                            dbc.Col(html.H4("Home",
                                     style={'fontSize':header_size}), 
                                 style={
                                     'fontWeight':'bold',
@@ -284,7 +284,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                 ## Predictions
                                 html.Div([
-                                    html.H5("Predictions",
+                                    html.H4("Predictions",
                                     style={'fontSize':header_size}),
                                 ]),
                             ],
@@ -316,6 +316,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
         
         for idx, row in scores.iterrows():
             
+            game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")
+            game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
+
             curr_game_layout =   dbc.Row([
                                     ### Left Margin
                                     dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding,}),
@@ -330,7 +333,11 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     dbc.Col([
                                         dbc.Row([
                                             html.Div(
-                                                '{date}'.format(date=str(row['game_date']).replace('-', '/'))),
+                                                '{date}'.format(date=game_date)),
+                                        ]),
+                                        dbc.Row([
+                                            html.Div(
+                                                '{time}'.format(time=game_time)),
                                         ]),
                                         dbc.Row([
                                                 html.Div(
@@ -417,7 +424,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                             ## Away Team
-                            dbc.Col(html.H5("Away",
+                            dbc.Col(html.H4("Away",
                                     style={'fontSize':header_size}), 
                                 style={'width':team_width,'maxWidth':team_width,
                                     'fontWeight':'bold',
@@ -434,7 +441,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             ),
 
                             ## Home Team
-                            dbc.Col(html.H5("Home",
+                            dbc.Col(html.H4("Home",
                                     style={'fontSize':header_size}), 
                                 style={'width':team_width,'maxWidth':team_width,
                                     'fontWeight':'bold',
@@ -452,7 +459,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                 ## Predictions
                                 html.Div([
-                                    html.H5("Predictions",
+                                    html.H4("Predictions",
                                     style={'fontSize':header_size}),
                                 ]),
                             ],
@@ -483,6 +490,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
         
         for idx, row in scores.iterrows():
             
+            game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")
+            game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
+
             curr_game_layout =   dbc.Row([
                                     ### Left Margin
                                     dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
@@ -494,7 +504,11 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     dbc.Col([
                                         dbc.Row([
                                             html.Div(
-                                                '{date}'.format(date=str(row['game_date']).replace('-', '/'))),
+                                                '{date}'.format(date=game_date)),
+                                        ]),
+                                        dbc.Row([
+                                            html.Div(
+                                                '{time}'.format(time=game_time)),
                                         ]),
                                         dbc.Row([
                                                 html.Div(
