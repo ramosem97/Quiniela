@@ -23,10 +23,10 @@ preds_width = '25%'
 min_preds_width = '20%'
 
 margin_padding = '1%'
-header_size = '1.9vw'
+header_size = '2.2vw'
 pred_font_size = '1vw'
 score_font_size = '2vw'
-dt_table_font_size = '1.8vw'
+dt_table_font_size = '2vw'
 
 ########## building score tables ################
 def get_curr_score(week, season, user_df, USER_LIST):
