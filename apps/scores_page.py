@@ -512,37 +512,40 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                 
             curr_game_info_layout = [
                                     dbc.Row([
-                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding, 'minWidth':margin_padding}),
+                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
                                         dbc.Col([
                                             html.H4(
                                                 "{score}".format(score=int(row['away_team_score'] + row['visitor_points_overtime_total'])),
                                             style={
-                                                'fontWeight':'bold',
                                                 'fontSize':score_font_size,
-                                                'verticalAlign':'center',
-                                                'justify':'center',
-                                            },
+                                            }
                                             ),
-                                        ], style={'textAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':min_team_width,}),
+                                        ], style={'justify':"center", 'textAlign':'center','verticalAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':min_team_width}),
 
-                                        dbc.Col(html.Div(''), style={'width':vs_width,'maxWidth':vs_width, 'minWidth':vs_width}),
+                                        dbc.Col(html.Div(""), style= {'width':vs_width,'maxWidth':vs_width,'minWidth':vs_width,}),
 
                                         dbc.Col([
                                             html.H4(
                                                 "{score}".format(score=int(row['home_team_score'] + row['home_points_overtime_total'])),
                                             style={
-                                                'fontWeight':'bold',
                                                 'fontSize':score_font_size,
-                                                'verticalAlign':'center',
-                                                'justify':'center',
                                             },
                                             ),
-                                        ], style={'justify':'center','textAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':min_team_width,}),
+                                        ], style={'justify':"center", 'textAlign':'center','verticalAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':min_team_width}),
 
-                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding, 'minWidth':margin_padding}),
-                                        dbc.Col(html.Div(''), style={'width':preds_width, 'maxWidth':preds_width, 'minWidth':min_preds_width}),
+                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
+                                        dbc.Col(html.Div(''), 
+                                        style={
+                                            'width':preds_width,
+                                            'maxWidth':preds_width,
+                                            'minWidth':min_preds_width,
+                                        }),
                                     ],
-                                    style={'justify':'center','textAlign':'center','verticalAlign':'center', 'topMargin':'2vw',
+                                    style={
+                                        'justify':"center",
+                                        'textAlign':'center',
+                                        'verticalAlign':'center',
+                                        'width':'100%', 
                                     }),
                                  ]
 

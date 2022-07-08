@@ -15,7 +15,7 @@ def create_dropdowns(df, preds):
             {'label':"{season}".format(season=season), 'value':season} for season in df.sort_values('season', ascending=False).season.unique()
 
         ],
-        value=df.loc[df['winner'].notnull()]['season'].max(),
+        value=df.loc[df['winner']!='']['season'].max(),
         placeholder="Season",
         id='season',
         clearable = False,
