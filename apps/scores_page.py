@@ -382,7 +382,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         'textAlign':'center', 
                                         'justify':"center", 
                                         'verticalAlign':'center',
-                                        'fontSize':'1vw',
+                                        'fontSize':'2vw',
                                         'minWidth':preds_width,
                                     },
                                     ),
