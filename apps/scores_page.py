@@ -26,7 +26,7 @@ margin_padding = '1%'
 header_size = '2.4vw'
 pred_font_size = '1vw'
 score_font_size = '2vw'
-dt_table_font_size = '2.4vw'
+dt_table_font_size = '2.5vw'
 
 ########## building score tables ################
 def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
@@ -36,7 +36,7 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
                 curr_user[[x+'_correct' for x in USER_LIST]].rename(columns={x+'_correct':x for x in USER_LIST}).T,
                 curr_user[[x+'_score' for x in USER_LIST]].rename(columns={x+'_score':x for x in USER_LIST}).T,
             ], axis=1)
-    curr_user.columns = ['Week Score', 'Season Score']
+    curr_user.columns = ['Week', 'Season']
     curr_user = curr_user.T.reset_index(drop=False)
     curr_user = curr_user.rename(columns={'index':''}).rename(columns=USER_ABBV_DICT)
 
@@ -46,7 +46,7 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
         style_cell={
             'padding': '2px',
             'fontSize':dt_table_font_size,
-            'width': '2vw',
+            'width': '1vw',
             'height': '1px',
             'maxWidth': 0,
             'textAlign':'center',  
@@ -65,14 +65,16 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
         },
         style_cell_conditional=[
             {'if': {'column_id': ''},
-            'width': '30%',
-            'fontWeight':'bold'},
+            'width': '25%',
+            'fontWeight':'bold',
+            'textAlign':'left'},
         ],
     )
     return [
-                dbc.Row(html.H3('Season {season} Week {week} Scoreboard'.format(season=season, week=week))),
+                dbc.Row(html.H3('Season {season} Week {week} Scoreboard'.format(season=season, week=week),
+                    style={'fontSize':'5vw'})),
                 dbc.Row([ user_table], 
-                    style={'width':'50%', 'textAlign':'left', 'justify':'left', 'display':'inline-block'}
+                    style={'width':'40%', 'textAlign':'left', 'justify':'left', 'display':'inline-block'}
                 ),
                 html.Br(),
                 html.Br(),
