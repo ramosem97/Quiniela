@@ -19,9 +19,9 @@ team_width = '20%'
 min_team_width = '15%'
 vs_width = '10%'
 scores_width = '2%'
-preds_width = '15%'
+preds_width = '20%'
 margin_padding = '.5px'
-header_size = '2vw'
+header_size = '2.5vw'
 
 
 ########## building score tables ################
@@ -163,9 +163,30 @@ def display_team(row, home_or_away, df_teams, width):
     if home_or_away == 'away':
         team= 'away_team'
         team_name = 'full_name_away'
+        score_ot = 'visitor_points_overtime_total'
+        score_col = 'away_team_score'
     else:
         team= 'home_team'
         team_name = 'full_name_home'
+        score_ot = 'home_points_overtime_total'
+        score_col = 'home_team_score'
+
+    if row['phase']!='':
+        score_div = \
+            dbc.Row([
+                html.Div("{score}".format(score=int(row[score_col] + row[score_ot]))),
+            ],
+            style={
+                'fontWeight':'bold',
+                'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,
+                'textAlign':'center',
+                'justify':'center',
+                'height':'1.5em',
+                'verticalAlign':'center',
+            },
+            )
+    else:
+        score_div = dbc.Row([])
 
     ## Return Layout
     return dbc.Col(
@@ -178,7 +199,7 @@ def display_team(row, home_or_away, df_teams, width):
                         src='/assets/teams/{team}_logo.webp'.format(team=row[team].upper()), 
                         id = row[team] + '_logo',
                         style={
-                            'height':'7vw',
+                            'height':'8vw',
                             # 'width':width,
                         }
                     ),style={'textAlign': 'center',}
@@ -200,6 +221,8 @@ def display_team(row, home_or_away, df_teams, width):
                         'height':'1em',
                     })),
             ]),
+            html.Br(),
+            score_div,
 
         ],
         style={
@@ -322,9 +345,6 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     ## vs
                                     dbc.Col([
                                         dbc.Row([
-                                            html.Div("VS"),
-                                        ], style={'fontWeight':'bold'},),
-                                        dbc.Row([
                                             html.Div(
                                                 '{date}'.format(date=str(row['game_date']).replace('-', '/'))),
                                         ]),
@@ -340,7 +360,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         # 'textAlign':'center',
                                         # 'display': 'inline-block', 
                                         'marginTop':'2%',
-                                        'fontSize':'1vw',
+                                        'fontSize':'1.5vw',
                                     },
                                     ),
                                     
@@ -454,7 +474,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             ### Left Margin
                             # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
-                            dbc.Col(html.Div(''), style={'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,}),
+                            # dbc.Col(html.Div(''), style={'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,}),
 
                             ### Left Margin
                             # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
@@ -467,7 +487,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                             ### Left Margin
                             # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
-                            dbc.Col(html.Div(''), style={'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,}),
+                            # dbc.Col(html.Div(''), style={'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,}),
 
                             ### Left Margin
                             # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
@@ -533,27 +553,13 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                                     ## Away Team Score
-                                    dbc.Col([
-                                        html.Div("{score}".format(score=int(row['away_team_score'] + row['visitor_points_overtime_total']))),
-                                    ],
-                                    style={
-                                        'fontWeight':'bold',
-                                        'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,
-                                        # 'textAlign':'center',
-                                        # 'display': 'inline-block', 
-                                        'marginTop':'2%',
-                                        'fontSize':'1vw',
-                                    },
-                                    ),
+                                    
 
                                     ### Left Margin
                                     # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                                     ## vs
                                     dbc.Col([
-                                        dbc.Row([
-                                            html.Div("VS"),
-                                        ], style={'fontWeight':'bold', },),
                                         dbc.Row([
                                             html.Div(
                                                 '{date}'.format(date=str(row['game_date']).replace('-', '/'))),
@@ -569,7 +575,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         # 'textAlign':'center',
                                         # 'display': 'inline-block', 
                                         'marginTop':'1%',
-                                        'fontSize':'1vw',
+                                        'fontSize':'1.5vw',
                                     },
                                     ),
 
@@ -577,18 +583,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                                     ## Home Team Score
-                                    dbc.Col([
-                                        html.Div("{score}".format(score=int(row['home_team_score'] + row['home_points_overtime_total']))),
-                                    ],
-                                    style={
-                                        'fontWeight':'bold',
-                                        'width':scores_width,'maxWidth':scores_width,'minWidth':scores_width,
-                                        # 'textAlign':'center',
-                                        # 'display': 'inline-block', 
-                                        'marginTop':'2%',
-                                        'fontSize':'1vw',
-                                    },
-                                    ),
+                                    
 
                                     ### Left Margin
                                     # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
@@ -626,7 +621,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         'textAlign':'center', 
                                         'justify':"center", 
                                         'verticalAlign':'center',
-                                        'fontSize':'1vw',
+                                        'fontSize':'1.5vw',
                                         'minWidth':preds_width,
                                     },
                                     ),
