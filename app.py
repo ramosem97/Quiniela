@@ -2,7 +2,7 @@ import dash_bootstrap_components as dbc
 import plotly.graph_objs as go
 from dash import dcc, html
 from dash.dependencies import Input, Output
-from dash_extensions.enrich import Input, Output
+from dash_extensions.enrich import Input, Output, State
 import dash
 import os
 import dash_bootstrap_components as dbc
@@ -154,7 +154,7 @@ app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     navbar.create_navbar(df=df.copy(), preds=preds.copy()),
     html.Div(children=[], id='page',
-    style={'width':'100%', 'textAlign':'center', 'justify':'center', 'display':'inline-block'})
+    style={'width':'95%', 'textAlign':'center', 'justify':'center'})
 ])
 
 
@@ -183,6 +183,17 @@ def print_df(season, week):
 
 
     return children, week_options
+
+# add callback for toggling the collapse on small screens
+@app.callback(
+    Output("navbar-collapse", "is_open"),
+    [Input("navbar-toggler", "n_clicks")],
+    [State("navbar-collapse", "is_open")],
+)
+def toggle_navbar_collapse(n, is_open):
+    if n:
+        return not is_open
+    return is_open
     
 if __name__ == '__main__':
 

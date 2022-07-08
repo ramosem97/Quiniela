@@ -40,45 +40,47 @@ def create_dropdowns(df, preds):
     )
     return dropdown_season, dropdown_week
 
+def dropdowns_lay(dropdown_season, dropdown_week):
+    return dbc.Row([
+                html.Div([
+                    dbc.Col([html.H5('Season: ', style={'color':'white', 'fontSize':'3vw', 'textAlign':'left', })]), 
+                    dbc.Col([dropdown_season], style={'fontSize':'2.5vw', 'textAlign':'center'}),
+                    ], style={'width':'50%'}), 
+                html.Div([
+                    dbc.Col([html.H5('Week: ', style={'color':'white', 'fontSize':'3vw', 'textAlign':'left', })]), 
+                    dbc.Col([dropdown_week], style={'fontSize':'2.5vw', 'textAlign':'center'}),
+                    ], style={'width':'50%'}),
+            ],
+            style={'width':'100%', 'justify':"left", 'verticalAlign':'center'},
+            )
+
 
 def create_navbar(df, preds):
 
     dropdown_season, dropdown_week = create_dropdowns(df, preds)
 
     layout = dbc.Navbar(
-        
-        dbc.Container(
-            [
-                # Use row and col to control vertical alignment of logo / brand
-                html.Div(
-                    [   
-                        dbc.Row([
-                            dbc.Col([html.Img(src=r'assets\\nfl_logo.jpg', height='50px')], style={'width':'25%', 'maxWidth':'25%', 'minWidth':'25%'}),
-                            # dbc.Col(html.Div(''), style={'width':'5%'}),
-                            dbc.Col([dbc.NavbarBrand("Quiniela Ramos")], style={'width':'25%'}),
-                            dbc.Col(html.Div(''), style={'width':'50%'}),
-                        ],
-                        style={'width':'100%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'},
-                        ),
-                        html.Br(),
-                        dbc.Row([
-                            html.Div([
-                                dbc.Col(html.H5('Season: ', style={'color':'white'})), 
-                                dbc.Col(dropdown_season)
-                            ], style={'width':'50%'}),
-                            html.Div([
-                                dbc.Col(html.H5('Week: ', style={'color':'white'})), 
-                                dbc.Col(dropdown_week)
-                            ], style={'width':'50%'}),
-                        ]),
-                    ],
-                    style={'width':'100%'},
+
+            # Use row and col to control vertical alignment of logo / brand
+            html.Div(
+                [   
+                
+                dbc.Row([
+                    dbc.Col([html.Img(src=r'assets\\nfl_logo.jpg', style={'width':'15vw'})], 
+                    style={'textAlign':'left', 'justify':"left", 'verticalAlign':'center'}),
+                    # dbc.Col(html.Div(''), style={'width':'5%'}),
+                    dbc.Col([dbc.NavbarBrand("Quiniela Ramos", style={'fontSize':'3vw', 'height':'5vw'})], 
+                    style={'textAlign':'left', 'justify':"center", 'verticalAlign':'center'}),
+                    # dbc.Col(html.Div(''), style={'width':'50%'}),
+                ],
+                style={'width':'100%', 'minWidth':'100%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'},
                 ),
-            ],style={'width':'100%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'}
-        ),
+                dropdowns_lay(dropdown_season, dropdown_week),
+
+                ], style={'width':'95%', 'padding':'2.5%'}),
+
         color="dark",
         dark=True,
-        className="mb-4",
     )
 
     return layout
