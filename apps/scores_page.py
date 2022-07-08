@@ -166,11 +166,13 @@ def team_stats(team, df_teams, season=None, week=None):
 def display_team(row, home_or_away, df_teams, width):
 
     if home_or_away == 'away':
+        logo = 'logo_away'
         team= 'away_team'
         team_name = 'full_name_away'
         score_ot = 'visitor_points_overtime_total'
         score_col = 'away_team_score'
     else:
+        logo = 'logo_home'
         team= 'home_team'
         team_name = 'full_name_home'
         score_ot = 'home_points_overtime_total'
@@ -184,7 +186,7 @@ def display_team(row, home_or_away, df_teams, width):
             [
                 html.Div(
                     html.Img(
-                        src='/assets/teams/{team}_logo.webp'.format(team=row[team].upper()), 
+                        src='/assets/teams/{logo}'.format(logo=row[logo]), 
                         id = row[team] + '_logo',
                         style={
                             'height':'8vw',

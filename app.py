@@ -20,7 +20,7 @@ nfl = nflapi.NFL(ua="nflapi_quiniela")
 
 HOME_COLS = {}
 HOME_COLS['id'] = ['home_team', 'abbreviation_home', 'nick_name_home',
-       'full_name_home', 'conference_home', 'division_home', 'city_state_region_home', 'venue_home', ]
+       'full_name_home', 'conference_home', 'division_home', 'city_state_region_home', 'venue_home','logo_home', ]
 HOME_COLS['val_for'] =  ['home_points_q1', 'home_points_q2',
        'home_points_q3', 'home_points_q4', 'home_points_overtime_total', 'home_team_score', 'home_passing_yards',
        'home_passing_touchdowns', 'home_rushing_yards',
@@ -28,7 +28,7 @@ HOME_COLS['val_for'] =  ['home_points_q1', 'home_points_q2',
 
 AWAY_COLS = {}
 AWAY_COLS['id'] = ['away_team', 'abbreviation_away','nick_name_away',
-       'full_name_away', 'conference_away', 'division_away', 'city_state_region_away', 'venue_away',]
+       'full_name_away', 'conference_away', 'division_away', 'city_state_region_away', 'venue_away','logo_away',]
 AWAY_COLS['val'] = ['visitor_points_q1', 'visitor_points_q2',
        'visitor_points_q3', 'visitor_points_q4', 'visitor_points_overtime_total',  'away_team_score', 
        'visitor_passing_yards', 'visitor_passing_touchdowns', 'visitor_rushing_yards','visitor_rushing_touchdowns']

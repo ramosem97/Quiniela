@@ -1,33 +1,33 @@
-,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue
-2,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2006,
-3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2006,
-4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2006,
-5,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2006,
-6,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2006,
-7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2006,
-8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2006,
-9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2006,
-10,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,
-11,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,
-12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2006,
-13,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2006,
-14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2006,
-15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2006,
-16,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2006,
-17,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2006,
-18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2006,
-19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2006,
-20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2006,
-21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2006,
-22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2006,
-23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2006,
-24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2006,
-25,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2006,
-26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2006,
-27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2006,
-28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2006,
-29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2006,
-30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2006,
-31,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2006,
-32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2006,
-33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2006,
+,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue,logo
+2,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2006,,WAS_logo_old.png
+3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2006,,TB_logo_old.jpg
+4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2006,,SEA_logo_old.svg
+5,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2006,,SF_logo.webp
+6,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2006,,LAC_logo.webp
+7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2006,,PIT_logo.webp
+8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2006,,ARI_logo.webp
+9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2006,,PHI_logo.webp
+10,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,,NYJ_logo_old.jpg
+11,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,,NYG_logo.webp
+12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2006,,NO_logo.webp
+13,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2006,,NE_logo.webp
+14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2006,,MIN_logo.webp
+15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2006,,MIA_logo_old.jpg
+16,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2006,,LV_logo.webp
+17,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2006,,LA_logo.webp
+18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2006,,KC_logo.webp
+19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2006,,JAX_logo_old.jpg
+20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2006,,IND_logo.webp
+21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2006,,HOU_logo.webp
+22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2006,,TEN_logo.webp
+23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2006,,GB_logo.webp
+24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2006,,DET_logo.webp
+25,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2006,,DEN_logo.webp
+26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2006,,DAL_logo.webp
+27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2006,,CLE_logo.webp
+28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2006,,CIN_logo.webp
+29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2006,,CHI_logo.webp
+30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2006,,CAR_logo.webp
+31,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2006,,BUF_logo.webp
+32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2006,,BAL_logo.webp
+33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2006,,ATL_logo.webp

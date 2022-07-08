@@ -1,33 +1,33 @@
-,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue
-2,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2014,
-3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2014,
-4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2014,
-5,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2014,
-6,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2014,
-7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2014,
-8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2014,
-9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2014,
-10,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,
-11,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,
-12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2014,
-13,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2014,
-14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2014,
-15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2014,
-16,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2014,
-17,LA,St. Louis Rams,Rams,NFC,NFC_WEST,St. Louis,2014,
-18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2014,
-19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2014,
-20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2014,
-21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2014,
-22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2014,
-23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2014,
-24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2014,
-25,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2014,
-26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2014,
-27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2014,
-28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2014,
-29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2014,
-30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2014,
-31,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2014,
-32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2014,
-33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2014,
+,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue,logo
+2,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2014,,WAS_logo_old.png
+3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2014,,TB_logo.webp
+4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2014,,SEA_logo.webp
+5,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2014,,SF_logo.webp
+6,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2014,,LAC_logo.webp
+7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2014,,PIT_logo.webp
+8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2014,,ARI_logo.webp
+9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2014,,PHI_logo.webp
+10,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,,NYJ_logo_old.jpg
+11,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,,NYG_logo.webp
+12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2014,,NO_logo.webp
+13,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2014,,NE_logo.webp
+14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2014,,MIN_logo.webp
+15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2014,,MIA_logo.webp
+16,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2014,,LV_logo.webp
+17,LA,St. Louis Rams,Rams,NFC,NFC_WEST,St. Louis,2014,,LA_logo.webp
+18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2014,,KC_logo.webp
+19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2014,,JAX_logo.webp
+20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2014,,IND_logo.webp
+21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2014,,HOU_logo.webp
+22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2014,,TEN_logo.webp
+23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2014,,GB_logo.webp
+24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2014,,DET_logo.webp
+25,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2014,,DEN_logo.webp
+26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2014,,DAL_logo.webp
+27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2014,,CLE_logo.webp
+28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2014,,CIN_logo.webp
+29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2014,,CHI_logo.webp
+30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2014,,CAR_logo.webp
+31,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2014,,BUF_logo.webp
+32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2014,,BAL_logo.webp
+33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2014,,ATL_logo.webp

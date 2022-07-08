@@ -1,33 +1,33 @@
-,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue
-2,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2018,FedExField
-3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2018,Raymond James Stadium
-4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2018,CenturyLink Field
-5,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2018,Levi's® Stadium
-6,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2018,ROKiT Field at StubHub Center
-7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2018,Heinz Field
-8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2018,State Farm Stadium
-9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2018,Lincoln Financial Field
-10,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2018,MetLife Stadium
-11,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2018,MetLife Stadium
-12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2018,Mercedes-Benz Superdome
-13,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2018,Gillette Stadium
-14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2018,U.S. Bank Stadium
-15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2018,Hard Rock Stadium
-16,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2018,Oakland Coliseum
-17,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2018,Los Angeles Memorial Coliseum
-18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2018,Arrowhead Stadium
-19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2018,TIAA Bank Field
-20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2018,Lucas Oil Stadium
-21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2018,NRG Stadium
-22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2018,Nissan Stadium
-23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2018,Lambeau Field
-24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2018,Ford Field
-25,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2018,Broncos Stadium at Mile High
-26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2018,AT&T Stadium
-27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2018,FirstEnergy Stadium
-28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2018,Paul Brown Stadium
-29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2018,Soldier Field
-30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2018,Bank of America Stadium
-31,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2018,New Era Field
-32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2018,M&T Bank Stadium
-33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2018,Mercedes-Benz Stadium
+,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue,logo
+2,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2018,FedExField,WAS_logo_old.png
+3,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2018,Raymond James Stadium,TB_logo.webp
+4,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2018,CenturyLink Field,SEA_logo.webp
+5,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2018,Levi's® Stadium,SF_logo.webp
+6,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2018,ROKiT Field at StubHub Center,LAC_logo.webp
+7,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2018,Heinz Field,PIT_logo.webp
+8,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2018,State Farm Stadium,ARI_logo.webp
+9,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2018,Lincoln Financial Field,PHI_logo.webp
+10,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2018,MetLife Stadium,NYJ_logo.webp
+11,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2018,MetLife Stadium,NYG_logo.webp
+12,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2018,Mercedes-Benz Superdome,NO_logo.webp
+13,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2018,Gillette Stadium,NE_logo.webp
+14,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2018,U.S. Bank Stadium,MIN_logo.webp
+15,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2018,Hard Rock Stadium,MIA_logo.webp
+16,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2018,Oakland Coliseum,LV_logo.webp
+17,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2018,Los Angeles Memorial Coliseum,LA_logo.webp
+18,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2018,Arrowhead Stadium,KC_logo.webp
+19,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2018,TIAA Bank Field,JAX_logo.webp
+20,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2018,Lucas Oil Stadium,IND_logo.webp
+21,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2018,NRG Stadium,HOU_logo.webp
+22,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2018,Nissan Stadium,TEN_logo.webp
+23,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2018,Lambeau Field,GB_logo.webp
+24,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2018,Ford Field,DET_logo.webp
+25,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2018,Broncos Stadium at Mile High,DEN_logo.webp
+26,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2018,AT&T Stadium,DAL_logo.webp
+27,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2018,FirstEnergy Stadium,CLE_logo.webp
+28,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2018,Paul Brown Stadium,CIN_logo.webp
+29,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2018,Soldier Field,CHI_logo.webp
+30,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2018,Bank of America Stadium,CAR_logo.webp
+31,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2018,New Era Field,BUF_logo.webp
+32,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2018,M&T Bank Stadium,BAL_logo.webp
+33,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2018,Mercedes-Benz Stadium,ATL_logo.webp

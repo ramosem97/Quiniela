@@ -1,641 +1,641 @@
-,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue
-0,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2003,
-1,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2003,
-2,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2003,
-3,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2003,
-4,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2003,
-5,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2003,
-6,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2003,
-7,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2003,
-8,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2003,
-9,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2003,
-10,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2003,
-11,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2003,
-12,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2003,
-13,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2003,
-14,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2003,
-15,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2003,
-16,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2003,
-17,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2003,
-18,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2003,
-19,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2003,
-20,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2003,
-21,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2003,
-22,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2003,
-23,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2003,
-24,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2003,
-25,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2003,
-26,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2003,
-27,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2003,
-28,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2003,
-29,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2003,
-30,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2003,
-31,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2003,
-32,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2004,
-33,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2004,
-34,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2004,
-35,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2004,
-36,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2004,
-37,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2004,
-38,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2004,
-39,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2004,
-40,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2004,
-41,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2004,
-42,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2004,
-43,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2004,
-44,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2004,
-45,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2004,
-46,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2004,
-47,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2004,
-48,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2004,
-49,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2004,
-50,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2004,
-51,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2004,
-52,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2004,
-53,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2004,
-54,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2004,
-55,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2004,
-56,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2004,
-57,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2004,
-58,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2004,
-59,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2004,
-60,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2004,
-61,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2004,
-62,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2004,
-63,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2004,
-64,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2005,
-65,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2005,
-66,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2005,
-67,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2005,
-68,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2005,
-69,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2005,
-70,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2005,
-71,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2005,
-72,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2005,
-73,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2005,
-74,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2005,
-75,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2005,
-76,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2005,
-77,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2005,
-78,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2005,
-79,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2005,
-80,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2005,
-81,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2005,
-82,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2005,
-83,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2005,
-84,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2005,
-85,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2005,
-86,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2005,
-87,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2005,
-88,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2005,
-89,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2005,
-90,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2005,
-91,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2005,
-92,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2005,
-93,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2005,
-94,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2005,
-95,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2005,
-96,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2006,
-97,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2006,
-98,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2006,
-99,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2006,
-100,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2006,
-101,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2006,
-102,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2006,
-103,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2006,
-104,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,
-105,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,
-106,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2006,
-107,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2006,
-108,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2006,
-109,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2006,
-110,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2006,
-111,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2006,
-112,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2006,
-113,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2006,
-114,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2006,
-115,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2006,
-116,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2006,
-117,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2006,
-118,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2006,
-119,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2006,
-120,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2006,
-121,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2006,
-122,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2006,
-123,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2006,
-124,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2006,
-125,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2006,
-126,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2006,
-127,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2006,
-128,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2007,
-129,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2007,
-130,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2007,
-131,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2007,
-132,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2007,
-133,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2007,
-134,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2007,
-135,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2007,
-136,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2007,
-137,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2007,
-138,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2007,
-139,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2007,
-140,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2007,
-141,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2007,
-142,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2007,
-143,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2007,
-144,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2007,
-145,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2007,
-146,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2007,
-147,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2007,
-148,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2007,
-149,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2007,
-150,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2007,
-151,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2007,
-152,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2007,
-153,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2007,
-154,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2007,
-155,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2007,
-156,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2007,
-157,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2007,
-158,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2007,
-159,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2007,
-160,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2008,
-161,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2008,
-162,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2008,
-163,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2008,
-164,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2008,
-165,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2008,
-166,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2008,
-167,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2008,
-168,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2008,
-169,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2008,
-170,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2008,
-171,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2008,
-172,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2008,
-173,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2008,
-174,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2008,
-175,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2008,
-176,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2008,
-177,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2008,
-178,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2008,
-179,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2008,
-180,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2008,
-181,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2008,
-182,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2008,
-183,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2008,
-184,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2008,
-185,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2008,
-186,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2008,
-187,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2008,
-188,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2008,
-189,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2008,
-190,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2008,
-191,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2008,
-192,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2009,
-193,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2009,
-194,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2009,
-195,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2009,
-196,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2009,
-197,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2009,
-198,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2009,
-199,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2009,
-200,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2009,
-201,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2009,
-202,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2009,
-203,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2009,
-204,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2009,
-205,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2009,
-206,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2009,
-207,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2009,
-208,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2009,
-209,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2009,
-210,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2009,
-211,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2009,
-212,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2009,
-213,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2009,
-214,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2009,
-215,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2009,
-216,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2009,
-217,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2009,
-218,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2009,
-219,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2009,
-220,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2009,
-221,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2009,
-222,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2009,
-223,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2009,
-224,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2010,
-225,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2010,
-226,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2010,
-227,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2010,
-228,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2010,
-229,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2010,
-230,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2010,
-231,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2010,
-232,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2010,
-233,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2010,
-234,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2010,
-235,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2010,
-236,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2010,
-237,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2010,
-238,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2010,
-239,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2010,
-240,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2010,
-241,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2010,
-242,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2010,
-243,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2010,
-244,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2010,
-245,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2010,
-246,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2010,
-247,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2010,
-248,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2010,
-249,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2010,
-250,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2010,
-251,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2010,
-252,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2010,
-253,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2010,
-254,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2010,
-255,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2010,
-256,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2011,
-257,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2011,
-258,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2011,
-259,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2011,
-260,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2011,
-261,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2011,
-262,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2011,
-263,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2011,
-264,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2011,
-265,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2011,
-266,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2011,
-267,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2011,
-268,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2011,
-269,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2011,
-270,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2011,
-271,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2011,
-272,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2011,
-273,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2011,
-274,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2011,
-275,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2011,
-276,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2011,
-277,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2011,
-278,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2011,
-279,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2011,
-280,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2011,
-281,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2011,
-282,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2011,
-283,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2011,
-284,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2011,
-285,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2011,
-286,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2011,
-287,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2011,
-288,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2012,
-289,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2012,
-290,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2012,
-291,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2012,
-292,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2012,
-293,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2012,
-294,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2012,
-295,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2012,
-296,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2012,
-297,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2012,
-298,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2012,
-299,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2012,
-300,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2012,
-301,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2012,
-302,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2012,
-303,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2012,
-304,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2012,
-305,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2012,
-306,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2012,
-307,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2012,
-308,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2012,
-309,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2012,
-310,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2012,
-311,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2012,
-312,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2012,
-313,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2012,
-314,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2012,
-315,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2012,
-316,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2012,
-317,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2012,
-318,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2012,
-319,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2012,
-320,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2013,
-321,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2013,
-322,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2013,
-323,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2013,
-324,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2013,
-325,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2013,
-326,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2013,
-327,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2013,
-328,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2013,
-329,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2013,
-330,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2013,
-331,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2013,
-332,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2013,
-333,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2013,
-334,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2013,
-335,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2013,
-336,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2013,
-337,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2013,
-338,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2013,
-339,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2013,
-340,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2013,
-341,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2013,
-342,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2013,
-343,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2013,
-344,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2013,
-345,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2013,
-346,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2013,
-347,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2013,
-348,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2013,
-349,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2013,
-350,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2013,
-351,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2013,
-352,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2014,
-353,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2014,
-354,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2014,
-355,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2014,
-356,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2014,
-357,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2014,
-358,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2014,
-359,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2014,
-360,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,
-361,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,
-362,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2014,
-363,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2014,
-364,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2014,
-365,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2014,
-366,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2014,
-367,LA,St. Louis Rams,Rams,NFC,NFC_WEST,St. Louis,2014,
-368,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2014,
-369,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2014,
-370,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2014,
-371,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2014,
-372,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2014,
-373,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2014,
-374,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2014,
-375,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2014,
-376,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2014,
-377,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2014,
-378,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2014,
-379,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2014,
-380,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2014,
-381,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2014,
-382,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2014,
-383,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2014,
-384,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2015,
-385,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2015,
-386,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2015,
-387,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2015,
-388,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2015,
-389,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2015,
-390,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2015,
-391,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2015,
-392,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2015,
-393,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2015,
-394,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2015,
-395,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2015,
-396,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2015,
-397,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2015,
-398,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2015,
-399,LA,St. Louis Rams,Rams,NFC,NFC_WEST,St. Louis,2015,
-400,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2015,
-401,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2015,
-402,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2015,
-403,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2015,
-404,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2015,
-405,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2015,
-406,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2015,
-407,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2015,
-408,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2015,
-409,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2015,
-410,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2015,
-411,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2015,
-412,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2015,
-413,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2015,
-414,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2015,
-415,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2015,
-416,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2016,
-417,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2016,
-418,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2016,
-419,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2016,
-420,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2016,
-421,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2016,
-422,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2016,
-423,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2016,
-424,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2016,
-425,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2016,
-426,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2016,
-427,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2016,
-428,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2016,
-429,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2016,
-430,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2016,
-431,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles,2016,
-432,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2016,
-433,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2016,
-434,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2016,
-435,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2016,
-436,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2016,
-437,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2016,
-438,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2016,
-439,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2016,
-440,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2016,
-441,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2016,
-442,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2016,
-443,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2016,
-444,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2016,
-445,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2016,
-446,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2016,
-447,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2016,
-448,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2017,
-449,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2017,
-450,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2017,
-451,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2017,
-452,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2017,
-453,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2017,
-454,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2017,
-455,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2017,
-456,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2017,
-457,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2017,
-458,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2017,
-459,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2017,
-460,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2017,
-461,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2017,
-462,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2017,
-463,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2017,
-464,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2017,
-465,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2017,
-466,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2017,
-467,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2017,
-468,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2017,
-469,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2017,
-470,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2017,
-471,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2017,
-472,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2017,
-473,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2017,
-474,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2017,
-475,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2017,
-476,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2017,
-477,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2017,
-478,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2017,
-479,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2017,
-480,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2018,FedExField
-481,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2018,Raymond James Stadium
-482,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2018,CenturyLink Field
-483,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2018,Levi's® Stadium
-484,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2018,ROKiT Field at StubHub Center
-485,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2018,Heinz Field
-486,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2018,State Farm Stadium
-487,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2018,Lincoln Financial Field
-488,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2018,MetLife Stadium
-489,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2018,MetLife Stadium
-490,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2018,Mercedes-Benz Superdome
-491,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2018,Gillette Stadium
-492,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2018,U.S. Bank Stadium
-493,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2018,Hard Rock Stadium
-494,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2018,Oakland Coliseum
-495,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2018,Los Angeles Memorial Coliseum
-496,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2018,Arrowhead Stadium
-497,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2018,TIAA Bank Field
-498,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2018,Lucas Oil Stadium
-499,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2018,NRG Stadium
-500,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2018,Nissan Stadium
-501,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2018,Lambeau Field
-502,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2018,Ford Field
-503,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2018,Broncos Stadium at Mile High
-504,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2018,AT&T Stadium
-505,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2018,FirstEnergy Stadium
-506,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2018,Paul Brown Stadium
-507,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2018,Soldier Field
-508,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2018,Bank of America Stadium
-509,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2018,New Era Field
-510,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2018,M&T Bank Stadium
-511,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2018,Mercedes-Benz Stadium
-512,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2019,FedExField
-513,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2019,Raymond James Stadium
-514,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2019,CenturyLink Field
-515,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2019,Levi's® Stadium
-516,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2019,ROKiT Field at Dignity Health Sports Park
-517,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2019,Heinz Field
-518,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2019,State Farm Stadium
-519,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2019,Lincoln Financial Field
-520,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2019,MetLife Stadium
-521,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2019,MetLife Stadium
-522,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2019,Mercedes-Benz Superdome
-523,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2019,Gillette Stadium
-524,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2019,U.S. Bank Stadium
-525,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2019,Hard Rock Stadium
-526,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2019,Oakland-Alameda County Coliseum
-527,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2019,Los Angeles Memorial Coliseum
-528,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2019,Arrowhead Stadium
-529,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2019,TIAA Bank Field
-530,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2019,Lucas Oil Stadium
-531,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2019,NRG Stadium
-532,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2019,Nissan Stadium
-533,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2019,Lambeau Field
-534,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2019,Ford Field
-535,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2019,Empower Field at Mile High
-536,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2019,AT&T Stadium
-537,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2019,FirstEnergy Stadium
-538,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2019,Paul Brown Stadium
-539,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2019,Soldier Field
-540,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2019,Bank of America Stadium
-541,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2019,New Era Field
-542,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2019,M&T Bank Stadium
-543,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2019,Mercedes-Benz Stadium
-544,WAS,Washington Football Team,Football Team,NFC,NFC_EAST,Washington,2020,FedExField
-545,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2020,Raymond James Stadium
-546,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2020,Lumen Field
-547,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2020,Levi's® Stadium
-548,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2020,SoFi Stadium
-549,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2020,Heinz Field
-550,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2020,State Farm Stadium
-551,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2020,Lincoln Financial Field
-552,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2020,MetLife Stadium
-553,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2020,MetLife Stadium
-554,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2020,Mercedes-Benz Superdome
-555,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2020,Gillette Stadium
-556,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2020,U.S. Bank Stadium
-557,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2020,Hard Rock Stadium
-558,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2020,Allegiant Stadium
-559,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2020,SoFi Stadium
-560,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2020,Arrowhead Stadium
-561,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2020,TIAA Bank Field
-562,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2020,Lucas Oil Stadium
-563,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2020,NRG Stadium
-564,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2020,Nissan Stadium
-565,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2020,Lambeau Field
-566,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2020,Ford Field
-567,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2020,Empower Field at Mile High
-568,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2020,AT&T Stadium
-569,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2020,FirstEnergy Stadium
-570,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2020,Paul Brown Stadium
-571,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2020,Soldier Field
-572,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2020,Bank of America Stadium
-573,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2020,Bills Stadium
-574,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2020,M&T Bank Stadium
-575,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2020,Mercedes-Benz Stadium
-576,WAS,Washington Football Team,Football Team,NFC,NFC_EAST,Washington,2021,FedExField
-577,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2021,Raymond James Stadium
-578,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2021,CenturyLink Field
-579,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2021,Levi's® Stadium
-580,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2021,SoFi Stadium
-581,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2021,Heinz Field
-582,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2021,State Farm Stadium
-583,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2021,Lincoln Financial Field
-584,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2021,MetLife Stadium
-585,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2021,MetLife Stadium
-586,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2021,Caesars Superdome
-587,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2021,Gillette Stadium
-588,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2021,U.S. Bank Stadium
-589,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2021,Hard Rock Stadium
-590,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2021,Allegiant Stadium
-591,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2021,SoFi Stadium
-592,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2021,GEHA Field at Arrowhead Stadium
-593,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2021,TIAA Bank Field
-594,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2021,Lucas Oil Stadium
-595,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2021,NRG Stadium
-596,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2021,Nissan Stadium
-597,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2021,Lambeau Field
-598,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2021,Ford Field
-599,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2021,Empower Field at Mile High
-600,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2021,AT&T Stadium
-601,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2021,FirstEnergy Stadium
-602,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2021,Paul Brown Stadium
-603,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2021,Soldier Field
-604,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2021,Bank of America Stadium
-605,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2021,Highmark Stadium
-606,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2021,M&T Bank Stadium
-607,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2021,Mercedes-Benz Stadium
-608,WAS,Washington Commanders,Commanders,NFC,NFC_EAST,Washington,2022,FedExField
-609,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2022,Raymond James Stadium
-610,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2022,CenturyLink Field
-611,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2022,Levi's® Stadium
-612,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2022,SoFi Stadium
-613,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2022,Heinz Field
-614,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2022,State Farm Stadium
-615,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2022,Lincoln Financial Field
-616,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2022,MetLife Stadium
-617,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2022,MetLife Stadium
-618,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2022,Caesars Superdome
-619,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2022,Gillette Stadium
-620,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2022,U.S. Bank Stadium
-621,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2022,Hard Rock Stadium
-622,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2022,Allegiant Stadium
-623,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2022,SoFi Stadium
-624,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2022,GEHA Field at Arrowhead Stadium
-625,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2022,TIAA Bank Field
-626,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2022,Lucas Oil Stadium
-627,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2022,NRG Stadium
-628,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2022,Nissan Stadium
-629,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2022,Lambeau Field
-630,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2022,Ford Field
-631,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2022,Empower Field at Mile High
-632,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2022,AT&T Stadium
-633,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2022,FirstEnergy Stadium
-634,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2022,Paul Brown Stadium
-635,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2022,Soldier Field
-636,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2022,Bank of America Stadium
-637,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2022,Highmark Stadium
-638,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2022,M&T Bank Stadium
-639,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2022,Mercedes-Benz Stadium
+,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue,logo
+0,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2003,,WAS_logo_old.png
+1,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2003,,TB_logo_old.jpg
+2,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2003,,SEA_logo_old.svg
+3,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2003,,SF_logo.webp
+4,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2003,,LAC_logo.webp
+5,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2003,,PIT_logo.webp
+6,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2003,,ARI_logo.webp
+7,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2003,,PHI_logo.webp
+8,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2003,,NYJ_logo_old.jpg
+9,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2003,,NYG_logo.webp
+10,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2003,,NO_logo.webp
+11,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2003,,NE_logo.webp
+12,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2003,,MIN_logo.webp
+13,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2003,,MIA_logo_old.jpg
+14,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2003,,LV_logo.webp
+15,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2003,,LA_logo.webp
+16,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2003,,KC_logo.webp
+17,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2003,,JAX_logo_old.jpg
+18,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2003,,IND_logo.webp
+19,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2003,,HOU_logo.webp
+20,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2003,,TEN_logo.webp
+21,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2003,,GB_logo.webp
+22,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2003,,DET_logo.webp
+23,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2003,,DEN_logo.webp
+24,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2003,,DAL_logo.webp
+25,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2003,,CLE_logo.webp
+26,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2003,,CIN_logo.webp
+27,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2003,,CHI_logo.webp
+28,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2003,,CAR_logo.webp
+29,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2003,,BUF_logo.webp
+30,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2003,,BAL_logo.webp
+31,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2003,,ATL_logo.webp
+32,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2004,,WAS_logo_old.png
+33,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2004,,TB_logo_old.jpg
+34,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2004,,SEA_logo_old.svg
+35,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2004,,SF_logo.webp
+36,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2004,,LAC_logo.webp
+37,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2004,,PIT_logo.webp
+38,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2004,,ARI_logo.webp
+39,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2004,,PHI_logo.webp
+40,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2004,,NYJ_logo_old.jpg
+41,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2004,,NYG_logo.webp
+42,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2004,,NO_logo.webp
+43,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2004,,NE_logo.webp
+44,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2004,,MIN_logo.webp
+45,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2004,,MIA_logo_old.jpg
+46,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2004,,LV_logo.webp
+47,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2004,,LA_logo.webp
+48,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2004,,KC_logo.webp
+49,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2004,,JAX_logo_old.jpg
+50,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2004,,IND_logo.webp
+51,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2004,,HOU_logo.webp
+52,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2004,,TEN_logo.webp
+53,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2004,,GB_logo.webp
+54,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2004,,DET_logo.webp
+55,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2004,,DEN_logo.webp
+56,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2004,,DAL_logo.webp
+57,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2004,,CLE_logo.webp
+58,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2004,,CIN_logo.webp
+59,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2004,,CHI_logo.webp
+60,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2004,,CAR_logo.webp
+61,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2004,,BUF_logo.webp
+62,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2004,,BAL_logo.webp
+63,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2004,,ATL_logo.webp
+64,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2005,,WAS_logo_old.png
+65,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2005,,TB_logo_old.jpg
+66,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2005,,SEA_logo_old.svg
+67,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2005,,SF_logo.webp
+68,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2005,,LAC_logo.webp
+69,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2005,,PIT_logo.webp
+70,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2005,,ARI_logo.webp
+71,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2005,,PHI_logo.webp
+72,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2005,,NYJ_logo_old.jpg
+73,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2005,,NYG_logo.webp
+74,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2005,,NO_logo.webp
+75,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2005,,NE_logo.webp
+76,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2005,,MIN_logo.webp
+77,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2005,,MIA_logo_old.jpg
+78,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2005,,LV_logo.webp
+79,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2005,,LA_logo.webp
+80,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2005,,KC_logo.webp
+81,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2005,,JAX_logo_old.jpg
+82,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2005,,IND_logo.webp
+83,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2005,,HOU_logo.webp
+84,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2005,,TEN_logo.webp
+85,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2005,,GB_logo.webp
+86,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2005,,DET_logo.webp
+87,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2005,,DEN_logo.webp
+88,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2005,,DAL_logo.webp
+89,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2005,,CLE_logo.webp
+90,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2005,,CIN_logo.webp
+91,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2005,,CHI_logo.webp
+92,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2005,,CAR_logo.webp
+93,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2005,,BUF_logo.webp
+94,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2005,,BAL_logo.webp
+95,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2005,,ATL_logo.webp
+96,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2006,,WAS_logo_old.png
+97,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2006,,TB_logo_old.jpg
+98,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2006,,SEA_logo_old.svg
+99,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2006,,SF_logo.webp
+100,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2006,,LAC_logo.webp
+101,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2006,,PIT_logo.webp
+102,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2006,,ARI_logo.webp
+103,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2006,,PHI_logo.webp
+104,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,,NYJ_logo_old.jpg
+105,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,,NYG_logo.webp
+106,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2006,,NO_logo.webp
+107,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2006,,NE_logo.webp
+108,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2006,,MIN_logo.webp
+109,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2006,,MIA_logo_old.jpg
+110,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2006,,LV_logo.webp
+111,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2006,,LA_logo.webp
+112,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2006,,KC_logo.webp
+113,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2006,,JAX_logo_old.jpg
+114,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2006,,IND_logo.webp
+115,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2006,,HOU_logo.webp
+116,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2006,,TEN_logo.webp
+117,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2006,,GB_logo.webp
+118,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2006,,DET_logo.webp
+119,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2006,,DEN_logo.webp
+120,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2006,,DAL_logo.webp
+121,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2006,,CLE_logo.webp
+122,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2006,,CIN_logo.webp
+123,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2006,,CHI_logo.webp
+124,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2006,,CAR_logo.webp
+125,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2006,,BUF_logo.webp
+126,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2006,,BAL_logo.webp
+127,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2006,,ATL_logo.webp
+128,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2007,,WAS_logo_old.png
+129,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2007,,TB_logo_old.jpg
+130,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2007,,SEA_logo_old.svg
+131,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2007,,SF_logo.webp
+132,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2007,,LAC_logo.webp
+133,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2007,,PIT_logo.webp
+134,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2007,,ARI_logo.webp
+135,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2007,,PHI_logo.webp
+136,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2007,,NYJ_logo_old.jpg
+137,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2007,,NYG_logo.webp
+138,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2007,,NO_logo.webp
+139,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2007,,NE_logo.webp
+140,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2007,,MIN_logo.webp
+141,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2007,,MIA_logo_old.jpg
+142,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2007,,LV_logo.webp
+143,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2007,,LA_logo.webp
+144,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2007,,KC_logo.webp
+145,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2007,,JAX_logo_old.jpg
+146,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2007,,IND_logo.webp
+147,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2007,,HOU_logo.webp
+148,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2007,,TEN_logo.webp
+149,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2007,,GB_logo.webp
+150,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2007,,DET_logo.webp
+151,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2007,,DEN_logo.webp
+152,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2007,,DAL_logo.webp
+153,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2007,,CLE_logo.webp
+154,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2007,,CIN_logo.webp
+155,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2007,,CHI_logo.webp
+156,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2007,,CAR_logo.webp
+157,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2007,,BUF_logo.webp
+158,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2007,,BAL_logo.webp
+159,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2007,,ATL_logo.webp
+160,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2008,,WAS_logo_old.png
+161,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2008,,TB_logo_old.jpg
+162,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2008,,SEA_logo_old.svg
+163,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2008,,SF_logo.webp
+164,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2008,,LAC_logo.webp
+165,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2008,,PIT_logo.webp
+166,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2008,,ARI_logo.webp
+167,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2008,,PHI_logo.webp
+168,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2008,,NYJ_logo_old.jpg
+169,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2008,,NYG_logo.webp
+170,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2008,,NO_logo.webp
+171,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2008,,NE_logo.webp
+172,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2008,,MIN_logo.webp
+173,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2008,,MIA_logo_old.jpg
+174,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2008,,LV_logo.webp
+175,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2008,,LA_logo.webp
+176,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2008,,KC_logo.webp
+177,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2008,,JAX_logo_old.jpg
+178,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2008,,IND_logo.webp
+179,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2008,,HOU_logo.webp
+180,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2008,,TEN_logo.webp
+181,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2008,,GB_logo.webp
+182,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2008,,DET_logo.webp
+183,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2008,,DEN_logo.webp
+184,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2008,,DAL_logo.webp
+185,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2008,,CLE_logo.webp
+186,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2008,,CIN_logo.webp
+187,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2008,,CHI_logo.webp
+188,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2008,,CAR_logo.webp
+189,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2008,,BUF_logo.webp
+190,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2008,,BAL_logo.webp
+191,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2008,,ATL_logo.webp
+192,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2009,,WAS_logo_old.png
+193,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2009,,TB_logo_old.jpg
+194,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2009,,SEA_logo_old.svg
+195,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2009,,SF_logo.webp
+196,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2009,,LAC_logo.webp
+197,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2009,,PIT_logo.webp
+198,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2009,,ARI_logo.webp
+199,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2009,,PHI_logo.webp
+200,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2009,,NYJ_logo_old.jpg
+201,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2009,,NYG_logo.webp
+202,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2009,,NO_logo.webp
+203,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2009,,NE_logo.webp
+204,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2009,,MIN_logo.webp
+205,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2009,,MIA_logo_old.jpg
+206,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2009,,LV_logo.webp
+207,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2009,,LA_logo.webp
+208,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2009,,KC_logo.webp
+209,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2009,,JAX_logo_old.jpg
+210,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2009,,IND_logo.webp
+211,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2009,,HOU_logo.webp
+212,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2009,,TEN_logo.webp
+213,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2009,,GB_logo.webp
+214,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2009,,DET_logo.webp
+215,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2009,,DEN_logo.webp
+216,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2009,,DAL_logo.webp
+217,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2009,,CLE_logo.webp
+218,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2009,,CIN_logo.webp
+219,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2009,,CHI_logo.webp
+220,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2009,,CAR_logo.webp
+221,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2009,,BUF_logo.webp
+222,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2009,,BAL_logo.webp
+223,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2009,,ATL_logo.webp
+224,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2010,,WAS_logo_old.png
+225,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2010,,TB_logo_old.jpg
+226,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2010,,SEA_logo_old.svg
+227,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2010,,SF_logo.webp
+228,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2010,,LAC_logo.webp
+229,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2010,,PIT_logo.webp
+230,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2010,,ARI_logo.webp
+231,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2010,,PHI_logo.webp
+232,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2010,,NYJ_logo_old.jpg
+233,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2010,,NYG_logo.webp
+234,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2010,,NO_logo.webp
+235,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2010,,NE_logo.webp
+236,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2010,,MIN_logo.webp
+237,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2010,,MIA_logo_old.jpg
+238,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2010,,LV_logo.webp
+239,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2010,,LA_logo.webp
+240,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2010,,KC_logo.webp
+241,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2010,,JAX_logo_old.jpg
+242,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2010,,IND_logo.webp
+243,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2010,,HOU_logo.webp
+244,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2010,,TEN_logo.webp
+245,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2010,,GB_logo.webp
+246,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2010,,DET_logo.webp
+247,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2010,,DEN_logo.webp
+248,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2010,,DAL_logo.webp
+249,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2010,,CLE_logo.webp
+250,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2010,,CIN_logo.webp
+251,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2010,,CHI_logo.webp
+252,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2010,,CAR_logo.webp
+253,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2010,,BUF_logo.webp
+254,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2010,,BAL_logo.webp
+255,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2010,,ATL_logo.webp
+256,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2011,,WAS_logo_old.png
+257,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2011,,TB_logo_old.jpg
+258,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2011,,SEA_logo.webp
+259,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2011,,SF_logo.webp
+260,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2011,,LAC_logo.webp
+261,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2011,,PIT_logo.webp
+262,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2011,,ARI_logo.webp
+263,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2011,,PHI_logo.webp
+264,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2011,,NYJ_logo_old.jpg
+265,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2011,,NYG_logo.webp
+266,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2011,,NO_logo.webp
+267,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2011,,NE_logo.webp
+268,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2011,,MIN_logo.webp
+269,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2011,,MIA_logo_old.jpg
+270,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2011,,LV_logo.webp
+271,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2011,,LA_logo.webp
+272,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2011,,KC_logo.webp
+273,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2011,,JAX_logo_old.jpg
+274,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2011,,IND_logo.webp
+275,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2011,,HOU_logo.webp
+276,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2011,,TEN_logo.webp
+277,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2011,,GB_logo.webp
+278,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2011,,DET_logo.webp
+279,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2011,,DEN_logo.webp
+280,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2011,,DAL_logo.webp
+281,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2011,,CLE_logo.webp
+282,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2011,,CIN_logo.webp
+283,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2011,,CHI_logo.webp
+284,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2011,,CAR_logo.webp
+285,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2011,,BUF_logo.webp
+286,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2011,,BAL_logo.webp
+287,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2011,,ATL_logo.webp
+288,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2012,,WAS_logo_old.png
+289,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2012,,TB_logo_old.jpg
+290,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2012,,SEA_logo.webp
+291,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2012,,SF_logo.webp
+292,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2012,,LAC_logo.webp
+293,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2012,,PIT_logo.webp
+294,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2012,,ARI_logo.webp
+295,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2012,,PHI_logo.webp
+296,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2012,,NYJ_logo_old.jpg
+297,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2012,,NYG_logo.webp
+298,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2012,,NO_logo.webp
+299,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2012,,NE_logo.webp
+300,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2012,,MIN_logo.webp
+301,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2012,,MIA_logo.webp
+302,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2012,,LV_logo.webp
+303,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2012,,LA_logo.webp
+304,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2012,,KC_logo.webp
+305,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2012,,JAX_logo.webp
+306,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2012,,IND_logo.webp
+307,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2012,,HOU_logo.webp
+308,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2012,,TEN_logo.webp
+309,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2012,,GB_logo.webp
+310,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2012,,DET_logo.webp
+311,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2012,,DEN_logo.webp
+312,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2012,,DAL_logo.webp
+313,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2012,,CLE_logo.webp
+314,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2012,,CIN_logo.webp
+315,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2012,,CHI_logo.webp
+316,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2012,,CAR_logo.webp
+317,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2012,,BUF_logo.webp
+318,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2012,,BAL_logo.webp
+319,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2012,,ATL_logo.webp
+320,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2013,,WAS_logo_old.png
+321,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2013,,TB_logo.webp
+322,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2013,,SEA_logo.webp
+323,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2013,,SF_logo.webp
+324,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2013,,LAC_logo.webp
+325,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2013,,PIT_logo.webp
+326,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2013,,ARI_logo.webp
+327,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2013,,PHI_logo.webp
+328,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2013,,NYJ_logo_old.jpg
+329,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2013,,NYG_logo.webp
+330,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2013,,NO_logo.webp
+331,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2013,,NE_logo.webp
+332,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2013,,MIN_logo.webp
+333,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2013,,MIA_logo.webp
+334,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2013,,LV_logo.webp
+335,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2013,,LA_logo.webp
+336,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2013,,KC_logo.webp
+337,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2013,,JAX_logo.webp
+338,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2013,,IND_logo.webp
+339,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2013,,HOU_logo.webp
+340,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2013,,TEN_logo.webp
+341,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2013,,GB_logo.webp
+342,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2013,,DET_logo.webp
+343,DEN,Denver Broncos,Broncos,AFC,AFC_WESTERN,Denver,2013,,DEN_logo.webp
+344,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EASTERN,Dallas,2013,,DAL_logo.webp
+345,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2013,,CLE_logo.webp
+346,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2013,,CIN_logo.webp
+347,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2013,,CHI_logo.webp
+348,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2013,,CAR_logo.webp
+349,BUF,Buffalo Bills,Bills,AFC,AFC_EASTERN,Buffalo,2013,,BUF_logo.webp
+350,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2013,,BAL_logo.webp
+351,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2013,,ATL_logo.webp
+352,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2014,,WAS_logo_old.png
+353,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2014,,TB_logo.webp
+354,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2014,,SEA_logo.webp
+355,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2014,,SF_logo.webp
+356,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2014,,LAC_logo.webp
+357,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2014,,PIT_logo.webp
+358,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2014,,ARI_logo.webp
+359,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2014,,PHI_logo.webp
+360,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,,NYJ_logo_old.jpg
+361,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,,NYG_logo.webp
+362,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2014,,NO_logo.webp
+363,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2014,,NE_logo.webp
+364,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2014,,MIN_logo.webp
+365,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2014,,MIA_logo.webp
+366,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2014,,LV_logo.webp
+367,LA,St. Louis Rams,Rams,NFC,NFC_WEST,St. Louis,2014,,LA_logo.webp
+368,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2014,,KC_logo.webp
+369,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2014,,JAX_logo.webp
+370,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2014,,IND_logo.webp
+371,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2014,,HOU_logo.webp
+372,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2014,,TEN_logo.webp
+373,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2014,,GB_logo.webp
+374,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2014,,DET_logo.webp
+375,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2014,,DEN_logo.webp
+376,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2014,,DAL_logo.webp
+377,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2014,,CLE_logo.webp
+378,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2014,,CIN_logo.webp
+379,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2014,,CHI_logo.webp
+380,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2014,,CAR_logo.webp
+381,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2014,,BUF_logo.webp
+382,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2014,,BAL_logo.webp
+383,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2014,,ATL_logo.webp
+384,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2015,,WAS_logo_old.png
+385,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2015,,TB_logo.webp
+386,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2015,,SEA_logo.webp
+387,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2015,,SF_logo.webp
+388,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2015,,LAC_logo.webp
+389,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2015,,PIT_logo.webp
+390,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2015,,ARI_logo.webp
+391,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2015,,PHI_logo.webp
+392,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2015,,NYJ_logo_old.jpg
+393,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2015,,NYG_logo.webp
+394,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2015,,NO_logo.webp
+395,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2015,,NE_logo.webp
+396,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2015,,MIN_logo.webp
+397,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2015,,MIA_logo.webp
+398,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2015,,LV_logo.webp
+399,LA,St. Louis Rams,Rams,NFC,NFC_WEST,St. Louis,2015,,LA_logo.webp
+400,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2015,,KC_logo.webp
+401,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2015,,JAX_logo.webp
+402,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2015,,IND_logo.webp
+403,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2015,,HOU_logo.webp
+404,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2015,,TEN_logo.webp
+405,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2015,,GB_logo.webp
+406,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2015,,DET_logo.webp
+407,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2015,,DEN_logo.webp
+408,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2015,,DAL_logo.webp
+409,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2015,,CLE_logo.webp
+410,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2015,,CIN_logo.webp
+411,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2015,,CHI_logo.webp
+412,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2015,,CAR_logo.webp
+413,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2015,,BUF_logo.webp
+414,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2015,,BAL_logo.webp
+415,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2015,,ATL_logo.webp
+416,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2016,,WAS_logo_old.png
+417,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2016,,TB_logo.webp
+418,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2016,,SEA_logo.webp
+419,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2016,,SF_logo.webp
+420,LAC,San Diego Chargers,Chargers,AFC,AFC_WEST,San Diego,2016,,LAC_logo.webp
+421,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2016,,PIT_logo.webp
+422,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2016,,ARI_logo.webp
+423,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2016,,PHI_logo.webp
+424,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2016,,NYJ_logo_old.jpg
+425,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2016,,NYG_logo.webp
+426,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2016,,NO_logo.webp
+427,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2016,,NE_logo.webp
+428,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2016,,MIN_logo.webp
+429,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2016,,MIA_logo.webp
+430,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2016,,LV_logo.webp
+431,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles,2016,,LA_logo.webp
+432,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2016,,KC_logo.webp
+433,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2016,,JAX_logo.webp
+434,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2016,,IND_logo.webp
+435,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2016,,HOU_logo.webp
+436,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2016,,TEN_logo.webp
+437,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2016,,GB_logo.webp
+438,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2016,,DET_logo.webp
+439,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2016,,DEN_logo.webp
+440,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2016,,DAL_logo.webp
+441,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2016,,CLE_logo.webp
+442,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2016,,CIN_logo.webp
+443,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2016,,CHI_logo.webp
+444,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2016,,CAR_logo.webp
+445,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2016,,BUF_logo.webp
+446,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2016,,BAL_logo.webp
+447,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2016,,ATL_logo.webp
+448,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2017,,WAS_logo_old.png
+449,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2017,,TB_logo.webp
+450,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2017,,SEA_logo.webp
+451,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2017,,SF_logo.webp
+452,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2017,,LAC_logo.webp
+453,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2017,,PIT_logo.webp
+454,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2017,,ARI_logo.webp
+455,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2017,,PHI_logo.webp
+456,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2017,,NYJ_logo_old.jpg
+457,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2017,,NYG_logo.webp
+458,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2017,,NO_logo.webp
+459,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2017,,NE_logo.webp
+460,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2017,,MIN_logo.webp
+461,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2017,,MIA_logo.webp
+462,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2017,,LV_logo.webp
+463,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2017,,LA_logo.webp
+464,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2017,,KC_logo.webp
+465,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2017,,JAX_logo.webp
+466,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2017,,IND_logo.webp
+467,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2017,,HOU_logo.webp
+468,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2017,,TEN_logo.webp
+469,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2017,,GB_logo.webp
+470,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2017,,DET_logo.webp
+471,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2017,,DEN_logo.webp
+472,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2017,,DAL_logo.webp
+473,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2017,,CLE_logo.webp
+474,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2017,,CIN_logo.webp
+475,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2017,,CHI_logo.webp
+476,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2017,,CAR_logo.webp
+477,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2017,,BUF_logo.webp
+478,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2017,,BAL_logo.webp
+479,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2017,,ATL_logo.webp
+480,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2018,FedExField,WAS_logo_old.png
+481,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2018,Raymond James Stadium,TB_logo.webp
+482,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2018,CenturyLink Field,SEA_logo.webp
+483,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2018,Levi's® Stadium,SF_logo.webp
+484,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2018,ROKiT Field at StubHub Center,LAC_logo.webp
+485,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2018,Heinz Field,PIT_logo.webp
+486,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2018,State Farm Stadium,ARI_logo.webp
+487,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2018,Lincoln Financial Field,PHI_logo.webp
+488,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2018,MetLife Stadium,NYJ_logo.webp
+489,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2018,MetLife Stadium,NYG_logo.webp
+490,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2018,Mercedes-Benz Superdome,NO_logo.webp
+491,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2018,Gillette Stadium,NE_logo.webp
+492,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2018,U.S. Bank Stadium,MIN_logo.webp
+493,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2018,Hard Rock Stadium,MIA_logo.webp
+494,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2018,Oakland Coliseum,LV_logo.webp
+495,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2018,Los Angeles Memorial Coliseum,LA_logo.webp
+496,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2018,Arrowhead Stadium,KC_logo.webp
+497,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2018,TIAA Bank Field,JAX_logo.webp
+498,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2018,Lucas Oil Stadium,IND_logo.webp
+499,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2018,NRG Stadium,HOU_logo.webp
+500,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2018,Nissan Stadium,TEN_logo.webp
+501,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2018,Lambeau Field,GB_logo.webp
+502,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2018,Ford Field,DET_logo.webp
+503,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2018,Broncos Stadium at Mile High,DEN_logo.webp
+504,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2018,AT&T Stadium,DAL_logo.webp
+505,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2018,FirstEnergy Stadium,CLE_logo.webp
+506,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2018,Paul Brown Stadium,CIN_logo.webp
+507,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2018,Soldier Field,CHI_logo.webp
+508,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2018,Bank of America Stadium,CAR_logo.webp
+509,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2018,New Era Field,BUF_logo.webp
+510,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2018,M&T Bank Stadium,BAL_logo.webp
+511,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2018,Mercedes-Benz Stadium,ATL_logo.webp
+512,WAS,Washington Redskins,Redskins,NFC,NFC_EAST,Washington,2019,FedExField,WAS_logo.webp
+513,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2019,Raymond James Stadium,TB_logo.webp
+514,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2019,CenturyLink Field,SEA_logo.webp
+515,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2019,Levi's® Stadium,SF_logo.webp
+516,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,Los Angeles Chargers,2019,ROKiT Field at Dignity Health Sports Park,LAC_logo.webp
+517,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2019,Heinz Field,PIT_logo.webp
+518,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2019,State Farm Stadium,ARI_logo.webp
+519,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2019,Lincoln Financial Field,PHI_logo.webp
+520,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2019,MetLife Stadium,NYJ_logo.webp
+521,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2019,MetLife Stadium,NYG_logo.webp
+522,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2019,Mercedes-Benz Superdome,NO_logo.webp
+523,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2019,Gillette Stadium,NE_logo.webp
+524,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2019,U.S. Bank Stadium,MIN_logo.webp
+525,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2019,Hard Rock Stadium,MIA_logo.webp
+526,LV,Oakland Raiders,Raiders,AFC,AFC_WEST,Oakland,2019,Oakland-Alameda County Coliseum,LV_logo.webp
+527,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,Los Angeles Rams,2019,Los Angeles Memorial Coliseum,LA_logo.webp
+528,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2019,Arrowhead Stadium,KC_logo.webp
+529,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2019,TIAA Bank Field,JAX_logo.webp
+530,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2019,Lucas Oil Stadium,IND_logo.webp
+531,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2019,NRG Stadium,HOU_logo.webp
+532,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2019,Nissan Stadium,TEN_logo.webp
+533,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2019,Lambeau Field,GB_logo.webp
+534,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2019,Ford Field,DET_logo.webp
+535,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2019,Empower Field at Mile High,DEN_logo.webp
+536,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2019,AT&T Stadium,DAL_logo.webp
+537,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2019,FirstEnergy Stadium,CLE_logo.webp
+538,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2019,Paul Brown Stadium,CIN_logo.webp
+539,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2019,Soldier Field,CHI_logo.webp
+540,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2019,Bank of America Stadium,CAR_logo.webp
+541,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2019,New Era Field,BUF_logo.webp
+542,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2019,M&T Bank Stadium,BAL_logo.webp
+543,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2019,Mercedes-Benz Stadium,ATL_logo.webp
+544,WAS,Washington Football Team,Football Team,NFC,NFC_EAST,Washington,2020,FedExField,WAS_logo.webp
+545,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2020,Raymond James Stadium,TB_logo.webp
+546,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2020,Lumen Field,SEA_logo.webp
+547,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2020,Levi's® Stadium,SF_logo.webp
+548,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2020,SoFi Stadium,LAC_logo.webp
+549,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2020,Heinz Field,PIT_logo.webp
+550,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2020,State Farm Stadium,ARI_logo.webp
+551,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2020,Lincoln Financial Field,PHI_logo.webp
+552,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2020,MetLife Stadium,NYJ_logo.webp
+553,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2020,MetLife Stadium,NYG_logo.webp
+554,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2020,Mercedes-Benz Superdome,NO_logo.webp
+555,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2020,Gillette Stadium,NE_logo.webp
+556,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2020,U.S. Bank Stadium,MIN_logo.webp
+557,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2020,Hard Rock Stadium,MIA_logo.webp
+558,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2020,Allegiant Stadium,LV_logo.webp
+559,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2020,SoFi Stadium,LA_logo.webp
+560,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2020,Arrowhead Stadium,KC_logo.webp
+561,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2020,TIAA Bank Field,JAX_logo.webp
+562,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2020,Lucas Oil Stadium,IND_logo.webp
+563,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2020,NRG Stadium,HOU_logo.webp
+564,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2020,Nissan Stadium,TEN_logo.webp
+565,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2020,Lambeau Field,GB_logo.webp
+566,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2020,Ford Field,DET_logo.webp
+567,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2020,Empower Field at Mile High,DEN_logo.webp
+568,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2020,AT&T Stadium,DAL_logo.webp
+569,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2020,FirstEnergy Stadium,CLE_logo.webp
+570,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2020,Paul Brown Stadium,CIN_logo.webp
+571,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2020,Soldier Field,CHI_logo.webp
+572,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2020,Bank of America Stadium,CAR_logo.webp
+573,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2020,Bills Stadium,BUF_logo.webp
+574,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2020,M&T Bank Stadium,BAL_logo.webp
+575,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2020,Mercedes-Benz Stadium,ATL_logo.webp
+576,WAS,Washington Football Team,Football Team,NFC,NFC_EAST,Washington,2021,FedExField,WAS_logo.webp
+577,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2021,Raymond James Stadium,TB_logo.webp
+578,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2021,CenturyLink Field,SEA_logo.webp
+579,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2021,Levi's® Stadium,SF_logo.webp
+580,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2021,SoFi Stadium,LAC_logo.webp
+581,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2021,Heinz Field,PIT_logo.webp
+582,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2021,State Farm Stadium,ARI_logo.webp
+583,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2021,Lincoln Financial Field,PHI_logo.webp
+584,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2021,MetLife Stadium,NYJ_logo.webp
+585,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2021,MetLife Stadium,NYG_logo.webp
+586,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2021,Caesars Superdome,NO_logo.webp
+587,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2021,Gillette Stadium,NE_logo.webp
+588,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2021,U.S. Bank Stadium,MIN_logo.webp
+589,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2021,Hard Rock Stadium,MIA_logo.webp
+590,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2021,Allegiant Stadium,LV_logo.webp
+591,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2021,SoFi Stadium,LA_logo.webp
+592,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2021,GEHA Field at Arrowhead Stadium,KC_logo.webp
+593,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2021,TIAA Bank Field,JAX_logo.webp
+594,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2021,Lucas Oil Stadium,IND_logo.webp
+595,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2021,NRG Stadium,HOU_logo.webp
+596,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2021,Nissan Stadium,TEN_logo.webp
+597,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2021,Lambeau Field,GB_logo.webp
+598,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2021,Ford Field,DET_logo.webp
+599,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2021,Empower Field at Mile High,DEN_logo.webp
+600,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2021,AT&T Stadium,DAL_logo.webp
+601,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2021,FirstEnergy Stadium,CLE_logo.webp
+602,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2021,Paul Brown Stadium,CIN_logo.webp
+603,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2021,Soldier Field,CHI_logo.webp
+604,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2021,Bank of America Stadium,CAR_logo.webp
+605,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2021,Highmark Stadium,BUF_logo.webp
+606,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2021,M&T Bank Stadium,BAL_logo.webp
+607,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2021,Mercedes-Benz Stadium,ATL_logo.webp
+608,WAS,Washington Commanders,Commanders,NFC,NFC_EAST,Washington,2022,FedExField,WAS_logo.webp
+609,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2022,Raymond James Stadium,TB_logo.webp
+610,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WEST,Seattle,2022,CenturyLink Field,SEA_logo.webp
+611,SF,San Francisco 49ers,49ers,NFC,NFC_WEST,San Francisco,2022,Levi's® Stadium,SF_logo.webp
+612,LAC,Los Angeles Chargers,Chargers,AFC,AFC_WEST,L.A. Chargers,2022,SoFi Stadium,LAC_logo.webp
+613,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2022,Heinz Field,PIT_logo.webp
+614,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2022,State Farm Stadium,ARI_logo.webp
+615,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2022,Lincoln Financial Field,PHI_logo.webp
+616,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2022,MetLife Stadium,NYJ_logo.webp
+617,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2022,MetLife Stadium,NYG_logo.webp
+618,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2022,Caesars Superdome,NO_logo.webp
+619,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2022,Gillette Stadium,NE_logo.webp
+620,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2022,U.S. Bank Stadium,MIN_logo.webp
+621,MIA,Miami Dolphins,Dolphins,AFC,AFC_EAST,Miami,2022,Hard Rock Stadium,MIA_logo.webp
+622,LV,Las Vegas Raiders,Raiders,AFC,AFC_WEST,Las Vegas,2022,Allegiant Stadium,LV_logo.webp
+623,LA,Los Angeles Rams,Rams,NFC,NFC_WEST,L.A. Rams,2022,SoFi Stadium,LA_logo.webp
+624,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WEST,Kansas City,2022,GEHA Field at Arrowhead Stadium,KC_logo.webp
+625,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2022,TIAA Bank Field,JAX_logo.webp
+626,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2022,Lucas Oil Stadium,IND_logo.webp
+627,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2022,NRG Stadium,HOU_logo.webp
+628,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2022,Nissan Stadium,TEN_logo.webp
+629,GB,Green Bay Packers,Packers,NFC,NFC_NORTH,Green Bay,2022,Lambeau Field,GB_logo.webp
+630,DET,Detroit Lions,Lions,NFC,NFC_NORTH,Detroit,2022,Ford Field,DET_logo.webp
+631,DEN,Denver Broncos,Broncos,AFC,AFC_WEST,Denver,2022,Empower Field at Mile High,DEN_logo.webp
+632,DAL,Dallas Cowboys,Cowboys,NFC,NFC_EAST,Dallas,2022,AT&T Stadium,DAL_logo.webp
+633,CLE,Cleveland Browns,Browns,AFC,AFC_NORTH,Cleveland,2022,FirstEnergy Stadium,CLE_logo.webp
+634,CIN,Cincinnati Bengals,Bengals,AFC,AFC_NORTH,Cincinnati,2022,Paul Brown Stadium,CIN_logo.webp
+635,CHI,Chicago Bears,Bears,NFC,NFC_NORTH,Chicago,2022,Soldier Field,CHI_logo.webp
+636,CAR,Carolina Panthers,Panthers,NFC,NFC_SOUTH,Carolina,2022,Bank of America Stadium,CAR_logo.webp
+637,BUF,Buffalo Bills,Bills,AFC,AFC_EAST,Buffalo,2022,Highmark Stadium,BUF_logo.webp
+638,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2022,M&T Bank Stadium,BAL_logo.webp
+639,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2022,Mercedes-Benz Stadium,ATL_logo.webp
