@@ -20,7 +20,7 @@ min_team_width = '15%'
 vs_width = '7%'
 scores_width = '2%'
 preds_width = '20%'
-margin_padding = '.5vw'
+margin_padding = '.5%'
 header_size = '1vw'
 
 
