@@ -16,6 +16,8 @@ import pandas as pd
 
 ############# GLOBAL VARS ###################
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
+USER_ABBV_DICT = {'Gel':'GEL','Hector':'HEC','Emilio':'EMI','Sonny':'SON'}
+
 nfl = nflapi.NFL(ua="nflapi_quiniela")
 
 HOME_COLS = {}
@@ -167,7 +169,8 @@ def print_df(season, week):
                                             df=df.copy(),
                                             df_teams=df_teams.copy(),
                                             user_df=user_df.copy(),
-                                            USER_LIST=USER_LIST)
+                                            USER_LIST=USER_LIST,
+                                            USER_ABBV_DICT=USER_ABBV_DICT)
 
     ### Update Week Options
     week_options = [{'label':"{week_type} - {week}".format(week=week_num, week_type=week_type), 'value':week_num} \

@@ -23,13 +23,13 @@ preds_width = '25%'
 min_preds_width = '20%'
 
 margin_padding = '1%'
-header_size = '2.2vw'
+header_size = '2.4vw'
 pred_font_size = '1vw'
 score_font_size = '2vw'
-dt_table_font_size = '2vw'
+dt_table_font_size = '2.4vw'
 
 ########## building score tables ################
-def get_curr_score(week, season, user_df, USER_LIST):
+def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
     curr_user = user_df.loc[((user_df.season==season) & (user_df.week_num==week))]
 
     curr_user = pd.concat([
@@ -38,15 +38,15 @@ def get_curr_score(week, season, user_df, USER_LIST):
             ], axis=1)
     curr_user.columns = ['Week Score', 'Season Score']
     curr_user = curr_user.T.reset_index(drop=False)
-    curr_user = curr_user.rename(columns={'index':''})
+    curr_user = curr_user.rename(columns={'index':''}).rename(columns=USER_ABBV_DICT)
 
     ### Create Table Figure
     user_table = dt.DataTable(
         curr_user.to_dict('records'), [{"name": i, "id": i} for i in curr_user.columns],
         style_cell={
-            'padding': '1px',
+            'padding': '2px',
             'fontSize':dt_table_font_size,
-            'width': '1vw',
+            'width': '2vw',
             'height': '1px',
             'maxWidth': 0,
             'textAlign':'center',  
@@ -229,7 +229,7 @@ def display_team(row, home_or_away, df_teams, width):
         )
 
 
-def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
+def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_ABBV_DICT):
 
     def end_row():
         return [dbc.Row(
@@ -376,7 +376,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                                 dbc.Col([
 
-                                                    html.Div(user + '', style={'fontWeight':'bold'}), 
+                                                    html.Div(USER_ABBV_DICT[user] + '', style={'fontWeight':'bold'}), 
                                                     html.Div(row[user],
                                                         style=border_if_winner(team=row[user], winner=row['winner']))
                                                 ], 
@@ -475,7 +475,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                                                 dbc.Col([
 
-                                                    html.Div(user + '', style={'fontWeight':'bold'}), 
+                                                    html.Div(USER_ABBV_DICT[user] + '', style={'fontWeight':'bold'}), 
                                                     html.Div(row[user],
                                                         style=border_if_winner(team=row[user], winner=row['winner']))
                                                 ], 
@@ -564,9 +564,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
     ## Check if Week has results or is upcoming
     if today > pd.to_datetime(min_date_week):
-        layout = get_curr_score(season=season, week=week, user_df=user_df, USER_LIST=USER_LIST) + display_historical_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)
+        layout = get_curr_score(season=season, week=week, user_df=user_df, USER_LIST=USER_LIST, USER_ABBV_DICT=USER_ABBV_DICT) + display_historical_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)
     else:
-        layout = get_curr_score(season=season, week=week, user_df=user_df, USER_LIST=USER_LIST)   + display_upcoming_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   
+        layout = get_curr_score(season=season, week=week, user_df=user_df, USER_LIST=USER_LIST, USER_ABBV_DICT=USER_ABBV_DICT)   + display_upcoming_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)   
 
     return layout
 
