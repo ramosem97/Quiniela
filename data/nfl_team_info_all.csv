@@ -1,22 +1,22 @@
 ,abbreviation,full_name,nick_name,conference,division,city_state_region,season,venue,logo
 0,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2003,,WAS_logo_old.png
-1,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2003,,TB_logo_old.jpg
-2,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2003,,SEA_logo_old.svg
+1,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2003,,TB_logo_old.png
+2,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2003,,SEA_logo_old.png
 3,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2003,,SF_logo.webp
 4,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2003,,LAC_logo.webp
 5,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2003,,PIT_logo.webp
 6,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2003,,ARI_logo.webp
 7,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2003,,PHI_logo.webp
-8,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2003,,NYJ_logo_old.jpg
+8,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2003,,NYJ_logo_old.png
 9,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2003,,NYG_logo.webp
 10,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2003,,NO_logo.webp
 11,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2003,,NE_logo.webp
 12,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2003,,MIN_logo.webp
-13,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2003,,MIA_logo_old.jpg
+13,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2003,,MIA_logo_old.png
 14,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2003,,LV_logo.webp
 15,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2003,,LA_logo.webp
 16,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2003,,KC_logo.webp
-17,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2003,,JAX_logo_old.jpg
+17,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2003,,JAX_logo_old.png
 18,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2003,,IND_logo.webp
 19,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2003,,HOU_logo.webp
 20,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2003,,TEN_logo.webp
@@ -32,23 +32,23 @@
 30,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2003,,BAL_logo.webp
 31,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2003,,ATL_logo.webp
 32,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2004,,WAS_logo_old.png
-33,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2004,,TB_logo_old.jpg
-34,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2004,,SEA_logo_old.svg
+33,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2004,,TB_logo_old.png
+34,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2004,,SEA_logo_old.png
 35,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2004,,SF_logo.webp
 36,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2004,,LAC_logo.webp
 37,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2004,,PIT_logo.webp
 38,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2004,,ARI_logo.webp
 39,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2004,,PHI_logo.webp
-40,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2004,,NYJ_logo_old.jpg
+40,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2004,,NYJ_logo_old.png
 41,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2004,,NYG_logo.webp
 42,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2004,,NO_logo.webp
 43,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2004,,NE_logo.webp
 44,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2004,,MIN_logo.webp
-45,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2004,,MIA_logo_old.jpg
+45,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2004,,MIA_logo_old.png
 46,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2004,,LV_logo.webp
 47,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2004,,LA_logo.webp
 48,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2004,,KC_logo.webp
-49,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2004,,JAX_logo_old.jpg
+49,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2004,,JAX_logo_old.png
 50,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2004,,IND_logo.webp
 51,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2004,,HOU_logo.webp
 52,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2004,,TEN_logo.webp
@@ -64,23 +64,23 @@
 62,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2004,,BAL_logo.webp
 63,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2004,,ATL_logo.webp
 64,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2005,,WAS_logo_old.png
-65,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2005,,TB_logo_old.jpg
-66,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2005,,SEA_logo_old.svg
+65,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2005,,TB_logo_old.png
+66,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2005,,SEA_logo_old.png
 67,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2005,,SF_logo.webp
 68,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2005,,LAC_logo.webp
 69,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2005,,PIT_logo.webp
 70,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2005,,ARI_logo.webp
 71,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2005,,PHI_logo.webp
-72,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2005,,NYJ_logo_old.jpg
+72,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2005,,NYJ_logo_old.png
 73,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2005,,NYG_logo.webp
 74,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2005,,NO_logo.webp
 75,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2005,,NE_logo.webp
 76,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2005,,MIN_logo.webp
-77,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2005,,MIA_logo_old.jpg
+77,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2005,,MIA_logo_old.png
 78,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2005,,LV_logo.webp
 79,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2005,,LA_logo.webp
 80,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2005,,KC_logo.webp
-81,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2005,,JAX_logo_old.jpg
+81,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2005,,JAX_logo_old.png
 82,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2005,,IND_logo.webp
 83,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2005,,HOU_logo.webp
 84,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2005,,TEN_logo.webp
@@ -96,23 +96,23 @@
 94,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2005,,BAL_logo.webp
 95,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2005,,ATL_logo.webp
 96,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2006,,WAS_logo_old.png
-97,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2006,,TB_logo_old.jpg
-98,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2006,,SEA_logo_old.svg
+97,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2006,,TB_logo_old.png
+98,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2006,,SEA_logo_old.png
 99,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2006,,SF_logo.webp
 100,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2006,,LAC_logo.webp
 101,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2006,,PIT_logo.webp
 102,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2006,,ARI_logo.webp
 103,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2006,,PHI_logo.webp
-104,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,,NYJ_logo_old.jpg
+104,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,,NYJ_logo_old.png
 105,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,,NYG_logo.webp
 106,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2006,,NO_logo.webp
 107,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2006,,NE_logo.webp
 108,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2006,,MIN_logo.webp
-109,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2006,,MIA_logo_old.jpg
+109,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2006,,MIA_logo_old.png
 110,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2006,,LV_logo.webp
 111,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2006,,LA_logo.webp
 112,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2006,,KC_logo.webp
-113,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2006,,JAX_logo_old.jpg
+113,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2006,,JAX_logo_old.png
 114,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2006,,IND_logo.webp
 115,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2006,,HOU_logo.webp
 116,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2006,,TEN_logo.webp
@@ -128,23 +128,23 @@
 126,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2006,,BAL_logo.webp
 127,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2006,,ATL_logo.webp
 128,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2007,,WAS_logo_old.png
-129,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2007,,TB_logo_old.jpg
-130,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2007,,SEA_logo_old.svg
+129,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2007,,TB_logo_old.png
+130,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2007,,SEA_logo_old.png
 131,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2007,,SF_logo.webp
 132,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2007,,LAC_logo.webp
 133,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2007,,PIT_logo.webp
 134,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2007,,ARI_logo.webp
 135,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2007,,PHI_logo.webp
-136,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2007,,NYJ_logo_old.jpg
+136,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2007,,NYJ_logo_old.png
 137,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2007,,NYG_logo.webp
 138,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2007,,NO_logo.webp
 139,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2007,,NE_logo.webp
 140,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2007,,MIN_logo.webp
-141,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2007,,MIA_logo_old.jpg
+141,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2007,,MIA_logo_old.png
 142,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2007,,LV_logo.webp
 143,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2007,,LA_logo.webp
 144,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2007,,KC_logo.webp
-145,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2007,,JAX_logo_old.jpg
+145,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2007,,JAX_logo_old.png
 146,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2007,,IND_logo.webp
 147,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2007,,HOU_logo.webp
 148,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2007,,TEN_logo.webp
@@ -160,23 +160,23 @@
 158,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2007,,BAL_logo.webp
 159,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2007,,ATL_logo.webp
 160,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2008,,WAS_logo_old.png
-161,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2008,,TB_logo_old.jpg
-162,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2008,,SEA_logo_old.svg
+161,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2008,,TB_logo_old.png
+162,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2008,,SEA_logo_old.png
 163,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2008,,SF_logo.webp
 164,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2008,,LAC_logo.webp
 165,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2008,,PIT_logo.webp
 166,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2008,,ARI_logo.webp
 167,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2008,,PHI_logo.webp
-168,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2008,,NYJ_logo_old.jpg
+168,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2008,,NYJ_logo_old.png
 169,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2008,,NYG_logo.webp
 170,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2008,,NO_logo.webp
 171,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2008,,NE_logo.webp
 172,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2008,,MIN_logo.webp
-173,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2008,,MIA_logo_old.jpg
+173,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2008,,MIA_logo_old.png
 174,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2008,,LV_logo.webp
 175,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2008,,LA_logo.webp
 176,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2008,,KC_logo.webp
-177,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2008,,JAX_logo_old.jpg
+177,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2008,,JAX_logo_old.png
 178,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2008,,IND_logo.webp
 179,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2008,,HOU_logo.webp
 180,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2008,,TEN_logo.webp
@@ -192,23 +192,23 @@
 190,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2008,,BAL_logo.webp
 191,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2008,,ATL_logo.webp
 192,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2009,,WAS_logo_old.png
-193,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2009,,TB_logo_old.jpg
-194,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2009,,SEA_logo_old.svg
+193,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2009,,TB_logo_old.png
+194,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2009,,SEA_logo_old.png
 195,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2009,,SF_logo.webp
 196,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2009,,LAC_logo.webp
 197,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2009,,PIT_logo.webp
 198,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2009,,ARI_logo.webp
 199,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2009,,PHI_logo.webp
-200,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2009,,NYJ_logo_old.jpg
+200,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2009,,NYJ_logo_old.png
 201,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2009,,NYG_logo.webp
 202,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2009,,NO_logo.webp
 203,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2009,,NE_logo.webp
 204,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2009,,MIN_logo.webp
-205,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2009,,MIA_logo_old.jpg
+205,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2009,,MIA_logo_old.png
 206,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2009,,LV_logo.webp
 207,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2009,,LA_logo.webp
 208,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2009,,KC_logo.webp
-209,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2009,,JAX_logo_old.jpg
+209,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2009,,JAX_logo_old.png
 210,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2009,,IND_logo.webp
 211,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2009,,HOU_logo.webp
 212,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2009,,TEN_logo.webp
@@ -224,23 +224,23 @@
 222,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2009,,BAL_logo.webp
 223,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2009,,ATL_logo.webp
 224,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2010,,WAS_logo_old.png
-225,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2010,,TB_logo_old.jpg
-226,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2010,,SEA_logo_old.svg
+225,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2010,,TB_logo_old.png
+226,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2010,,SEA_logo_old.png
 227,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2010,,SF_logo.webp
 228,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2010,,LAC_logo.webp
 229,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2010,,PIT_logo.webp
 230,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2010,,ARI_logo.webp
 231,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2010,,PHI_logo.webp
-232,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2010,,NYJ_logo_old.jpg
+232,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2010,,NYJ_logo_old.png
 233,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2010,,NYG_logo.webp
 234,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2010,,NO_logo.webp
 235,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2010,,NE_logo.webp
 236,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2010,,MIN_logo.webp
-237,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2010,,MIA_logo_old.jpg
+237,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2010,,MIA_logo_old.png
 238,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2010,,LV_logo.webp
 239,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2010,,LA_logo.webp
 240,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2010,,KC_logo.webp
-241,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2010,,JAX_logo_old.jpg
+241,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2010,,JAX_logo_old.png
 242,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2010,,IND_logo.webp
 243,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2010,,HOU_logo.webp
 244,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2010,,TEN_logo.webp
@@ -256,23 +256,23 @@
 254,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2010,,BAL_logo.webp
 255,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2010,,ATL_logo.webp
 256,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2011,,WAS_logo_old.png
-257,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2011,,TB_logo_old.jpg
+257,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2011,,TB_logo_old.png
 258,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2011,,SEA_logo.webp
 259,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2011,,SF_logo.webp
 260,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2011,,LAC_logo.webp
 261,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2011,,PIT_logo.webp
 262,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2011,,ARI_logo.webp
 263,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2011,,PHI_logo.webp
-264,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2011,,NYJ_logo_old.jpg
+264,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2011,,NYJ_logo_old.png
 265,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2011,,NYG_logo.webp
 266,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2011,,NO_logo.webp
 267,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2011,,NE_logo.webp
 268,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2011,,MIN_logo.webp
-269,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2011,,MIA_logo_old.jpg
+269,MIA,Miami Dolphins,Dolphins,AFC,AFC_EASTERN,Miami,2011,,MIA_logo_old.png
 270,LV,Oakland Raiders,Raiders,AFC,AFC_WESTERN,Oakland,2011,,LV_logo.webp
 271,LA,St. Louis Rams,Rams,NFC,NFC_WESTERN,St. Louis,2011,,LA_logo.webp
 272,KC,Kansas City Chiefs,Chiefs,AFC,AFC_WESTERN,Kansas City,2011,,KC_logo.webp
-273,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2011,,JAX_logo_old.jpg
+273,JAX,Jacksonville Jaguars,Jaguars,AFC,AFC_SOUTH,Jacksonville,2011,,JAX_logo_old.png
 274,IND,Indianapolis Colts,Colts,AFC,AFC_SOUTH,Indianapolis,2011,,IND_logo.webp
 275,HOU,Houston Texans,Texans,AFC,AFC_SOUTH,Houston,2011,,HOU_logo.webp
 276,TEN,Tennessee Titans,Titans,AFC,AFC_SOUTH,Tennessee,2011,,TEN_logo.webp
@@ -288,14 +288,14 @@
 286,BAL,Baltimore Ravens,Ravens,AFC,AFC_NORTH,Baltimore,2011,,BAL_logo.webp
 287,ATL,Atlanta Falcons,Falcons,NFC,NFC_SOUTH,Atlanta,2011,,ATL_logo.webp
 288,WAS,Washington Redskins,Redskins,NFC,NFC_EASTERN,Washington,2012,,WAS_logo_old.png
-289,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2012,,TB_logo_old.jpg
+289,TB,Tampa Bay Buccaneers,Buccaneers,NFC,NFC_SOUTH,Tampa Bay,2012,,TB_logo_old.png
 290,SEA,Seattle Seahawks,Seahawks,NFC,NFC_WESTERN,Seattle,2012,,SEA_logo.webp
 291,SF,San Francisco 49ers,49ers,NFC,NFC_WESTERN,San Francisco,2012,,SF_logo.webp
 292,LAC,San Diego Chargers,Chargers,AFC,AFC_WESTERN,San Diego,2012,,LAC_logo.webp
 293,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2012,,PIT_logo.webp
 294,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2012,,ARI_logo.webp
 295,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2012,,PHI_logo.webp
-296,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2012,,NYJ_logo_old.jpg
+296,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2012,,NYJ_logo_old.png
 297,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2012,,NYG_logo.webp
 298,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2012,,NO_logo.webp
 299,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2012,,NE_logo.webp
@@ -327,7 +327,7 @@
 325,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2013,,PIT_logo.webp
 326,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2013,,ARI_logo.webp
 327,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2013,,PHI_logo.webp
-328,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2013,,NYJ_logo_old.jpg
+328,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2013,,NYJ_logo_old.png
 329,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2013,,NYG_logo.webp
 330,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2013,,NO_logo.webp
 331,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2013,,NE_logo.webp
@@ -359,7 +359,7 @@
 357,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2014,,PIT_logo.webp
 358,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2014,,ARI_logo.webp
 359,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2014,,PHI_logo.webp
-360,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,,NYJ_logo_old.jpg
+360,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,,NYJ_logo_old.png
 361,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,,NYG_logo.webp
 362,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2014,,NO_logo.webp
 363,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2014,,NE_logo.webp
@@ -391,7 +391,7 @@
 389,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2015,,PIT_logo.webp
 390,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2015,,ARI_logo.webp
 391,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2015,,PHI_logo.webp
-392,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2015,,NYJ_logo_old.jpg
+392,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2015,,NYJ_logo_old.png
 393,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2015,,NYG_logo.webp
 394,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2015,,NO_logo.webp
 395,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2015,,NE_logo.webp
@@ -423,7 +423,7 @@
 421,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2016,,PIT_logo.webp
 422,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2016,,ARI_logo.webp
 423,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2016,,PHI_logo.webp
-424,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2016,,NYJ_logo_old.jpg
+424,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2016,,NYJ_logo_old.png
 425,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2016,,NYG_logo.webp
 426,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2016,,NO_logo.webp
 427,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2016,,NE_logo.webp
@@ -455,7 +455,7 @@
 453,PIT,Pittsburgh Steelers,Steelers,AFC,AFC_NORTH,Pittsburgh,2017,,PIT_logo.webp
 454,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2017,,ARI_logo.webp
 455,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2017,,PHI_logo.webp
-456,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2017,,NYJ_logo_old.jpg
+456,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2017,,NYJ_logo_old.png
 457,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2017,,NYG_logo.webp
 458,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2017,,NO_logo.webp
 459,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2017,,NE_logo.webp
