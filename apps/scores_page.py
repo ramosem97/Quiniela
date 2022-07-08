@@ -16,16 +16,17 @@ from dash_extensions.enrich import Dash, ServersideOutput, Output, Input, Trigge
 # from app import df, USER_LIST, user_df, df_teams
 
 team_width = '25%'
-min_team_width = '25%'
-vs_width = '12%'
-scores_width = '1%'
+min_team_width = '20%'
+vs_width = '15%'
+# scores_width = '1%'
 preds_width = '25%'
+min_preds_width = '20%'
 
-margin_padding = '.5px'
-header_size = '4vw'
-pred_font_size = '2vw'
-score_font_size = '4vw'
-dt_table_font_size = '3vw'
+margin_padding = '1%'
+header_size = '1.9vw'
+pred_font_size = '1vw'
+score_font_size = '2vw'
+dt_table_font_size = '1.8vw'
 
 ########## building score tables ################
 def get_curr_score(week, season, user_df, USER_LIST):
@@ -43,16 +44,16 @@ def get_curr_score(week, season, user_df, USER_LIST):
     user_table = dt.DataTable(
         curr_user.to_dict('records'), [{"name": i, "id": i} for i in curr_user.columns],
         style_cell={
-            'textAlign': 'left', 
-            'padding': '5px',
+            'padding': '1px',
             'fontSize':dt_table_font_size,
-            'width': 'auto',
-            'height': 'auto',
+            'width': '1vw',
+            'height': '1px',
             'maxWidth': 0,
             'textAlign':'center',  
             'border': 'none'  
         },
         style_header={
+            'textAlign': 'center', 
             'backgroundColor': 'transparent',
             'fontWeight': 'bold',
             'fontSize':dt_table_font_size,
@@ -64,14 +65,14 @@ def get_curr_score(week, season, user_df, USER_LIST):
         },
         style_cell_conditional=[
             {'if': {'column_id': ''},
-            'width': '35%',
+            'width': '30%',
             'fontWeight':'bold'},
         ],
     )
     return [
                 dbc.Row(html.H3('Season {season} Week {week} Scoreboard'.format(season=season, week=week))),
-                dbc.Row([user_table], 
-                    style={'width':'80%', 'textAlign':'center', 'display':'inline-block'}
+                dbc.Row([ user_table], 
+                    style={'width':'50%', 'textAlign':'left', 'justify':'left', 'display':'inline-block'}
                 ),
                 html.Br(),
                 html.Br(),
@@ -82,11 +83,11 @@ def border_if_winner(team, winner, final=True):
     
     if final == True:
         if team == winner:
-            return {'border':"2px MediumSeaGreen solid", 'borderRadius': '50%',
+            return {'border':"2px MediumSeaGreen solid", 'borderRadius': '20%',
                      
                     }
         elif winner == 'TIE':
-            return {'border':"2px GoldenRod solid", 'borderRadius': '50%',
+            return {'border':"2px GoldenRod solid", 'borderRadius': '10%',
                     
                 }
         else:
@@ -205,7 +206,7 @@ def display_team(row, home_or_away, df_teams, width):
                     style={
                         # 'fontSize':'1vw',
                         'fontWeight':'bold',
-                        'height':'1em',
+                        'height':'1vw',
                     })),
             ]),
             html.Br(),
@@ -216,7 +217,7 @@ def display_team(row, home_or_away, df_teams, width):
             'maxWidth':width,
             'minWidth':width,
             'fontSize':'2vw',
-            # 'height':"5px",
+            'height':"15vw",
             'justify':"center",
             'textAlign':'center',
             'verticalAlign':'center',
@@ -228,58 +229,51 @@ def display_team(row, home_or_away, df_teams, width):
 
 def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
+    def end_row():
+        return [dbc.Row(
+                [
+                    html.Div('', style={'width':'10%'}), 
+                    html.Div('', style={'textAlign':'center', 'height':'1vw', 'justify':'center', 'borderBottom':".5px outset rgba(255,255,255,.2)", 'width':'80%', 'borderBottomWidth':'light'}),
+                    html.Div('', style={'width':'10%'}), 
+                ]),
+                html.Br()]
 
-    def display_upcoming_week(scores, season=season, week=week, user_df=user_df, df_teams=df_teams, USER_LIST=USER_LIST):
-
+    def score_head_layout():
         score_layout = [dbc.Row([
 
                             ### Left Margin
-                            dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,
-                                    'maxWidth':margin_padding}),
+                            dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                             ## Away Team
                             dbc.Col(html.H4("Away",
                                     style={'fontSize':header_size}), 
-                                style={
+                                style={'width':team_width,'maxWidth':team_width,
                                     'fontWeight':'bold',
-                                    'width':team_width,
-                                    'maxWidth':team_width,
                                     'textAlign':'center', 
                                     'justify':"center",
                                     'verticalAlign':'center',
-                                    'minWidth':min_team_width,
+                                    'minWidth':team_width,
                                     }
                                 ),
-                            
-                            ### Left Margin
-                            # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,
-                            #         'minWidth':margin_padding,}),
 
                             ## vs
                             dbc.Col(html.Div(""),
-                                style= {'width':vs_width, 'maxWidth':vs_width,'minWidth':vs_width,}
+                                style= {'width':vs_width,'maxWidth':vs_width,'minWidth':vs_width,}
                             ),
-
-                            ### Left Margin
-                            # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,
-                            #         'minWidth':margin_padding}),
 
                             ## Home Team
                             dbc.Col(html.H4("Home",
                                     style={'fontSize':header_size}), 
-                                style={
+                                style={'width':team_width,'maxWidth':team_width,
                                     'fontWeight':'bold',
-                                    'width':team_width,
-                                    'maxWidth':team_width,
                                     'textAlign':'center', 
                                     'justify':"center",
                                     'verticalAlign':'center',
-                                    'minWidth':min_team_width,
+                                    'minWidth':team_width,
                                     }
                                 ),
                             
-                            dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,
-                                    'minWidth':margin_padding}),
+                            dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
 
                             dbc.Col([
@@ -291,10 +285,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                 ]),
                             ],
                             style={
+                                'width':preds_width,'maxWidth':preds_width,\
                                 'fontWeight':'bold',
-                                'width':preds_width,
-                                'maxWidth':preds_width,
-                                'minWidth':preds_width,
+                                'minWidth':min_preds_width,
                                 'textAlign':'center', 
                                 'justify':"center", 
                                 'verticalAlign':'center',
@@ -303,7 +296,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
 
                             
                             ### Right Margin
-                            # dbc.Col(html.Div(''), style={'width':margin_padding, 'maxWidth':margin_padding,'minWidth':margin_padding}),
+                            # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                         ],
                         style={
@@ -315,7 +308,14 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                         ),
                         
                     ]
+
+        return score_layout + end_row()
+
+
+    def display_upcoming_week(scores, season=season, week=week, user_df=user_df, df_teams=df_teams, USER_LIST=USER_LIST):
         
+        score_layout = score_head_layout()
+
         for idx, row in scores.iterrows():
             
             game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")
@@ -396,7 +396,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         'justify':"center", 
                                         'verticalAlign':'center',
                                         'fontSize':'2vw',
-                                        'minWidth':preds_width,
+                                        'minWidth':min_preds_width,
                                     },
                                     ),
 
@@ -414,81 +414,13 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                     'width':'100%', 
                                 })
 
-            score_layout = score_layout + [curr_game_layout] + [html.Br()]
+            score_layout = score_layout + [curr_game_layout] + end_row()
 
         return score_layout
 
     def display_historical_week(scores, season=season, week=week, user_df=user_df, df_teams=df_teams, USER_LIST=USER_LIST):
 
-        score_layout = [dbc.Row([
-
-                            ### Left Margin
-                            dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
-
-                            ## Away Team
-                            dbc.Col(html.H4("Away",
-                                    style={'fontSize':header_size}), 
-                                style={'width':team_width,'maxWidth':team_width,
-                                    'fontWeight':'bold',
-                                    'textAlign':'center', 
-                                    'justify':"center",
-                                    'verticalAlign':'center',
-                                    'minWidth':team_width,
-                                    }
-                                ),
-
-                            ## vs
-                            dbc.Col(html.Div(""),
-                                style= {'width':vs_width,'maxWidth':vs_width,'minWidth':vs_width,}
-                            ),
-
-                            ## Home Team
-                            dbc.Col(html.H4("Home",
-                                    style={'fontSize':header_size}), 
-                                style={'width':team_width,'maxWidth':team_width,
-                                    'fontWeight':'bold',
-                                    'textAlign':'center', 
-                                    'justify':"center",
-                                    'verticalAlign':'center',
-                                    'minWidth':team_width,
-                                    }
-                                ),
-                            
-                            dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
-
-
-                            dbc.Col([
-
-                                ## Predictions
-                                html.Div([
-                                    html.H4("Predictions",
-                                    style={'fontSize':header_size}),
-                                ]),
-                            ],
-                            style={
-                                'width':preds_width,'maxWidth':preds_width,\
-                                'fontWeight':'bold',
-                                'minWidth':preds_width,
-                                'textAlign':'center', 
-                                'justify':"center", 
-                                'verticalAlign':'center',
-                            }
-                            ),
-
-                            
-                            ### Right Margin
-                            # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
-
-                        ],
-                        style={
-                            'width':'100%',
-                            'textAlign':'center', 
-                            'justify':"center", 
-                            'verticalAlign':'center',
-                        },
-                        ),
-                        
-                    ]
+        score_layout = score_head_layout()
         
         for idx, row in scores.iterrows():
             
@@ -545,7 +477,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                                     html.Div(row[user],
                                                         style=border_if_winner(team=row[user], winner=row['winner']))
                                                 ], 
-                                                style={'width':'{}%'.format((100)//len(USER_LIST))*2}
+                                                # style={'width':'{}%'.format((100)//(len(USER_LIST))*2)}
                                                 ) for user in USER_LIST[user_vals*2:user_vals*2+2]
                                             ],
                                             style={
@@ -561,7 +493,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                         'justify':"center", 
                                         'verticalAlign':'center',
                                         'fontSize':'1.5vw',
-                                        'minWidth':preds_width,
+                                        'minWidth':min_preds_width,
                                     },
                                     ),
 
@@ -580,18 +512,20 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                 
             curr_game_info_layout = [
                                     dbc.Row([
-                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding}),
+                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding, 'minWidth':margin_padding}),
                                         dbc.Col([
                                             html.H4(
                                                 "{score}".format(score=int(row['away_team_score'] + row['visitor_points_overtime_total'])),
                                             style={
                                                 'fontWeight':'bold',
                                                 'fontSize':score_font_size,
+                                                'verticalAlign':'center',
+                                                'justify':'center',
                                             },
                                             ),
-                                        ], style={'justify':'center','textAlign':'center','verticalAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':team_width,}),
+                                        ], style={'textAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':min_team_width,}),
 
-                                        dbc.Col(html.Div(''), style={'width':vs_width,'maxWidth':vs_width}),
+                                        dbc.Col(html.Div(''), style={'width':vs_width,'maxWidth':vs_width, 'minWidth':vs_width}),
 
                                         dbc.Col([
                                             html.H4(
@@ -599,19 +533,20 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST):
                                             style={
                                                 'fontWeight':'bold',
                                                 'fontSize':score_font_size,
+                                                'verticalAlign':'center',
+                                                'justify':'center',
                                             },
                                             ),
-                                        ], style={'justify':'center','textAlign':'center','verticalAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':team_width,}),
+                                        ], style={'justify':'center','textAlign':'center','width':team_width,'maxWidth':team_width,'minWidth':min_team_width,}),
 
-                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding}),
-                                        dbc.Col(html.Div(''), style={'width':preds_width, 'maxWidth':preds_width}),
+                                        dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding, 'minWidth':margin_padding}),
+                                        dbc.Col(html.Div(''), style={'width':preds_width, 'maxWidth':preds_width, 'minWidth':min_preds_width}),
                                     ],
-                                    style={
-                                        'width':'100%',
+                                    style={'justify':'center','textAlign':'center','verticalAlign':'center', 'topMargin':'2vw',
                                     }),
                                  ]
 
-            score_layout = score_layout + [curr_game_layout] + curr_game_info_layout + [html.Br()]
+            score_layout = score_layout + [curr_game_layout] + curr_game_info_layout + end_row()
 
         return score_layout
 

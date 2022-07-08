@@ -62,19 +62,19 @@ def create_navbar(df, preds):
                         ),
                         html.Br(),
                         dbc.Row([
-                            dbc.Col([
-                                dbc.Row(html.Div('Season: ', style={'color':'white'})), 
-                                dbc.Row(dropdown_season)
-                            ], style={'width':'20%'}),
-                            dbc.Col([
-                                dbc.Row(html.Div('Week: ', style={'color':'white'})), 
-                                dbc.Row(dropdown_week)
-                            ], style={'width':'20%'}),
+                            html.Div([
+                                dbc.Col(html.H5('Season: ', style={'color':'white'})), 
+                                dbc.Col(dropdown_season)
+                            ], style={'width':'50%'}),
+                            html.Div([
+                                dbc.Col(html.H5('Week: ', style={'color':'white'})), 
+                                dbc.Col(dropdown_week)
+                            ], style={'width':'50%'}),
                         ]),
                     ],
                     style={'width':'100%'},
                 ),
-            ],style={'width':'100%'}
+            ],style={'width':'100%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'}
         ),
         color="dark",
         dark=True,
