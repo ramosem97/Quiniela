@@ -26,7 +26,7 @@ margin_padding = '1%'
 header_size = '2.4vw'
 pred_font_size = '2vw'
 score_font_size = '2.5vw'
-dt_table_font_size = '2.5vw'
+dt_table_font_size = '11px'
     
 ########## BORDER SEP ###########################
 def end_row():
@@ -53,39 +53,48 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
     ### Create Table Figure
     user_table = dt.DataTable(
         curr_user.to_dict('records'), [{"name": i, "id": i} for i in curr_user.columns],
+        fixed_rows={'headers': True},
         style_cell={
-            'padding': '1px',
-            'fontSize':dt_table_font_size,
-            'width': '1vw',
-            'maxWidth': 0,
+            'padding': 0,
             'textAlign':'center',  
+            # 'minHeight': .1, 'maxHeight': .1, 'height': .1,
             'border': 'none',
-            'height':'.5px',
+            'backgroundColor': 'transparent',
+            # 'minWidth': 5, 'maxWidth': 5, 'width': 5,
         },
         style_header={
+            'padding': 0,
             'textAlign': 'center', 
+            # 'height': .5, 
             'backgroundColor': 'transparent',
             'fontWeight': 'bold',
-            'fontSize':dt_table_font_size,
             'border': 'none',
-            'lineHeight':'.5px',
         },
         style_table = {
+            # 'fontSize':dt_table_font_size,
             'border': 'none',
-            'overflowX': 'auto'
+            'overflowX': 'auto',
+            'overflowY': 'auto',
         },
         style_cell_conditional=[
             {'if': {'column_id': ''},
-            'width': '35%',
-            'fontWeight':'bold',
-            'textAlign':'left'},
+                # 'width': '35%',
+                'fontWeight':'bold',
+                'textAlign':'left'\
+            },
         ],
     )
     return [
-                dbc.Row([ user_table], 
+                    
+                html.Div([ user_table], 
                     style={
-                        'width':'50%', 
-                        'textAlign':'left', 'justify':'left', 'display':'inline-block', 
+                        # 'display':'flex',
+                        'alignItems':"center",
+                        'width':'60%', 
+                        'height':'100px',
+                        'textAlign':'center', 
+                        'justify':'center', 
+                        'display':'inline-block', 
                         'fontFamily':"arial",
                     }
                 ),
@@ -168,6 +177,9 @@ def user_team_stats(user, home_team, away_team, season, week, df_teams):
     user_stat_table = html.Div([
 
                 html.H6("{user}'s Historical Accuracy".format(user=user)),
+
+                html.Div("Accuracy per Team".format(team=team),
+                    style={'fontWeight':'bold', 'textAlign':'center'}),
 
                 dt.DataTable(
                     user_acc.to_dict('records'), 
@@ -292,7 +304,8 @@ def team_stats(team, df_teams, season=None, week=None, game_date=None):
                     ],
                 ),
                 html.Br(),
-                html.Div("{team}'s Winning Streak:".format(team=team),style={'fontWeight':'bold', 'textAlign':'left'}),
+                html.Div("{team}'s Winning Streak".format(team=team),
+                    style={'fontWeight':'bold', 'textAlign':'center'}),
                 html.Div("{streak}".format(streak=win_streak),)
     ],
     style={'color':'white', 'whiteSpace': 'normal', 'fontFamily':"arial", 'fontSize':'10px'})
@@ -374,8 +387,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                             dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                             ## Away Team
-                            dbc.Col(html.H4("Away",
-                                    style={'fontSize':header_size}), 
+                            dbc.Col(html.H6("Away",
+                                    # style={'fontSize':header_size}
+                                    ), 
                                 style={'width':team_width,'maxWidth':team_width,
                                     'fontWeight':'bold',
                                     'textAlign':'center', 
@@ -391,8 +405,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                             ),
 
                             ## Home Team
-                            dbc.Col(html.H4("Home",
-                                    style={'fontSize':header_size}), 
+                            dbc.Col(html.H6("Home",
+                                    # style={'fontSize':header_size}
+                                    ), 
                                 style={'width':team_width,'maxWidth':team_width,
                                     'fontWeight':'bold',
                                     'textAlign':'center', 
@@ -405,10 +420,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                             dbc.Col([
 
                                 ## Predictions
-                                html.Div([
-                                    html.H4("Predictions",
-                                    style={'fontSize':header_size}),
-                                ]),
+                                html.H6("Predictions",
+                                # style={'fontSize':header_size}
+                                ),
                             ],
                             style={
                                 'width':preds_width,'maxWidth':preds_width,\
