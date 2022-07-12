@@ -21,12 +21,14 @@ vs_width = '15%'
 # scores_width = '1%'
 preds_width = '25%'
 min_preds_width = '20%'
-
 margin_padding = '1%'
+
 header_size = '2.4vw'
 pred_font_size = '2vw'
 score_font_size = '2.5vw'
 dt_table_font_size = '11px'
+logo_size = '8vw'
+team_name_size='2vw'
     
 ########## BORDER SEP ###########################
 def end_row():
@@ -338,7 +340,7 @@ def display_team(row, home_or_away, df_teams, width):
                         src='/assets/teams/{logo}'.format(logo=row[logo]), 
                         id = row[team] + '_logo',
                         style={
-                            'height':'8vw',
+                            'height':logo_size,
                             # 'width':width,
                         }
                     ),style={'textAlign': 'center',}
@@ -355,9 +357,9 @@ def display_team(row, home_or_away, df_teams, width):
                 html.Div("{name}"\
                     .format(name=row[team_name].title(),
                     style={
-                        # 'fontSize':'1vw',
+                        'fontSize':team_name_size,
                         'fontWeight':'bold',
-                        'height':'1vw',
+                        # 'height':'1vw',
                     })),
             ]),
             html.Br(),
@@ -440,7 +442,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
 
                         ],
                         style={
-                            'width':'100%',
+                            'width':'95%',
                             'textAlign':'center', 
                             'justify':"center", 
                             'verticalAlign':'center',
@@ -459,7 +461,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
         ## Get Previous Games
         min_date = scores.game_date.min()
         curr_df_teams = df_teams.loc[df_teams['game_date'] < min_date].reset_index(drop=True)
-
+        
         for idx, row in scores.iterrows():
             
             game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")

@@ -174,7 +174,7 @@ app.layout = html.Div([
 ])
 
 
-@app.callback([Output("page", "children"), Output("week", "options"), Output('username', 'children')],
+@app.callback([Output("page", "children"), Output("week", "options"), Output('username', 'children'), Output("week", "value")],
 [Input("season", "value"), Input("week", "value")])
 def print_df(season, week):
 
@@ -182,9 +182,16 @@ def print_df(season, week):
     ## Get User Data
     username = 'Welcome {user}'.format(user=str(request.authorization['username']))
 
+    ## Check if Week Works or not
+    max_week = df.loc[df['season']==season].week_num.max()
+    if week > max_week:
+        week_num = max_week
+    else:
+        week_num = week
+
     ## Get Score Children
     children = scores_page.display_scores(season=season, 
-                                            week=week,
+                                            week=week_num,
                                             user=username,
                                             df=df.copy(),
                                             df_teams=df_teams.copy(),
@@ -196,13 +203,13 @@ def print_df(season, week):
     week_options = [
                         {'label':"{week_type} - {week}".format(week=week_num, week_type=week_type), 'value':week_num} if week_type=='REG' else \
                         {'label':"{week_type}".format(week=week_num, week_type=week_type), 'value':week_num} \
-                        for week_num, week, week_type in df.loc[df['season']==season]\
+                        for week_num, week_type in df.loc[df['season']==season]\
                         .sort_values('week_num', ascending=True).groupby(['week_num', 'week', 'week_type']).size()\
-                            .reset_index(drop=False)[['week_num', 'week', 'week_type']].values
+                            .reset_index(drop=False)[['week_num', 'week_type']].values
                     ]
 
 
-    return children, week_options, username
+    return children, week_options, username, week_num
 
     
 if __name__ == '__main__':
