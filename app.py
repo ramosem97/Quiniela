@@ -9,10 +9,21 @@ import dash_bootstrap_components as dbc
 from apps import navbar, scores_page
 import nflapi
 import pandas as pd
+import dash_auth
+from flask import request
 
 ####################################################
 ################ GLOBAL VARS #######################
 ####################################################
+
+# Keep this out of source code repository - save in a file or a database
+VALID_USERNAME_PASSWORD_PAIRS = {
+        'Emilio':'ramitos',
+        'Gel':'ramitos',
+        'Hector':'ramitos',
+        'Sonny':'ramitos',
+        'guest':''
+    }
 
 ############# GLOBAL VARS ###################
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
@@ -141,6 +152,11 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 # app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, external_stylesheets])
 
+auth = dash_auth.BasicAuth(
+    app,
+    VALID_USERNAME_PASSWORD_PAIRS
+)
+
 server = app.server
 app.config.suppress_callback_exceptions = True
 # app.css.config.serve_locally = True
@@ -152,20 +168,24 @@ app.config.suppress_callback_exceptions = True
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
-    navbar.create_navbar(df=df.copy(), preds=preds.copy()),
+    navbar.create_navbar(df=df.copy(), preds=preds.copy(), auth=auth),
     html.Div(children=[], id='page',
     style={'width':'95%', 'textAlign':'center', 'justify':'center'})
 ])
 
 
-@app.callback([Output("page", "children"), Output("week", "options"),],
+@app.callback([Output("page", "children"), Output("week", "options"), Output('username', 'children')],
 [Input("season", "value"), Input("week", "value")])
 def print_df(season, week):
+
+
+    ## Get User Data
+    username = 'Welcome {user}'.format(user=str(request.authorization['username']))
 
     ## Get Score Children
     children = scores_page.display_scores(season=season, 
                                             week=week,
-                                            user='Emilio',
+                                            user=username,
                                             df=df.copy(),
                                             df_teams=df_teams.copy(),
                                             user_df=user_df.copy(),
@@ -173,27 +193,17 @@ def print_df(season, week):
                                             USER_ABBV_DICT=USER_ABBV_DICT)
 
     ### Update Week Options
-    week_options = [{'label':"{week_type} - {week}".format(week=week_num, week_type=week_type), 'value':week_num} \
-                            for week_num, week, week_type in df.loc[df['season']==season]\
-                            .sort_values('week_num', ascending=True).groupby(['week_num', 'week', 'week_type']).size()\
-                                .reset_index(drop=False)[['week_num', 'week', 'week_type']].values]
+    week_options = [
+                        {'label':"{week_type} - {week}".format(week=week_num, week_type=week_type), 'value':week_num} if week_type=='REG' else \
+                        {'label':"{week_type}".format(week=week_num, week_type=week_type), 'value':week_num} \
+                        for week_num, week, week_type in df.loc[df['season']==season]\
+                        .sort_values('week_num', ascending=True).groupby(['week_num', 'week', 'week_type']).size()\
+                            .reset_index(drop=False)[['week_num', 'week', 'week_type']].values
+                    ]
 
 
-    ## Get Table of Scores
+    return children, week_options, username
 
-
-    return children, week_options
-
-# add callback for toggling the collapse on small screens
-@app.callback(
-    Output("navbar-collapse", "is_open"),
-    [Input("navbar-toggler", "n_clicks")],
-    [State("navbar-collapse", "is_open")],
-)
-def toggle_navbar_collapse(n, is_open):
-    if n:
-        return not is_open
-    return is_open
     
 if __name__ == '__main__':
 
