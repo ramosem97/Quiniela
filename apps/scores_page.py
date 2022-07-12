@@ -23,10 +23,10 @@ preds_width = '25%'
 min_preds_width = '20%'
 margin_padding = '1%'
 
-header_size = '2.4vw'
+header_size = '3vw'
 pred_font_size = '2vw'
 score_font_size = '2.5vw'
-dt_table_font_size = '11px'
+dt_table_font_size = '3vw'
 logo_size = '8vw'
 team_name_size='2vw'
     
@@ -369,7 +369,7 @@ def display_team(row, home_or_away, df_teams, width):
             'width':width,
             'maxWidth':width,
             'minWidth':width,
-            'fontSize':'2vw',
+            'fontSize':team_name_size,
             'height':"15vw",
             'justify':"center",
             'textAlign':'center',
