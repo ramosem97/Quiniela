@@ -37,14 +37,15 @@ HOME_COLS['id'] = ['home_team', 'abbreviation_home', 'nick_name_home',
 HOME_COLS['val_for'] =  ['home_points_q1', 'home_points_q2',
        'home_points_q3', 'home_points_q4', 'home_points_overtime_total', 'home_team_score', 'home_passing_yards',
        'home_passing_touchdowns', 'home_rushing_yards',
-       'home_rushing_touchdowns']
+       'home_rushing_touchdowns', 'home_total_score', 'home_total_yards']
 
 AWAY_COLS = {}
 AWAY_COLS['id'] = ['away_team', 'abbreviation_away','nick_name_away',
        'full_name_away', 'conference_away', 'division_away', 'city_state_region_away', 'venue_away','logo_away',]
 AWAY_COLS['val'] = ['visitor_points_q1', 'visitor_points_q2',
        'visitor_points_q3', 'visitor_points_q4', 'visitor_points_overtime_total',  'away_team_score', 
-       'visitor_passing_yards', 'visitor_passing_touchdowns', 'visitor_rushing_yards','visitor_rushing_touchdowns']
+       'visitor_passing_yards', 
+       'visitor_passing_touchdowns', 'visitor_rushing_yards','visitor_rushing_touchdowns', 'away_total_score', 'away_total_yards']
 
 ############## READ IN QUINIELA DATA ########
 preds = pd.read_csv('data/quiniela_res.csv').sort_values(['season', 'week'], ascending=True)
@@ -71,6 +72,12 @@ scores['winner'] = [None if((pd.isnull(home_score)) | (pd.isnull(away_score))) e
                     scores[['home_team_score', 'away_team_score', 
                             'home_points_overtime_total', 'visitor_points_overtime_total', 
                             'home_team', 'away_team']].values]
+
+scores['total_home_score'] = scores['home_team_score'] + scores['home_points_overtime_total']
+scores['total_away_score'] = scores['away_team_score'] + scores['visitor_points_overtime_total']
+scores['home_total_yards'] = scores['home_passing_yards'] + scores['home_rushing_yards']
+scores['away_total_yards'] = scores['visitor_passing_yards'] + scores['visitor_rushing_yards']
+
 scores = scores.fillna('')
 
 ############# CREATE FULL DATASET ###########
@@ -129,6 +136,9 @@ df_away['home_or_away'] = 'away'
 
 df_teams = pd.concat([df_home, df_away]).sort_values(['season', 'week', 'game_time']).reset_index(drop=True)
 
+df_teams['div_game'] = [1 if (x==y) else 0 for x,y in df_teams[['division', 'division_against']].values]
+df_teams['conf_game'] = [1 if (x==y) else 0 for x,y in df_teams[['conference', 'conference_against']].values]
+
 ############ CREATE USER SCORE DF ############
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
 userL=USER_LIST
@@ -147,9 +157,8 @@ user_df = user_df.reset_index(drop=False)
 ####################################################
 ################ START APP #########################
 ####################################################
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+external_stylesheets = ['data/bWLwgP.css']
 
-# app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, external_stylesheets])
 
 auth = dash_auth.BasicAuth(
@@ -188,7 +197,7 @@ def print_df(season, week):
         week_num = max_week
     else:
         week_num = week
-
+    
     ## Get Score Children
     children = scores_page.display_scores(season=season, 
                                             week=week_num,

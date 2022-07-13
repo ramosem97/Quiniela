@@ -76,7 +76,7 @@ def create_navbar(df, preds, auth):
                 dbc.Row([
                     dbc.Col(
                     [
-                        html.Img(src=r'assets\\nfl_logo.jpg', style={'height':'10vw', 'padding':'1px'}),
+                        html.Img(src=r'assets\\nfl_logo.jpg', style={'height':'6vw', 'padding':'1px'}),
                         html.H5("Quiniela Ramos", style={'color':'white','padding':'1px'})
                     ], 
                     style={'width':'50%', 'textAlign':'left', 'verticalAlign':'center'}
