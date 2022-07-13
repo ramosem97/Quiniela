@@ -23,7 +23,7 @@ preds_width = '25%'
 min_preds_width = '20%'
 margin_padding = '1%'
 
-header_size = '2.5vw'
+header_size = '12px'
 pred_font_size = '2vw'
 score_font_size = '2.5vw'
 dt_table_font_size = '9px'
@@ -88,15 +88,16 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
     )
     return [
                     
-                html.Div([ user_table], 
+                html.Div([user_table], 
                     style={
                         # 'display':'flex',
                         'alignItems':"center",
-                        'width':'80%', 
+                        # 'width':'80%', 
                         'height':'100px',
                         'textAlign':'center', 
                         'justify':'center', 
-                        'display':'inline-block', 
+                        # 'display':'inline-block', 
+                        'padding':'4px',
                         'fontFamily':"arial",
                     }
                 ),
