@@ -23,10 +23,10 @@ preds_width = '25%'
 min_preds_width = '20%'
 margin_padding = '1%'
 
-header_size = '3vw'
+header_size = '2.5vw'
 pred_font_size = '2vw'
 score_font_size = '2.5vw'
-dt_table_font_size = '3vw'
+dt_table_font_size = '9px'
 logo_size = '8vw'
 team_name_size='2vw'
     
@@ -62,7 +62,7 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
             # 'minHeight': .1, 'maxHeight': .1, 'height': .1,
             'border': 'none',
             'backgroundColor': 'transparent',
-            # 'minWidth': 5, 'maxWidth': 5, 'width': 5,
+            'minWidth': 5, 'maxWidth': 5, 'width': 5,
         },
         style_header={
             'padding': 0,
@@ -80,7 +80,7 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
         },
         style_cell_conditional=[
             {'if': {'column_id': ''},
-                # 'width': '35%',
+                'width': '35%',
                 'fontWeight':'bold',
                 'textAlign':'left'\
             },
@@ -92,7 +92,7 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
                     style={
                         # 'display':'flex',
                         'alignItems':"center",
-                        'width':'60%', 
+                        'width':'80%', 
                         'height':'100px',
                         'textAlign':'center', 
                         'justify':'center', 
@@ -328,7 +328,7 @@ def display_team(row, home_or_away, df_teams, width):
         team_name = 'full_name_home'
         score_ot = 'home_points_overtime_total'
         score_col = 'home_team_score'
-
+    
     ## Return Layout
     return dbc.Col(
         [
@@ -465,7 +465,8 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
         for idx, row in scores.iterrows():
             
             game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")
-            game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
+            # game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
+            game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M")
 
             curr_game_layout =   dbc.Row([
                                     ### Left Margin
@@ -574,7 +575,8 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
         for idx, row in scores.iterrows():
             
             game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")
-            game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
+            # game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
+            game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M")
 
             curr_game_layout =   dbc.Row([
                                     ### Left Margin
