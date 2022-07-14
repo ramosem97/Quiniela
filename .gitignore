@@ -3,4 +3,5 @@ venv
 .DS_Store
 .env
 *pycache*
+*.ipynb_checkpoints
 .cache
