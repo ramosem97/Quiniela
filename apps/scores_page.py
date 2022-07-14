@@ -633,7 +633,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                     dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding,}),
 
                                     ### Away Team
-                                    display_team(row=row, home_or_away='away', df_teams=curr_df_teams, width=team_width,
+                                    display_team(row=row, home_or_away='away', df_teams=df_teams, width=team_width,
                                                 rankings=rankings, team_summ=team_summ),
 
                                     ### Left Margin
@@ -669,7 +669,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                     # dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                                     ## Home Team
-                                    display_team(row=row, home_or_away='home', df_teams=curr_df_teams, width=team_width,
+                                    display_team(row=row, home_or_away='home', df_teams=df_teams, width=team_width,
                                                 rankings=rankings, team_summ=team_summ),                              
                                     
                                     dbc.Col([
@@ -749,7 +749,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                     dbc.Col(html.Div(''), style={'width':margin_padding,'maxWidth':margin_padding,'minWidth':margin_padding}),
 
                                     ### Away Team
-                                    display_team(row=row, home_or_away='away', df_teams=curr_df_teams, width=team_width,
+                                    display_team(row=row, home_or_away='away', df_teams=df_teams, width=team_width,
                                                 rankings=rankings, team_summ=team_summ),           
 
                                     ## vs
@@ -778,7 +778,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                     ),
 
                                     ## Home Team
-                                    display_team(row=row, home_or_away='home', df_teams=curr_df_teams, width=team_width,
+                                    display_team(row=row, home_or_away='home', df_teams=df_teams, width=team_width,
                                                 rankings=rankings, team_summ=team_summ),                                      
                                     
 
