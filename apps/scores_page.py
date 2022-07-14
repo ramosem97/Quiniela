@@ -132,7 +132,7 @@ def border_if_winner(team, winner, final=True):
 def team_rankings(df_teams, week, season):
 
     ## Get Data For Current Week and Season
-    curr_teams = df_teams.loc[df_teams['season']==season].loc[df_teams['week_num']<=week].reset_index(drop=True)
+    curr_teams = df_teams.loc[df_teams['season']==season].loc[df_teams['week_num']<week].reset_index(drop=True)
 
     ## Against Cols
     # against_cols = ['against_passing_yards','against_passing_touchdowns', 'against_rushing_yards','against_rushing_touchdowns', 'total_against_score', 'against_total_yards']
@@ -197,24 +197,24 @@ def team_rankings(df_teams, week, season):
     return rankings, team_avg
 
 ################# USER STATS ########################
-def user_team_stats(user, home_team, away_team, season, week, df_teams):
+def user_team_stats(user, home_team, away_team, season, week, game_date, df_teams):
 
     from sklearn.metrics import confusion_matrix
 
-    # min_date = df_teams.loc[df_teams['season']== season].loc[df_teams['week'] == week].game_date.min()
-    curr_teams = df_teams.loc[df_teams['team'].isin([home_team, away_team])].reset_index(drop=False)
+    min_date = df_teams.loc[df_teams['season']== season].loc[df_teams['week_num'] == week].game_date.min()
+    curr_teams = df_teams.loc[df_teams['team'].isin([home_team, away_team])].loc[df_teams['season']==season].loc[df_teams['game_date']<min_date].reset_index(drop=True)
 
-    user_acc = pd.DataFrame([], columns=['Team', 'Winner', 'Losing', 'Last 5'])
+    user_acc = pd.DataFrame([], columns=['Team', 'PRED W', 'PRED L', 'LAST 5'])
 
     count = 0
     for team, vals in curr_teams.groupby(['team'])[[user, 'winner', 'game_date']]:
 
-        vals = vals.sort_values(['game_date']).head(10)
+        vals = vals.sort_values(['game_date'], ascending=False).head(10)
 
         actual = [x if x == team else 'other' for x in vals['winner']]
         user_pred = [x if x == team else 'other' for x in vals[user]]
 
-        cm = confusion_matrix(actual, user_pred).ravel()
+        cm = confusion_matrix(actual, user_pred, labels=['other', team]).ravel()
 
         if len(cm) == 1:
             if np.unique(actual)[0] == 'other':
@@ -254,7 +254,7 @@ def user_team_stats(user, home_team, away_team, season, week, df_teams):
 
                 html.H6("{user}'s Historical Accuracy".format(user=user)),
 
-                html.Div("Accuracy per Team".format(team=team),
+                html.Div("Accuracy per Team",
                     style={'fontWeight':'bold', 'textAlign':'center'}),
 
                 dt.DataTable(
@@ -295,18 +295,17 @@ def user_team_stats(user, home_team, away_team, season, week, df_teams):
 
 def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None, rankings=None, team_summ=None):
 
-    loc = 1
     if week==1:
         season=season-1
         week = df_teams.loc[df_teams['season']==season].week_num.max()
-        loc = 0
+        game_date = df_teams.loc[df_teams['season']==season].game_date.max()
 
-    team_df = df_teams.loc[df_teams['team']==team].reset_index(drop=True)
+    team_df = df_teams.loc[df_teams['team']==team].loc[df_teams['game_date']<game_date].reset_index(drop=True)
 
     ## Get Last Few Games
     imp_cols = ['phase', 'game_date', 'week_type', 'week_num', 'against_team', 'team', 'winner', 'home_or_away',
                 'team_score', 'points_overtime_total', 'against_team_score', 'against_points_overtime_total']
-    last_few_games = team_df.sort_values(['game_time'], ascending=False).iloc[loc:].loc[team_df['phase']!=''].head(5)[imp_cols]
+    last_few_games = team_df.sort_values(['game_time'], ascending=False).loc[team_df['phase']!=''].head(5)[imp_cols]
 
     ## Previous Three Games
     last_3_gamesL = []
@@ -345,7 +344,7 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
     team_week_ranking = team_week_ranking[['RANK', 'GP', 'W']].reset_index(drop=False).rename(columns={'SET':''})
 
     ## Create Final Data Frame
-    team_stats = pd.DataFrame(last_3_gamesL, columns=['Date', 'Game'])
+    team_stats_df = pd.DataFrame(last_3_gamesL, columns=['Date', 'Game'])
 
     ## Create Table Figure
     team_stat_table = html.Div([
@@ -426,8 +425,8 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                 
                 html.Div("Last 3 Games" , style={'fontWeight':'bold'}),
                 dt.DataTable(
-                    team_stats.to_dict('records'), 
-                    [{"name": i, "id": i} for i in team_stats.columns],
+                    team_stats_df.to_dict('records'), 
+                    [{"name": i, "id": i} for i in team_stats_df.columns],
                     style_cell={
                         'padding':'2px',
                         'verticalAlign':'center',
@@ -503,7 +502,7 @@ def display_team(row, home_or_away, df_teams, width, rankings, team_summ):
                     ),style={'textAlign': 'center',}
                 ),
                 dbc.Tooltip(
-                    team_stats(row[team], full_name=row[team_name], season=row['season'], week=row['week_num'], df_teams=df_teams, rankings=rankings, team_summ=team_summ),
+                    team_stats(row[team], full_name=row[team_name], season=row['season'], week=row['week_num'], game_date=row['game_date'], df_teams=df_teams, rankings=rankings, team_summ=team_summ),
                     target=row[team] + '_logo',
                 )
             ],
@@ -809,7 +808,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                         html.Div([
                                             dbc.Tooltip(
                                                 user_team_stats(user=user, home_team=row['home_team'], 
-                                                    away_team=row['away_team'], season=season, week=week, df_teams=curr_df_teams),
+                                                    away_team=row['away_team'], season=season, week=week, game_date=row['game_date'], df_teams=df_teams),
                                                 target='game_{game}_user_{user}'.format(game=idx, user=user),
                                                 style={
                                                     # "fontSize": "3.5vw",
