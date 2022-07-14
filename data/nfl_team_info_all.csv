@@ -8,7 +8,7 @@
 6,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2003,,ARI_logo.webp
 7,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2003,,PHI_logo.webp
 8,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2003,,NYJ_logo_old.png
-9,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2003,,NYG_logo.webp
+9,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2003,,NYG_logo.png
 10,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2003,,NO_logo.webp
 11,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2003,,NE_logo.webp
 12,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2003,,MIN_logo.webp
@@ -40,7 +40,7 @@
 38,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2004,,ARI_logo.webp
 39,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2004,,PHI_logo.webp
 40,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2004,,NYJ_logo_old.png
-41,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2004,,NYG_logo.webp
+41,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2004,,NYG_logo.png
 42,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2004,,NO_logo.webp
 43,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2004,,NE_logo.webp
 44,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2004,,MIN_logo.webp
@@ -72,7 +72,7 @@
 70,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2005,,ARI_logo.webp
 71,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2005,,PHI_logo.webp
 72,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2005,,NYJ_logo_old.png
-73,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2005,,NYG_logo.webp
+73,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2005,,NYG_logo.png
 74,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2005,,NO_logo.webp
 75,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2005,,NE_logo.webp
 76,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2005,,MIN_logo.webp
@@ -104,7 +104,7 @@
 102,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2006,,ARI_logo.webp
 103,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2006,,PHI_logo.webp
 104,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2006,,NYJ_logo_old.png
-105,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,,NYG_logo.webp
+105,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2006,,NYG_logo.png
 106,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2006,,NO_logo.webp
 107,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2006,,NE_logo.webp
 108,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2006,,MIN_logo.webp
@@ -136,7 +136,7 @@
 134,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2007,,ARI_logo.webp
 135,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2007,,PHI_logo.webp
 136,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2007,,NYJ_logo_old.png
-137,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2007,,NYG_logo.webp
+137,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2007,,NYG_logo.png
 138,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2007,,NO_logo.webp
 139,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2007,,NE_logo.webp
 140,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2007,,MIN_logo.webp
@@ -168,7 +168,7 @@
 166,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2008,,ARI_logo.webp
 167,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2008,,PHI_logo.webp
 168,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2008,,NYJ_logo_old.png
-169,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2008,,NYG_logo.webp
+169,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2008,,NYG_logo.png
 170,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2008,,NO_logo.webp
 171,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2008,,NE_logo.webp
 172,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2008,,MIN_logo.webp
@@ -200,7 +200,7 @@
 198,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2009,,ARI_logo.webp
 199,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2009,,PHI_logo.webp
 200,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2009,,NYJ_logo_old.png
-201,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2009,,NYG_logo.webp
+201,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2009,,NYG_logo.png
 202,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2009,,NO_logo.webp
 203,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2009,,NE_logo.webp
 204,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2009,,MIN_logo.webp
@@ -232,7 +232,7 @@
 230,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2010,,ARI_logo.webp
 231,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2010,,PHI_logo.webp
 232,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2010,,NYJ_logo_old.png
-233,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2010,,NYG_logo.webp
+233,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2010,,NYG_logo.png
 234,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2010,,NO_logo.webp
 235,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2010,,NE_logo.webp
 236,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2010,,MIN_logo.webp
@@ -264,7 +264,7 @@
 262,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2011,,ARI_logo.webp
 263,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2011,,PHI_logo.webp
 264,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2011,,NYJ_logo_old.png
-265,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2011,,NYG_logo.webp
+265,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2011,,NYG_logo.png
 266,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2011,,NO_logo.webp
 267,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2011,,NE_logo.webp
 268,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2011,,MIN_logo.webp
@@ -296,7 +296,7 @@
 294,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2012,,ARI_logo.webp
 295,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2012,,PHI_logo.webp
 296,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2012,,NYJ_logo_old.png
-297,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2012,,NYG_logo.webp
+297,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2012,,NYG_logo.png
 298,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2012,,NO_logo.webp
 299,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2012,,NE_logo.webp
 300,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2012,,MIN_logo.webp
@@ -328,7 +328,7 @@
 326,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WESTERN,Arizona,2013,,ARI_logo.webp
 327,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EASTERN,Philadelphia,2013,,PHI_logo.webp
 328,NYJ,New York Jets,Jets,AFC,AFC_EASTERN,New York Jets,2013,,NYJ_logo_old.png
-329,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2013,,NYG_logo.webp
+329,NYG,New York Giants,Giants,NFC,NFC_EASTERN,New York Giants,2013,,NYG_logo.png
 330,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2013,,NO_logo.webp
 331,NE,New England Patriots,Patriots,AFC,AFC_EASTERN,New England,2013,,NE_logo.webp
 332,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2013,,MIN_logo.webp
@@ -360,7 +360,7 @@
 358,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2014,,ARI_logo.webp
 359,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2014,,PHI_logo.webp
 360,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2014,,NYJ_logo_old.png
-361,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,,NYG_logo.webp
+361,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2014,,NYG_logo.png
 362,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2014,,NO_logo.webp
 363,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2014,,NE_logo.webp
 364,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2014,,MIN_logo.webp
@@ -392,7 +392,7 @@
 390,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2015,,ARI_logo.webp
 391,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2015,,PHI_logo.webp
 392,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2015,,NYJ_logo_old.png
-393,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2015,,NYG_logo.webp
+393,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2015,,NYG_logo.png
 394,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2015,,NO_logo.webp
 395,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2015,,NE_logo.webp
 396,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2015,,MIN_logo.webp
@@ -424,7 +424,7 @@
 422,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2016,,ARI_logo.webp
 423,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2016,,PHI_logo.webp
 424,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2016,,NYJ_logo_old.png
-425,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2016,,NYG_logo.webp
+425,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2016,,NYG_logo.png
 426,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2016,,NO_logo.webp
 427,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2016,,NE_logo.webp
 428,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2016,,MIN_logo.webp
@@ -456,7 +456,7 @@
 454,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2017,,ARI_logo.webp
 455,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2017,,PHI_logo.webp
 456,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2017,,NYJ_logo_old.png
-457,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2017,,NYG_logo.webp
+457,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2017,,NYG_logo.png
 458,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2017,,NO_logo.webp
 459,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2017,,NE_logo.webp
 460,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2017,,MIN_logo.webp
@@ -488,7 +488,7 @@
 486,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2018,State Farm Stadium,ARI_logo.webp
 487,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2018,Lincoln Financial Field,PHI_logo.webp
 488,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2018,MetLife Stadium,NYJ_logo.webp
-489,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2018,MetLife Stadium,NYG_logo.webp
+489,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2018,MetLife Stadium,NYG_logo.png
 490,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2018,Mercedes-Benz Superdome,NO_logo.webp
 491,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2018,Gillette Stadium,NE_logo.webp
 492,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2018,U.S. Bank Stadium,MIN_logo.webp
@@ -520,7 +520,7 @@
 518,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2019,State Farm Stadium,ARI_logo.webp
 519,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2019,Lincoln Financial Field,PHI_logo.webp
 520,NYJ,New York Jets,Jets,AFC,AFC_EAST,New York Jets,2019,MetLife Stadium,NYJ_logo.webp
-521,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2019,MetLife Stadium,NYG_logo.webp
+521,NYG,New York Giants,Giants,NFC,NFC_EAST,New York Giants,2019,MetLife Stadium,NYG_logo.png
 522,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2019,Mercedes-Benz Superdome,NO_logo.webp
 523,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2019,Gillette Stadium,NE_logo.webp
 524,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2019,U.S. Bank Stadium,MIN_logo.webp
@@ -552,7 +552,7 @@
 550,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2020,State Farm Stadium,ARI_logo.webp
 551,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2020,Lincoln Financial Field,PHI_logo.webp
 552,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2020,MetLife Stadium,NYJ_logo.webp
-553,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2020,MetLife Stadium,NYG_logo.webp
+553,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2020,MetLife Stadium,NYG_logo.png
 554,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2020,Mercedes-Benz Superdome,NO_logo.webp
 555,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2020,Gillette Stadium,NE_logo.webp
 556,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2020,U.S. Bank Stadium,MIN_logo.webp
@@ -584,7 +584,7 @@
 582,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2021,State Farm Stadium,ARI_logo.webp
 583,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2021,Lincoln Financial Field,PHI_logo.webp
 584,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2021,MetLife Stadium,NYJ_logo.webp
-585,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2021,MetLife Stadium,NYG_logo.webp
+585,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2021,MetLife Stadium,NYG_logo.png
 586,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2021,Caesars Superdome,NO_logo.webp
 587,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2021,Gillette Stadium,NE_logo.webp
 588,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2021,U.S. Bank Stadium,MIN_logo.webp
@@ -616,7 +616,7 @@
 614,ARI,Arizona Cardinals,Cardinals,NFC,NFC_WEST,Arizona,2022,State Farm Stadium,ARI_logo.webp
 615,PHI,Philadelphia Eagles,Eagles,NFC,NFC_EAST,Philadelphia,2022,Lincoln Financial Field,PHI_logo.webp
 616,NYJ,New York Jets,Jets,AFC,AFC_EAST,N.Y. Jets,2022,MetLife Stadium,NYJ_logo.webp
-617,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2022,MetLife Stadium,NYG_logo.webp
+617,NYG,New York Giants,Giants,NFC,NFC_EAST,N.Y. Giants,2022,MetLife Stadium,NYG_logo.png
 618,NO,New Orleans Saints,Saints,NFC,NFC_SOUTH,New Orleans,2022,Caesars Superdome,NO_logo.webp
 619,NE,New England Patriots,Patriots,AFC,AFC_EAST,New England,2022,Gillette Stadium,NE_logo.webp
 620,MIN,Minnesota Vikings,Vikings,NFC,NFC_NORTH,Minnesota,2022,U.S. Bank Stadium,MIN_logo.webp
