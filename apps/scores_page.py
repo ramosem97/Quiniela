@@ -220,7 +220,7 @@ def user_team_stats(user, home_team, away_team, season, week, game_date, df_team
                     },
                     style_table = {
                         'border': 'none',
-                        'height':'300px',
+                        # 'height':'300px',
                     },
                     style_cell_conditional=[
                         {'if': {'column_id': 'index'},
@@ -313,13 +313,12 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                     style_cell={
                         'border': 'none',
                         'backgroundColor': 'transparent',
-                        'fontSize':'8px',
+                        'textAlign':'center',
                     },
                     style_header={
                         'border': 'none',
                         'backgroundColor': 'transparent',
                         'fontWeight':'bold',
-                        'fontSize':'9px',
                         'textAlign':'center',
                     },
                     style_table = {
@@ -347,15 +346,14 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                     style_cell={
                         'border': 'none',
                         'backgroundColor': 'transparent',
-                        'fontSize':'8px',
                         'padding':0,
                         'width':'20%',
+                        'textAlign':'center',
                     },
                     style_header={
                         'border': 'none',
                         'backgroundColor': 'transparent',
                         'fontWeight':'bold',
-                        'fontSize':'9px',
                         'textAlign':'center',
                     },
                     style_table = {
@@ -387,14 +385,12 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                         'verticalAlign':'center',
                         'border': 'none',
                         'backgroundColor': 'transparent',
-                        'fontSize':'8px',
                     },
                     style_header={
                         'verticalAlign':'center',
                         'border': 'none',
                         'backgroundColor': 'transparent',
                         'fontWeight':'bold',
-                        'fontSize':'9px',
                     },
                     style_table = {
                         'border': 'none',
@@ -418,7 +414,7 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                     style={'fontWeight':'bold', 'textAlign':'center'}),
                 html.Div("{streak}".format(streak=win_streak),)
     ],
-    style={'color':'white', 'whiteSpace': 'normal', 'fontFamily':"arial", 'fontSize':'10px'})
+    style={'color':'white','whiteSpace': 'normal', 'fontFamily':"arial", 'fontSize':'11px', 'lineHeight':'1.5'})
 
     return team_stat_table
 
@@ -458,6 +454,12 @@ def display_team(row, home_or_away, df_teams, width, rankings, team_summ):
                 dbc.Tooltip(
                     team_stats(row[team], full_name=row[team_name], season=row['season'], week=row['week_num'], game_date=row['game_date'], df_teams=df_teams, rankings=rankings, team_summ=team_summ),
                     target=row[team] + '_logo',
+                    style={
+                        # "fontSize": "3.5vw",
+                        'minWidth': '700px',
+                        # 'width': '500px',
+                        # 'height': '10vw',
+                    },
                 )
             ],
             # style=border_if_winner(team=row[team], winner=row['winner'],),
