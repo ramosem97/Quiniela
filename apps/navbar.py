@@ -6,20 +6,20 @@ from dash.exceptions import PreventUpdate
 import plotly.graph_objs as go
 import pandas as pd 
 import numpy as np
+from dash import dash_table as dt
 
 ## App Import
 # from app import app, df, USER_LIST, user_df, df_teams, preds
 
-
 ########## building the dropdowns ################
-def create_dropdowns(df, preds):
+def create_dropdowns(df, season, week):
     dropdown_season = dcc.Dropdown(
         options=[
             
             {'label':"{season}".format(season=season), 'value':season} for season in df.sort_values('season', ascending=False).season.unique()
 
         ],
-        value=df.loc[df['winner']!='']['season'].max(),
+        value=season,
         placeholder="Season",
         id='season',
         clearable = False,
@@ -38,7 +38,7 @@ def create_dropdowns(df, preds):
                                     .reset_index(drop=False)[['week_num', 'week', 'week_type']].values
             
         ],
-        value=df.loc[df['season']==df.loc[df['winner']!='']['season'].max()].loc[(df['winner']!='')].week_num.max(),
+        value=week,
         placeholder="Week",
         id='week',
         clearable = False,
@@ -47,6 +47,78 @@ def create_dropdowns(df, preds):
         # label = "Week",
     )
     return dropdown_season, dropdown_week
+
+########## building score tables ################
+def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
+    curr_user = user_df.loc[((user_df.season==season) & (user_df.week_num==week))]
+
+    curr_user = pd.concat([
+                curr_user[[x+'_correct' for x in USER_LIST]].rename(columns={x+'_correct':x for x in USER_LIST}).T,
+                curr_user[[x+'_score' for x in USER_LIST]].rename(columns={x+'_score':x for x in USER_LIST}).T,
+            ], axis=1)
+    curr_user.columns = ['Week', 'Season']
+    curr_user = curr_user.T.reset_index(drop=False)
+    curr_user = curr_user.rename(columns={'index':''}).rename(columns=USER_ABBV_DICT)
+
+    ### Create Table Figure
+    user_table = dt.DataTable(
+        curr_user.to_dict('records'), [{"name": i, "id": i} for i in curr_user.columns],
+        fixed_rows={'headers': True},
+        style_cell={
+            'padding': 0,
+            'textAlign':'center',  
+            'border': 'none',
+            'backgroundColor': 'transparent',
+            'minWidth': 5, 'maxWidth': 5, 'width': 5,
+        },
+        style_header={
+            'padding': 0,
+            'textAlign': 'center', 
+            # 'height': .5, 
+            'backgroundColor': 'transparent',
+            'fontWeight': 'bold',
+            'border': 'none',
+        },
+        style_table = {
+            'border': 'none',
+            'overflowX': 'auto',
+            'overflowY': 'auto',
+        },
+        style_cell_conditional=[
+            {'if': {'column_id': ''},
+                'width': '35%',
+                'fontWeight':'bold',
+                'textAlign':'left'\
+            },
+        ],
+        css=[{
+            'selector': '.dash-spreadsheet td div',
+            'rule': '''
+                line-height: 15px;
+                max-height: 30px; min-height: 30px; height: 30px;
+                display: block;
+                overflow-y: hidden;
+            '''
+        }],
+        # fill_width=False,
+    )
+    return [
+                    
+                html.Div([user_table], 
+                    style={
+                        'color':'white',
+                        'alignItems':"center",
+                        # 'width':'80%', 
+                        'height':'100px',
+                        'textAlign':'center', 
+                        'justify':'center', 
+                        # 'display':'inline-block', 
+                        'padding':'4px',
+                        'fontFamily':"arial",
+                    }, 
+                ),
+                html.Br(),
+            ]
 
 def dropdowns_lay(dropdown_season, dropdown_week):
     return dbc.Row([
@@ -63,10 +135,19 @@ def dropdowns_lay(dropdown_season, dropdown_week):
             )
 
 
-def create_navbar(df, preds, auth):
+def create_navbar(df, user_df, USER_LIST, USER_ABBV_DICT, auth):
 
-    dropdown_season, dropdown_week = create_dropdowns(df, preds)
+    ## Create Dropdowns
+    season = df.loc[df['winner']!='']['season'].max()
+    week = df.loc[df['season']==df.loc[df['winner']!='']['season'].max()].loc[(df['winner']!='')].week_num.max()
+    dropdown_season, dropdown_week = create_dropdowns(df, season, week)
 
+    ## Get Current Scores Table
+    score_table = get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT)
+
+
+    ## Create Layout
+    nav_lay = []
     layout = dbc.Navbar(
 
             # Use row and col to control vertical alignment of logo / brand
@@ -91,9 +172,35 @@ def create_navbar(df, preds, auth):
                 ],
                 style={'width':'95%', 'minWidth':'95%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'},
                 ),
+                
+                dbc.Row(
+                [
+                    html.Div('', style={'width':'10%'}), 
+                    html.Div('', style={'textAlign':'center', 
+                        'height':'1vw', 'justify':'center', 
+                        'borderBottom':".5px outset rgba(255,255,255,.2)", 
+                        'width':'80%', 'borderBottomWidth':'light'}),
+                    html.Div('', style={'width':'10%'}), 
+                ]),
                 dropdowns_lay(dropdown_season, dropdown_week),
+                
+                dbc.Row(
+                [
+                    html.Div('', style={'width':'10%'}), 
+                    html.Div('', style={'textAlign':'center', 
+                        'height':'1vw', 'justify':'center', 
+                        'borderBottom':".5px outset rgba(255,255,255,.2)", 
+                        'width':'80%', 'borderBottomWidth':'light'}),
+                    html.Div('', style={'width':'10%'}), 
+                ]),
+                dbc.Row(
+                    score_table, 
+                    style={'paddingLeft':'5%', 'paddingRight':'5%', 'textAlign':'center', 'justify':'center'},
+                    id='score_table'
+                ),
+            ], 
+            style={'width':'95%', 'padding':'2.5%', 'paddingRight':'2.5%'}),
 
-                ], style={'width':'95%', 'padding':'2.5%', 'paddingRight':'1%'}),
         sticky="fixed",
         color="dark",
         dark=True,

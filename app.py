@@ -177,13 +177,19 @@ app.config.suppress_callback_exceptions = True
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
-    navbar.create_navbar(df=df.copy(), preds=preds.copy(), auth=auth),
+    navbar.create_navbar(
+                        df=df.copy(), user_df=user_df.copy(), 
+                        USER_LIST=USER_LIST, USER_ABBV_DICT=USER_ABBV_DICT, 
+                        auth=auth
+    ),
     html.Div(children=[], id='page',
     style={'width':'95%', 'textAlign':'center', 'justify':'center'})
 ])
 
 
-@app.callback([Output("page", "children"), Output("week", "options"), Output('username', 'children'), Output("week", "value")],
+@app.callback([Output("page", "children"), Output("week", "options"), 
+                Output('username', 'children'), Output("week", "value"),
+                Output('score_table', 'children')],
 [Input("season", "value"), Input("week", "value")])
 def print_df(season, week):
 
@@ -217,8 +223,11 @@ def print_df(season, week):
                             .reset_index(drop=False)[['week_num', 'week_type']].values
                     ]
 
+    ### Update Score Table
+    scores_table = navbar.get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT)
 
-    return children, week_options, username, week_num
+
+    return children, week_options, username, week_num, scores_table
 
     
 if __name__ == '__main__':
