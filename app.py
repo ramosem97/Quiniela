@@ -146,6 +146,10 @@ df_teams['div_win'] = [win if game == 1 else 0 for win,game in df_teams[['win', 
 df_teams['conf_game'] = [1 if ((x==y) & (w_type == 'REG')) else 0 for x,y,w_type in df_teams[['conference', 'conference_against', 'week_type']].values]
 df_teams['conf_win'] = [win if game == 1 else 0 for win,game in df_teams[['win', 'conf_game']].values]
 
+df_teams.loc[:, df_teams.dtypes == object] = df_teams.loc[:, df_teams.dtypes == object].fillna('')
+df_teams.loc[:, df_teams.dtypes == float] = df_teams.loc[:, df_teams.dtypes == float].fillna(0)
+
+
 ############ CREATE USER SCORE DF ############
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
 userL=USER_LIST
@@ -200,9 +204,9 @@ app.layout = html.Div([
 [Input("season", "value"), Input("week", "value")])
 def update_page(season, week):
 
-
     ## Get User Data
-    username = 'Welcome {user}'.format(user=str(request.authorization['username']))
+    username = str(request.authorization['username'])
+    welcome_user = 'Welcome {user}'.format(user=username)
 
     ## Check if Week Works or not
     season_df = df.loc[((df['season']==season) & (df['week_num']==week))]
@@ -244,7 +248,7 @@ def update_page(season, week):
                                         USER_LIST=USER_LIST, USER_ABBV_DICT=USER_ABBV_DICT)
 
 
-    return children, week_options, username, week_num, scores_table
+    return children, week_options, welcome_user, week_num, scores_table
 
     
 if __name__ == '__main__':

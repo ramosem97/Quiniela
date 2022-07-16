@@ -135,7 +135,6 @@ def user_team_stats(user, home_team, away_team, season, week, game_date, df_team
         count += 1
 
     for (team, loc), vals in curr_teams.groupby(['team', 'home_or_away'])[[user, 'winner', 'game_date']]:
-        print(team, loc, vals[[user]])
         ## Away Team
         if ((loc == 'away') & (away_team == team)):
             user_acc.loc[count] = get_user_stats(team, vals, loc='AWAY')\
@@ -296,6 +295,10 @@ def team_rankings(df_teams, week, season):
 
 def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None, rankings=None, team_summ=None):
 
+    season_str = 'Season'
+    if week==1:
+        season_str = 'Last Season'
+        
     ## Get Subset
     team_df = df_teams.loc[df_teams['team']==team].loc[df_teams['game_date']<game_date].reset_index(drop=True)
 
@@ -367,7 +370,7 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                 html.Div("{div}".format(div=team_df['division'].max().replace('_', ' ')), style={'fontWeight':'bold'}),
 
                 sep[0],
-                html.Div("Season Record", style={'fontWeight':'bold', 
+                html.Div("{} Record".format(season_str), style={'fontWeight':'bold', 
                         'textAlign':'left', 'fontSize':'12px'}),
                 html.Div(ovr_record),
 
@@ -571,11 +574,62 @@ def display_team(row, home_or_away, df_teams, width, rankings, team_summ):
 ################# DISPLAY SCORES ########################
 
 def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_ABBV_DICT):
+    
+    def display_game(row, idx, rankings, team_summ, preds=True):
 
-    def display_game(row, idx, rankings, team_summ):
         game_date = datetime.strptime(row['game_date'], "%Y-%m-%d").strftime("%m/%d/%Y")
         # game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M %p %Z")
         game_time = pd.to_datetime(row['game_time']).tz_convert('US/Eastern').strftime("%I:%M")
+
+        ## Get Preds Layout
+        USER_LIST_TEMP = [curr_user for curr_user in USER_LIST if (((pd.notnull(row[curr_user])) & (preds)) | (curr_user == user))]
+        row = row.fillna(' ')
+        preds_layout = dbc.Col([
+
+                            ## Predictions
+                            html.Div([
+
+                                dbc.Row([
+
+                                    dbc.Col([
+
+                                        html.Div(USER_ABBV_DICT[curr_user] + '', style={'fontWeight':'bold'}), 
+                                        html.Div(str(row[curr_user]),
+                                            style=border_if_winner(team=str(row[curr_user]), winner=row['winner'])),
+                                    ], 
+                                    id='game_{game}_user_{user}'.format(game=idx, user=curr_user),
+                                    # style={'width':'{}%'.format((100)//(len(USER_LIST))*2)}
+                                    ) for curr_user in USER_LIST_TEMP[user_vals*2:user_vals*2+2]
+                                ],
+                                style={
+                                },
+                                ) for user_vals in np.arange(len(USER_LIST_TEMP)//2 + len(USER_LIST_TEMP)%2)
+                            
+                            ]
+                            ),
+                            html.Div([
+                                dbc.Tooltip(
+                                    user_team_stats(user=curr_user, home_team=row['home_team'], 
+                                        away_team=row['away_team'], season=season, week=week, game_date=row['game_date'], df_teams=df_teams),
+                                    target='game_{game}_user_{user}'.format(game=idx, user=curr_user),
+                                    style={
+                                        'minWidth': '700px',
+                                    }
+                                ) for curr_user in USER_LIST_TEMP
+                            ],
+                            )
+                        ],
+                        style={
+                            'display': 'inline-block', 
+                            'width':preds_width, 'maxWidth':preds_width,
+                            'textAlign':'center', 
+                            'justify':"center", 
+                            'verticalAlign':'center',
+                            'fontSize':'1.5vw',
+                            'minWidth':min_preds_width,
+                        },
+                        )
+
 
         curr_game_layout =   dbc.Row([
                                 ### Left Margin
@@ -612,60 +666,11 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
 
                                 ## Home Team
                                 display_team(row=row, home_or_away='home', df_teams=df_teams, width=team_width,
-                                            rankings=rankings, team_summ=team_summ),                                      
+                                            rankings=rankings, team_summ=team_summ),   
+
+                                ## Preds
+                                preds_layout,                                   
                                 
-
-                                dbc.Col([
-
-                                    ## Predictions
-                                    html.Div([
-
-                                        dbc.Row([
-
-                                            dbc.Col([
-
-                                                html.Div(USER_ABBV_DICT[user] + '', style={'fontWeight':'bold'}), 
-                                                html.Div(row[user],
-                                                    style=border_if_winner(team=row[user], winner=row['winner'])),
-                                            ], 
-                                            id='game_{game}_user_{user}'.format(game=idx, user=user),
-                                            # style={'width':'{}%'.format((100)//(len(USER_LIST))*2)}
-                                            ) for user in USER_LIST[user_vals*2:user_vals*2+2]
-                                        ],
-                                        style={
-                                        },
-                                        ) for user_vals in np.arange(len(USER_LIST)//2 + len(USER_LIST)%2)
-                                    
-                                    ]
-                                ),
-                                    html.Div([
-                                        dbc.Tooltip(
-                                            user_team_stats(user=user, home_team=row['home_team'], 
-                                                away_team=row['away_team'], season=season, week=week, game_date=row['game_date'], df_teams=df_teams),
-                                            target='game_{game}_user_{user}'.format(game=idx, user=user),
-                                            style={
-                                                # "fontSize": "3.5vw",
-                                                'minWidth': '700px',
-                                                # 'width': '500px',
-                                                # 'height': '10vw',
-                                            }
-                                        ) for user in USER_LIST
-                                    ],
-                                    )
-                                ],
-                                style={
-                                    'display': 'inline-block', 
-                                    'width':preds_width, 'maxWidth':preds_width,
-                                    'textAlign':'center', 
-                                    'justify':"center", 
-                                    'verticalAlign':'center',
-                                    'fontSize':'1.5vw',
-                                    'minWidth':min_preds_width,
-                                },
-                                ),
-
-                                # dbc.Col(html.Div(''), style={'width':margin_padding, 'maxWidth':margin_padding,'minWidth':margin_padding}),
-
                             ], 
                             style={
                                 # 'height':'10%',
@@ -717,17 +722,22 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                  ]
         return curr_game_info_layout
 
-    def display_upcoming_week(scores, season=season, week=week, user_df=user_df, df_teams=df_teams, USER_LIST=USER_LIST):
+    def display_upcoming_week(user, scores, season=season, week=week, user_df=user_df, df_teams=df_teams, USER_LIST=USER_LIST):
         
         # Start Layout
         score_layout = end_row()
 
         ## Get Rankings
         rankings, team_summ = team_rankings(df_teams, week=week, season=season)
+
+        ## Check if User has added results
+        preds=False
+        if len(df_teams.loc[df_teams[user].notnull()].loc[df_teams['season']==season].loc[df_teams['week_num']==week]) > 0:
+            preds = True
         
         for idx, row in scores.iterrows():
             
-            curr_game_layout = display_game(row=row, idx=idx, rankings=rankings, team_summ=team_summ)
+            curr_game_layout = display_game(row=row, idx=idx, rankings=rankings, team_summ=team_summ, preds=preds)
 
             score_layout = score_layout + [curr_game_layout] + end_row()
 
@@ -763,7 +773,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
     if today > pd.to_datetime(min_date_week):
         layout = display_historical_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)
     else:
-        layout = display_upcoming_week(scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)  
+        layout = display_upcoming_week(user=user, scores=curr_scores, user_df=user_df, USER_LIST=USER_LIST)  
 
     return layout
 
