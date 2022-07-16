@@ -123,11 +123,11 @@ def get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT):
 def dropdowns_lay(dropdown_season, dropdown_week):
     return dbc.Row([
                 html.Div([
-                    dbc.Col([html.H6('Season: ', style={'color':'white','textAlign':'left','padding':'2px'})]), 
+                    dbc.Col([html.H4('Season: ', style={'color':'white','textAlign':'left','padding':'2px'})]), 
                     dbc.Col([dropdown_season], style={'textAlign':'center','padding':'2px'}),
                     ], style={'width':'40%'}), 
                 html.Div([
-                    dbc.Col([html.H6('Week: ', style={'color':'white', 'textAlign':'left','padding':'2px'})]), 
+                    dbc.Col([html.H4('Week: ', style={'color':'white', 'textAlign':'left','padding':'2px'})]), 
                     dbc.Col([dropdown_week], style={'textAlign':'center','padding':'2px'}),
                     ], style={'width':'40%'}),
             ],
@@ -157,21 +157,22 @@ def create_navbar(df, user_df, USER_LIST, USER_ABBV_DICT, auth):
                 dbc.Row([
                     dbc.Col(
                     [
-                        html.Img(src=r'assets\\nfl_logo.jpg', style={'height':'6vw', 'padding':'1px'}),
-                        html.H5("Quiniela Ramos", style={'color':'white','padding':'1px'})
+                        html.Img(src=r'assets\\nfl_logo.jpg', style={'width':'50%', 'padding':'1px'}),
+                        # html.H3("Quiniela", style={'color':'white','padding':'1px'})
                     ], 
-                    style={'width':'50%', 'textAlign':'left', 'verticalAlign':'center'}
+                    style={'width':'60%', 'textAlign':'left', 'verticalAlign':'center'}
                     ),
 
                     dbc.Col(\
                     [
                         html.H6("", id='username', style={'textAlign':'right', \
                             'verticalAlign':'top', 'justify':'right', 'color':'white', 'paddingRight':'0%'}),
-                    ], style={'paddingRight':'0%'}
+                    ], style={'paddingRight':'0%', 'width':'40%'}
                     )
                 ],
                 style={'width':'95%', 'minWidth':'95%', 'textAlign':'left', 'justify':"center", 'verticalAlign':'center'},
                 ),
+                html.Br(),
                 
                 dbc.Row(
                 [
@@ -183,6 +184,7 @@ def create_navbar(df, user_df, USER_LIST, USER_ABBV_DICT, auth):
                     html.Div('', style={'width':'10%'}), 
                 ]),
                 dropdowns_lay(dropdown_season, dropdown_week),
+                html.Br(),
                 
                 dbc.Row(
                 [

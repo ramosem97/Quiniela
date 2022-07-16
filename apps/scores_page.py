@@ -50,7 +50,8 @@ def end_row():
                 html.Div('', style={'width':'10%'}), 
                 html.Div('', style={'textAlign':'center', 'height':'1vw', 'justify':'center', 'borderBottom':".5px outset rgba(255,255,255,.2)", 'width':'80%', 'borderBottomWidth':'light'}),
                 html.Div('', style={'width':'10%'}), 
-            ]),
+            ],
+            style={'padding':'2%'}),
             html.Br()]
 
 ################ BORDER IF WINNER #############
@@ -73,89 +74,23 @@ def border_if_winner(team, winner, final=True):
 ####################################################
 ################# HELPER FUNCTIONS #################
 ####################################################
-
-################ TEAM RANKINGS #############
-def team_rankings(df_teams, week, season):
-
-    ## Get Data For Current Week and Season
-    curr_teams = df_teams.loc[df_teams['season']==season].loc[df_teams['week_num']<week].reset_index(drop=True)
-
-    ## Against Cols
-    # against_cols = ['against_passing_yards','against_passing_touchdowns', 'against_rushing_yards','against_rushing_touchdowns', 'total_against_score', 'against_total_yards']
-    against_cols = ['total_against_score', 'against_total_yards']
-
-    ## For Cols
-    # for_cols = ['passing_yards', 'passing_touchdowns', 'rushing_yards', 'rushing_touchdowns', 'total_score', 'total_yards']
-    for_cols = ['total_score', 'total_yards']
-
-    ## Div or Conf Cols
-    curr_teams['game'] = 1
-    curr_teams['win'] = [1 if x==y else 0 for x,y in curr_teams[['team', 'winner']].values]
-    other_cols = ['win', 'game', 'conf_game', 'div_game']
-
-    ## Team Overall Summary
-    team_summ = curr_teams.groupby(['team', 'division', 'conference'])[against_cols + for_cols].agg('sum')
-    team_summ = team_summ.merge(curr_teams.groupby(['team', 'division', 'conference'])[other_cols].agg('sum'),
-                            left_index=True, right_index=True).reset_index(drop=False)
-
-    ########## Rankings ###############
-    rankings = {}
-
-    ## Division Ranking
-    rankings['div'] = pd.concat([
-                            team_summ[['team', 'div_game', 'win']], 
-                            team_summ.groupby(['division'])[for_cols + ['win']].rank(ascending=False, method='min').rename(columns={'win':'RANK'}),
-                            team_summ.groupby(['division'])[against_cols].rank(ascending=True, method='min'), 
-                            ], axis=1).rename(columns={'div_game':'game'})
-    rankings['div']['SET'] = 'DIV'
-
-
-    ## Conference Ranking
-    rankings['conf'] = pd.concat([
-                            team_summ[['team', 'conf_game', 'win']], 
-                            team_summ.groupby(['conference'])[for_cols + ['win']].rank(ascending=False, method='min').rename(columns={'win':'RANK'}),
-                            team_summ.groupby(['conference'])[against_cols].rank(ascending=True, method='min'), 
-                    ], axis=1).rename(columns={'conf_game':'game'})
-    rankings['conf']['SET'] = 'CONF'
-
-
-    ## Overall Ranking
-    rankings['all'] = pd.concat([
-                            team_summ[['team', 'game', 'win']], 
-                            team_summ[for_cols + ['win']].rank(ascending=False, method='min').rename(columns={'win':'RANK'}),
-                            team_summ[against_cols].rank(ascending=True, method='min'), 
-                            ], axis=1)
-    rankings['all']['SET'] = 'ALL'
-
-    ## Concat 
-    rankings = pd.concat(rankings.values())
-    rankings.columns = ['TEAM', 'GP', 'W','OFF-PTS', 'OFF-YRD','RANK', 'DEF-PTS', 'DEF-YRD', 'SET']
-    for col in ['GP', 'W',  'OFF-PTS', 'OFF-YRD', 'DEF-PTS', 'DEF-YRD', 'RANK']:
-        rankings[col] = rankings[col].astype(int)
-    rankings = rankings[['TEAM', 'SET', 'RANK', 'GP', 'W',  'OFF-PTS', 'OFF-YRD', 'DEF-PTS', 'DEF-YRD']]
-
-    ########## AVG YARD AND SCORE ###############
-    team_avg = curr_teams.groupby(['team'])[against_cols + for_cols].mean()
-    team_avg = team_avg.apply(np.round)
-    team_avg = team_avg.reset_index(drop=False)
-    team_avg.columns = ['TEAM',  'OFF-PTS', 'OFF-YRD', 'DEF-PTS', 'DEF-YRD']
-
-    return rankings, team_avg
-
 ################# USER STATS ########################
 def user_team_stats(user, home_team, away_team, season, week, game_date, df_teams):
 
     from sklearn.metrics import confusion_matrix
 
     min_date = df_teams.loc[df_teams['season']== season].loc[df_teams['week_num'] == week].game_date.min()
-    curr_teams = df_teams.loc[df_teams['team'].isin([home_team, away_team])].loc[df_teams['season']==season].loc[df_teams['game_date']<min_date].reset_index(drop=True)
+    curr_teams = df_teams.loc[df_teams['team'].isin([home_team, away_team])].loc[df_teams['season']<=season].loc[df_teams['game_date']<min_date].reset_index(drop=True)
 
-    user_acc = pd.DataFrame([], columns=['Team', 'PRED W', 'PRED L', 'LAST 5'])
+    user_acc = pd.DataFrame([], columns=['TEAM', 'LOC', 'PRED W', 'PRED L', 'LAST 5'])
 
-    count = 0
-    for team, vals in curr_teams.groupby(['team'])[[user, 'winner', 'game_date']]:
+    def get_user_stats(team, vals, loc):
 
-        vals = vals.sort_values(['game_date'], ascending=False).head(10)
+        num_games = 5
+        if loc == 'OVR':
+            num_games = 10
+
+        vals = vals.sort_values(['game_date'], ascending=False).head(num_games)
 
         actual = [x if x == team else 'other' for x in vals['winner']]
         user_pred = [x if x == team else 'other' for x in vals[user]]
@@ -190,46 +125,80 @@ def user_team_stats(user, home_team, away_team, season, week, game_date, df_team
             else:
                 acc += 'F'
 
-        user_acc.loc[count] = [team, if_chosen_rate, if_not_chosen, acc]
+        return [team, loc, if_chosen_rate, if_not_chosen, acc]
+
+    count = 0
+    for team, vals in curr_teams.groupby(['team'])[[user, 'winner', 'game_date']]:
+
+        user_acc.loc[count] = get_user_stats(team, vals, loc='OVR')
 
         count += 1
 
+    for (team, loc), vals in curr_teams.groupby(['team', 'home_or_away'])[[user, 'winner', 'game_date']]:
+        print(team, loc, vals[[user]])
+        ## Away Team
+        if ((loc == 'away') & (away_team == team)):
+            user_acc.loc[count] = get_user_stats(team, vals, loc='AWAY')\
+        ## Home Team
+        elif ((loc == 'home') & (home_team == team)):
+            user_acc.loc[count] = get_user_stats(team, vals, loc='HOME')
+        else:
+            continue
+        count += 1
+
+    ## End Row
+    sep = end_row()
+
     ## Create Table Figure
+    def create_team_table(team, user_acc):
+
+        return dt.DataTable(
+            user_acc.loc[user_acc['TEAM'] == team].drop(['TEAM'], axis=1).to_dict('records'), 
+            [{"name": i, "id": i} for i in user_acc.drop(['TEAM'], axis=1).columns],
+            tooltip_header =None,
+            style_cell={
+                'textAlign':'center',  
+                'border': 'none',
+                'backgroundColor': 'transparent',
+            },
+            style_header={
+                'textAlign':'center',  
+                'border': 'none',
+                'backgroundColor': 'transparent',
+                'fontWeight':'bold',
+            },
+            style_table = {
+                'border': 'none',
+                # 'height':'300px',
+            },
+            style_cell_conditional=[
+                {'if': {'column_id': 'index'},
+                'width': '25%',
+                'fontWeight':'bold',
+                'textAlign':'left'},
+            ],
+            css = table_css,
+            editable=False,
+            row_selectable=False,
+        )
 
     user_stat_table = html.Div([
 
-                html.H6("{user}'s Historical Accuracy".format(user=user)),
+                html.H6("{user}'s Records".format(user=user)),
 
-                html.Div("Accuracy per Team",
-                    style={'fontWeight':'bold', 'textAlign':'center'}),
+                sep[0],
+                html.Div("{team} Team Record".format(team=away_team),
+                    style={'fontWeight':'bold', 'textAlign':'left', 'fontSize':'12px'},),
+                create_team_table(away_team, user_acc),
 
-                dt.DataTable(
-                    user_acc.to_dict('records'), 
-                    [{"name": i, "id": i} for i in user_acc.columns],
-                    tooltip_header =None,
-                    style_cell={
-                        'textAlign':'center',  
-                        'border': 'none',
-                        'backgroundColor': 'transparent',
-                    },
-                    style_header={
-                        'textAlign':'center',  
-                        'border': 'none',
-                        'backgroundColor': 'transparent',
-                        'fontWeight':'bold',
-                    },
-                    style_table = {
-                        'border': 'none',
-                        # 'height':'300px',
-                    },
-                    style_cell_conditional=[
-                        {'if': {'column_id': 'index'},
-                        'width': '25%',
-                        'fontWeight':'bold',
-                        'textAlign':'left'},
-                    ],
-                    css = table_css,
-                ),
+                sep[0],
+                html.Div("{team} Team Record".format(team=home_team),
+                            style={'fontWeight':'bold', 'textAlign':'left', 'fontSize':'12px'},),
+                create_team_table(home_team, user_acc),
+                
+                
+                
+
     ],
     style={'color':'white','whiteSpace': 'normal', 'fontFamily':"arial", 'fontSize':'11px', 'lineHeight':'1.5'})
 
@@ -239,21 +208,101 @@ def user_team_stats(user, home_team, away_team, season, week, game_date, df_team
 
     return user_stat_table
 
+################ TEAM RANKINGS #############
+def team_rankings(df_teams, week, season):
+
+    if week==1:
+        season=season-1
+        week = df_teams.loc[df_teams['season']==season].week_num.max() + 1
+
+    ## Get Data For Current Week and Season
+    curr_teams = df_teams.loc[df_teams['season']==season].loc[df_teams['week_num']<week].reset_index(drop=True)
+    
+
+    ## Against Cols
+    # against_cols = ['against_passing_yards','against_passing_touchdowns', 'against_rushing_yards','against_rushing_touchdowns', 'total_against_score', 'against_total_yards']
+    against_cols = ['total_against_score', 'against_total_yards']
+
+    ## For Cols
+    # for_cols = ['passing_yards', 'passing_touchdowns', 'rushing_yards', 'rushing_touchdowns', 'total_score', 'total_yards']
+    for_cols = ['total_score', 'total_yards']
+
+    ## Fille NA
+    curr_teams[against_cols + for_cols] = curr_teams[against_cols + for_cols].fillna(0)
+    curr_teams['winner'] = curr_teams['winner'].fillna('NA')
+
+    ## Div or Conf Cols
+    other_cols = ['win', 'game', 'reg_game', 'reg_win', 'conf_win', 'conf_game', 'div_win', 'div_game'] 
+
+    ## Team Overall Summary
+    team_summ = curr_teams.groupby(['team', 'division', 'conference'])[against_cols + for_cols].agg('sum')
+    team_summ = team_summ.merge(curr_teams.groupby(['team', 'division', 'conference'])[other_cols].agg('sum'),
+                            left_index=True, right_index=True).reset_index(drop=False)
+
+    ########## Rankings ###############
+    rankings = {}
+
+    ## Division Ranking
+    rankings['div'] = pd.concat([
+                            team_summ[['team', 'div_game', 'div_win']], 
+                            team_summ.groupby(['division'])[for_cols + ['div_win']].rank(ascending=False, method='min').rename(columns={'div_win':'RANK'}),
+                            team_summ.groupby(['division'])[against_cols].rank(ascending=True, method='min'), 
+                            ], axis=1).rename(columns={'div_game':'game', 'div_win':'win'})
+    rankings['div']['SET'] = 'DIV'
+
+
+    ## Conference Ranking
+    rankings['conf'] = pd.concat([
+                            team_summ[['team', 'conf_game', 'conf_win']], 
+                            team_summ.groupby(['conference'])[for_cols + ['conf_win']].rank(ascending=False, method='min').rename(columns={'conf_win':'RANK'}),
+                            team_summ.groupby(['conference'])[against_cols].rank(ascending=True, method='min'), 
+                    ], axis=1).rename(columns={'conf_game':'game', 'conf_win':'win'})
+    rankings['conf']['SET'] = 'CONF'
+
+
+    ## Overall Ranking
+    rankings['reg'] = pd.concat([
+                            team_summ[['team', 'reg_game', 'reg_win']], 
+                            team_summ[for_cols + ['reg_win']].rank(ascending=False, method='min').rename(columns={'reg_win':'RANK'}),
+                            team_summ[against_cols].rank(ascending=True, method='min'), 
+                            ], axis=1).rename(columns={'reg_game':'game', 'reg_win':'win'})
+    rankings['reg']['SET'] = 'OVR'
+
+    ## Overall Ranking
+    rankings['all'] = pd.concat([
+                            team_summ[['team', 'game', 'win']], 
+                            team_summ[for_cols + ['win']].rank(ascending=False, method='min').rename(columns={'win':'RANK'}),
+                            team_summ[against_cols].rank(ascending=True, method='min'), 
+                            ], axis=1)
+    rankings['all']['SET'] = 'ALL'
+
+    ## Concat 
+    rankings = pd.concat(rankings.values())
+    rankings.columns = ['TEAM', 'GP', 'W','OFF-PTS', 'OFF-YRD','RANK', 'DEF-PTS', 'DEF-YRD', 'SET']
+    for col in ['GP', 'W',  'OFF-PTS', 'OFF-YRD', 'DEF-PTS', 'DEF-YRD', 'RANK']:
+        rankings[col] = rankings[col].astype(int)
+    rankings = rankings[['TEAM', 'SET', 'RANK', 'GP', 'W',  'OFF-PTS', 'OFF-YRD', 'DEF-PTS', 'DEF-YRD']]
+    rankings['L'] = rankings['GP'] - rankings['W']
+
+    ########## AVG YARD AND SCORE ###############
+    team_avg = curr_teams.groupby(['team'])[against_cols + for_cols].agg(np.nanmean)
+    team_avg = team_avg.apply(np.round)
+    team_avg = team_avg.reset_index(drop=False)
+    team_avg.columns = ['TEAM',  'OFF-PTS', 'OFF-YRD', 'DEF-PTS', 'DEF-YRD']
+
+    return rankings, team_avg
+
 ################# TEAM STATS ########################
 
 def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None, rankings=None, team_summ=None):
 
-    if week==1:
-        season=season-1
-        week = df_teams.loc[df_teams['season']==season].week_num.max()
-        game_date = df_teams.loc[df_teams['season']==season].game_date.max()
-
+    ## Get Subset
     team_df = df_teams.loc[df_teams['team']==team].loc[df_teams['game_date']<game_date].reset_index(drop=True)
 
     ## Get Last Few Games
     imp_cols = ['phase', 'game_date', 'week_type', 'week_num', 'against_team', 'team', 'winner', 'home_or_away',
                 'team_score', 'points_overtime_total', 'against_team_score', 'against_points_overtime_total']
-    last_few_games = team_df.sort_values(['game_time'], ascending=False).loc[team_df['phase']!=''].head(5)[imp_cols]
+    last_few_games = team_df.sort_values(['game_time'], ascending=False).loc[team_df['phase']!=''][imp_cols]
 
     ## Previous Three Games
     last_3_gamesL = []
@@ -275,28 +324,40 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
 
     ## Win Streak
     win_streak = ""
-    for idx, game in last_few_games.head(5).iloc[::-1].iterrows():
+    for idx, game in last_few_games.head(10).iloc[::-1].iterrows():
         if game['winner'] == game['team']:
             win_streak += 'W'
         else:
             win_streak += 'L'
+
     ## Get Team Week Ranking Summary
     team_week_ranking = rankings.loc[rankings['TEAM']==team].drop(['TEAM'], axis=1).set_index(['SET'])
 
     ## Get Team Week Summary
     team_week_summ = team_summ.loc[team_summ['TEAM']==team].drop(['TEAM'], axis=1)
-    team_week_summ.index = ['ACT']
+    team_week_summ.index = ['AVG']
     team_week_summ = pd.concat([team_week_summ, team_week_ranking[team_week_summ.columns]])
     team_week_cols = team_week_summ.copy()
     team_week_summ = team_week_summ.reset_index(drop=False).rename(columns={'index':''})
+    team_week_summ = team_week_summ.loc[team_week_summ[''].isin(['AVG', 'ALL'])].reset_index(drop=True)
+    team_week_summ.loc[team_week_summ['']=='ALL', ''] = 'RANK'
+
     team_week_cols.columns = pd.MultiIndex.from_product([['OFF','DEF'], ['PTS','YRD']],names=['',''])
     team_week_cols = team_week_cols.reset_index(drop=False).rename(columns={'index':''})
 
+    ## Get overall Record
+    ovr_record = team_week_ranking.loc['ALL']
+    ovr_record = "GP {GP} - W {W} - L {L}".format(W=ovr_record['W'], GP=ovr_record['GP'], L=ovr_record['L'])
+
     ## Get Rankings Only
-    team_week_ranking = team_week_ranking[['RANK', 'GP', 'W']].reset_index(drop=False).rename(columns={'SET':''})
+    team_week_ranking = team_week_ranking[['RANK', 'GP', 'W', 'L']].reset_index(drop=False).rename(columns={'SET':''})
+    team_week_ranking = team_week_ranking.loc[team_week_ranking[''].isin(['DIV', 'CONF', 'OVR'])].reset_index(drop=True)
 
     ## Create Final Data Frame
     team_stats_df = pd.DataFrame(last_3_gamesL, columns=['Date', 'Game'])
+
+    ## End Row
+    sep = end_row()
 
     ## Create Table Figure
     team_stat_table = html.Div([
@@ -304,9 +365,20 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                 html.H6("{team}".format(team=full_name)),
 
                 html.Div("{div}".format(div=team_df['division'].max().replace('_', ' ')), style={'fontWeight':'bold'}),
-                html.Br(),
 
-                html.Div("Rankings" , style={'fontWeight':'bold'}),
+                sep[0],
+                html.Div("Season Record", style={'fontWeight':'bold', 
+                        'textAlign':'left', 'fontSize':'12px'}),
+                html.Div(ovr_record),
+
+                html.Div("Winning Streak", 
+                style={'fontWeight':'bold', 
+                        'textAlign':'left', 'fontSize':'12px'}),
+                html.Div("{streak}".format(streak=win_streak),),
+
+                sep[0],
+                html.Div("Regular Season" , 
+                    style={'fontWeight':'bold', 'textAlign':'left', 'fontSize':'12px'}),
                 dt.DataTable(
                     team_week_ranking.to_dict('records'), 
                     [{"name": i, "id": i} for i in team_week_ranking.columns],
@@ -339,7 +411,9 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                     css = table_css,
                 ),
 
-                html.Div("Statistics" , style={'fontWeight':'bold'}),
+                sep[0],
+                html.Div("Statistics", style={'fontWeight':'bold', 
+                        'textAlign':'left', 'fontSize':'12px'}),
                 dt.DataTable(
                     team_week_summ.to_dict('records'), 
                     [{"name": [x,y], "id": x+'-'+y} if x != '' else {"name": [x,y], "id":''} for x,y in team_week_cols.columns],
@@ -376,45 +450,48 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
                     css = table_css,
                 ),
                 
-                html.Div("Last 3 Games" , style={'fontWeight':'bold'}),
-                dt.DataTable(
-                    team_stats_df.to_dict('records'), 
-                    [{"name": i, "id": i} for i in team_stats_df.columns],
-                    style_cell={
-                        'padding':'1px',
-                        'verticalAlign':'center',
-                        'border': 'none',
-                        'backgroundColor': 'transparent',
-                    },
-                    style_header={
-                        'verticalAlign':'center',
-                        'border': 'none',
-                        'backgroundColor': 'transparent',
-                        'fontWeight':'bold',
-                    },
-                    style_table = {
-                        'border': 'none',
-                        'overflowX': 'auto',
-                        'overflowY': 'auto',
-                        'verticalAlign':'center',
-                        'textAlign':'center',
-                    },
-                    style_cell_conditional=[
-                        {'if': {'column_id': 'Date'},
-                            'textAlign':'left',
+                sep[0],
+                html.Div("Last 3 Games", style={'fontWeight':'bold', 
+                        'textAlign':'left', 'fontSize':'12px'}),
+                html.Div(
+                    dt.DataTable(
+                        team_stats_df.to_dict('records'), 
+                        [{"name": i, "id": i} for i in team_stats_df.columns],
+                        style_cell={
+                            'verticalAlign':'center',
+                            'border': 'none',
+                            'backgroundColor': 'transparent',
                         },
-                        {'if': {'column_id': 'Game'},
-                            'textAlign':'center', 
-                        }
-                    ],
-                    css = table_css,
+                        style_header={
+                            'verticalAlign':'center',
+                            'border': 'none',
+                            'backgroundColor': 'transparent',
+                            'fontWeight':'bold',
+                        },
+                        style_table = {
+                            'padding':0,
+                            'border': 'none',
+                            'overflowX': 'auto',
+                            'overflowY': 'auto',
+                            'verticalAlign':'center',
+                            'textAlign':'center',
+                        },
+                        style_cell_conditional=[
+                            {'if': {'column_id': 'Date'},
+                                'textAlign':'center',
+                            },
+                            {'if': {'column_id': 'Game'},
+                                'textAlign':'center', 
+                            }
+                        ],
+                        css = table_css,
+                    ),
+                # style={'height':'10px'}
                 ),
-                html.Br(),
-                html.Div("Winning Streak",
-                    style={'fontWeight':'bold', 'textAlign':'center'}),
-                html.Div("{streak}".format(streak=win_streak),)
+
+                sep[0],
     ],
-    style={'color':'white','whiteSpace': 'normal', 'fontFamily':"arial", 'fontSize':'11px', 'lineHeight':'1.5'})
+    style={'color':'white','whiteSpace': 'None', 'fontFamily':"arial", 'fontSize':'11px', 'lineHeight':'1.5', 'padding':'1px'})
 
     return team_stat_table
 
@@ -663,6 +740,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
 
         ## Get Rankings
         rankings, team_summ = team_rankings(df_teams, week=week, season=season)
+        
         
         for idx, row in scores.iterrows():
             

@@ -57,7 +57,8 @@ preds = preds.rename(columns={'Home Team': 'home_team', 'Away Team':'away_team'}
 teams = pd.read_csv('data/nfl_team_info_all.csv', index_col=0)
 teams['season'] = teams['season'].astype(int)
 team_dec = teams.groupby(['full_name', 'abbreviation']).size().reset_index(drop=False).set_index(['full_name'])['abbreviation'].to_dict()
-teams = teams.fillna('')
+teams.loc[:, teams.dtypes == object] = teams.loc[:, teams.dtypes == object].fillna('')
+teams.loc[:, teams.dtypes == float] = teams.loc[:, teams.dtypes == float].fillna(0)
 
 ############# READ IN SCORES DATA ###########
 scores = pd.read_csv('data/nfl_scores_all.csv', index_col=0)
@@ -77,8 +78,8 @@ scores['total_home_score'] = scores['home_team_score'] + scores['home_points_ove
 scores['total_away_score'] = scores['away_team_score'] + scores['visitor_points_overtime_total']
 scores['home_total_yards'] = scores['home_passing_yards'] + scores['home_rushing_yards']
 scores['away_total_yards'] = scores['visitor_passing_yards'] + scores['visitor_rushing_yards']
-
-scores = scores.fillna('')
+scores.loc[:, scores.dtypes == object] = scores.loc[:, scores.dtypes == object].fillna('')
+scores.loc[:, scores.dtypes == float] = scores.loc[:, scores.dtypes == float].fillna(0)
 
 ############# CREATE FULL DATASET ###########
 ## Merge Home Team Info
@@ -136,8 +137,14 @@ df_away['home_or_away'] = 'away'
 
 df_teams = pd.concat([df_home, df_away]).sort_values(['season', 'week', 'game_time']).reset_index(drop=True)
 
-df_teams['div_game'] = [1 if (x==y) else 0 for x,y in df_teams[['division', 'division_against']].values]
-df_teams['conf_game'] = [1 if (x==y) else 0 for x,y in df_teams[['conference', 'conference_against']].values]
+df_teams['game'] = [1 if (phase == 'FINAL') else 0 for phase, w_type in df_teams[['phase', 'week_type']].values]
+df_teams['win'] = [1 if x==y else 0 for x,y in df_teams[['team', 'winner']].values]
+df_teams['reg_game'] = [1 if ((phase == 'FINAL') & (w_type == 'REG')) else 0 for phase, w_type in df_teams[['phase', 'week_type']].values]
+df_teams['reg_win'] = [1 if ((x==y) & (game == 1)) else 0 for x,y,game in df_teams[['team', 'winner', 'reg_game']].values]
+df_teams['div_game'] = [1 if ((x==y) & (w_type == 'REG')) else 0 for x,y,w_type in df_teams[['division', 'division_against', 'week_type']].values]
+df_teams['div_win'] = [win if game == 1 else 0 for win,game in df_teams[['win', 'div_game']].values]
+df_teams['conf_game'] = [1 if ((x==y) & (w_type == 'REG')) else 0 for x,y,w_type in df_teams[['conference', 'conference_against', 'week_type']].values]
+df_teams['conf_win'] = [win if game == 1 else 0 for win,game in df_teams[['win', 'conf_game']].values]
 
 ############ CREATE USER SCORE DF ############
 USER_LIST = ['Gel','Hector','Emilio','Sonny']
@@ -191,18 +198,26 @@ app.layout = html.Div([
                 Output('username', 'children'), Output("week", "value"),
                 Output('score_table', 'children')],
 [Input("season", "value"), Input("week", "value")])
-def print_df(season, week):
+def update_page(season, week):
 
 
     ## Get User Data
     username = 'Welcome {user}'.format(user=str(request.authorization['username']))
 
     ## Check if Week Works or not
-    max_week = df.loc[df['season']==season].week_num.max()
+    season_df = df.loc[((df['season']==season) & (df['week_num']==week))]
+    if len(season_df) == 0:
+        max_week = 1
+    else:
+        max_week = season_df.week_num.max()
+    del(season_df)
+
+    ## Get Weeek Num
     if week > max_week:
         week_num = max_week
     else:
         week_num = week
+    
     
     ## Get Score Children
     children = scores_page.display_scores(season=season, 
@@ -224,7 +239,9 @@ def print_df(season, week):
                     ]
 
     ### Update Score Table
-    scores_table = navbar.get_curr_score(week, season, user_df, USER_LIST, USER_ABBV_DICT)
+    scores_table = navbar.get_curr_score(week=week_num, season=season, 
+                                        user_df=user_df.copy(), 
+                                        USER_LIST=USER_LIST, USER_ABBV_DICT=USER_ABBV_DICT)
 
 
     return children, week_options, username, week_num, scores_table
