@@ -500,7 +500,7 @@ def team_stats(team, df_teams, full_name, season=None, week=None, game_date=None
 
 ################# DISPLAY TEAM  ########################
 
-def display_team(row, home_or_away, df_teams, width, rankings, team_summ):
+def display_team(row, home_or_away, df_teams, width, rankings, team_summ, preds=True):
 
     if home_or_away == 'away':
         logo = 'logo_away'
@@ -516,7 +516,7 @@ def display_team(row, home_or_away, df_teams, width, rankings, team_summ):
         score_col = 'home_team_score'
     
     ## Return Layout
-    return dbc.Col(
+    team_layout = dbc.Col(
         [
         
             dbc.Row(
@@ -570,6 +570,8 @@ def display_team(row, home_or_away, df_teams, width, rankings, team_summ):
             # 'fontSize':'80%',
         }
         )
+
+    return team_layout
 
 ################# DISPLAY SCORES ########################
 
@@ -630,6 +632,8 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                         },
                         )
 
+        
+        ################# Create Full Layout per Game #############################
 
         curr_game_layout =   dbc.Row([
                                 ### Left Margin
@@ -637,7 +641,7 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
 
                                 ### Away Team
                                 display_team(row=row, home_or_away='away', df_teams=df_teams, width=team_width,
-                                            rankings=rankings, team_summ=team_summ),           
+                                            rankings=rankings, team_summ=team_summ, preds=preds),           
 
                                 ## vs
                                 dbc.Col([
@@ -680,6 +684,9 @@ def display_scores(season, week, user, df, user_df, df_teams, USER_LIST, USER_AB
                                 'verticalAlign':'center',
                                 # 'width':'95%', 
                             })
+
+        ########### Create Border Reactions ###############
+
         return curr_game_layout
 
     def get_current_game_info(row):
